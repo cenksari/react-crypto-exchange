@@ -1,8 +1,10 @@
+import SiteLayout from '../../layouts/SiteLayout';
+
 const HomeScreen = () => (
-  <div className='center'>
+  <SiteLayout>
     <h3>Home</h3>
     <p>Welcome home!</p>
-  </div>
+  </SiteLayout>
 );
 
 export default HomeScreen;
