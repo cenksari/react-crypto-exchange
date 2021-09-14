@@ -1,40 +1,46 @@
 import { memo } from 'react';
+import { Link } from 'react-router-dom';
 
 import NavbarButton from './NavbarButton';
 
 const Navbar = memo(() => (
   <nav className='navbar-inner no-select'>
+    <div className='logo'>
+      <Link to='/'>
+        <img src='/images/btclever-logo.png' alt='BTClever' draggable='false' />
+      </Link>
+    </div>
     <h3>Main menu</h3>
     <ul>
       <li>
-        <NavbarButton url='/' icon='dashboard' title='Dashboard' />
+        <NavbarButton url='/home' icon='dashboard' title='Dashboard' />
       </li>
       <li>
-        <NavbarButton url='/' icon='account_balance_wallet' title='My wallet' />
+        <NavbarButton url='/wallet' icon='account_balance_wallet' title='My wallet' />
       </li>
       <li>
-        <NavbarButton url='/' icon='sync' title='Transactions' />
+        <NavbarButton url='/transactions' icon='sync' title='Transactions' />
       </li>
       <li>
-        <NavbarButton url='/' icon='paid' title='Trading' />
+        <NavbarButton url='/trading' icon='paid' title='Trading' />
       </li>
       <li>
-        <NavbarButton url='/' icon='account_balance' title='Exchange' />
+        <NavbarButton url='/exchange' icon='account_balance' title='Exchange' />
       </li>
       <li>
-        <NavbarButton url='/' icon='equalizer' title='Market capital' />
+        <NavbarButton url='/market' icon='equalizer' title='Market capital' />
       </li>
     </ul>
     <h3>Others</h3>
     <ul>
       <li>
-        <NavbarButton url='/' icon='contacts' title='Contacts' />
+        <NavbarButton url='/contacts' icon='contacts' title='Contacts' />
       </li>
       <li>
-        <NavbarButton url='/' icon='chat' title='Messages' />
+        <NavbarButton url='/messages' icon='chat' title='Messages' />
       </li>
       <li>
-        <NavbarButton url='/' icon='settings' title='Settings' />
+        <NavbarButton url='/settings' icon='settings' title='Settings' />
       </li>
     </ul>
     <div className='copyright'>
