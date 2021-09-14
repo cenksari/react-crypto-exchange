@@ -556,6 +556,7 @@ header .header-right .header-user .signout i {
 /* Navbar */
 
 .navbar {
+  width: 25%;
   padding: 20px 0 20px 20px;
   background-color: #ffffff;
   border-right: 1px solid #ebebeb;
@@ -789,7 +790,7 @@ header .header-right .header-user .signout i {
 /* Forms */
 
 .form-logo img {
-  width: 110px;
+  width: 150px;
   margin-bottom: 30px;
 }
 

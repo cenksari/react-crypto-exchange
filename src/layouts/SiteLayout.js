@@ -4,11 +4,11 @@ import PropTypes from 'prop-types';
 import Navbar from '../components/Navbar/Navbar';
 
 const SiteLayout = memo(({ children }) => (
-  <div className='full-width'>
-    <div className='navbar'>
+  <div className='flex full-width'>
+    <div className='navbar full-height'>
       <Navbar />
     </div>
-    <div className='content'>{children}</div>
+    <div className='content flex-1'>{children}</div>
   </div>
 ));
 

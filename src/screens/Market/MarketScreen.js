@@ -8,7 +8,7 @@ import WidgetCoinHorizontal from '../../components/Widgets/WidgetCoinHorizontal'
 
 const MarketScreen = () => (
   <MainLayout>
-    <Header icon='sort' title='Market' />
+    <Header title='Market' />
     <div className='flex'>
       <div className='content-left box-right-padding'>
         <WidgetMarket />

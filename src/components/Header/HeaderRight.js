@@ -10,7 +10,7 @@ const HeaderRight = memo(() => {
         <ul className='header-menu nowrap'>
           <li>
             <Link
-              to='/'
+              to='/market'
               className={location.pathname.toLowerCase().includes('/market') ? 'active' : 'passive'}
             >
               Market

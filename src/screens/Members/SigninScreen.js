@@ -67,7 +67,7 @@ const SigninScreen = () => {
                       />
                     </div>
                     <div className='form-line right'>
-                      <Link to='/'>Şifremi unuttum</Link>
+                      <Link to='/members/forgot-password'>Şifremi unuttum</Link>
                     </div>
                     <div className='form-line'>
                       <div className='buttons'>
@@ -77,7 +77,7 @@ const SigninScreen = () => {
                     <div className='form-line'>
                       <div className='center'>
                         <p>
-                          Hesabınız yoksa <Link to='/'>yeni hesap</Link> oluşturun.
+                          Hesabınız yoksa <Link to='/members/signup'>yeni hesap</Link> oluşturun.
                         </p>
                       </div>
                     </div>

@@ -11,8 +11,12 @@ const Header = memo(({ icon, title }) => (
   </header>
 ));
 
+Header.defaultProps = {
+  icon: null,
+};
+
 Header.propTypes = {
-  icon: PropTypes.string.isRequired,
+  icon: PropTypes.string,
   title: PropTypes.string.isRequired,
 };
 
