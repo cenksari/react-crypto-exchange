@@ -25,7 +25,6 @@ const WidgetLimits = memo(() => (
     <div className='box-content box-content-height-nobutton'>
       <div className='limits-header-row flex flex-center flex-space-between no-select'>
         <div>&nbsp;</div>
-        <div>&nbsp;</div>
         <div className='center'>
           <span className='gray'>24s limit</span>
         </div>
@@ -35,9 +34,8 @@ const WidgetLimits = memo(() => (
         <div className='center'>
           <span className='gray'>Durum</span>
         </div>
+        <div>&nbsp;</div>
       </div>
-
-      <WidgetLimitsRow />
 
       <WidgetLimitsRow />
 

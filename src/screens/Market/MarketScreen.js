@@ -2,6 +2,9 @@ import MainLayout from '../../layouts/MainLayout';
 import Header from '../../components/Header/Header';
 
 import WidgetMarket from '../../components/Widgets/WidgetMarket';
+import WidgetBuySell from '../../components/Widgets/WidgetBuySell';
+import WidgetBuyOrders from '../../components/Widgets/WidgetBuyOrders';
+import WidgetSellOrders from '../../components/Widgets/WidgetSellOrders';
 import WidgetTradeHistory from '../../components/Widgets/WidgetTradeHistory';
 import WidgetCoinVertical from '../../components/Widgets/WidgetCoinVertical';
 import WidgetCoinHorizontal from '../../components/Widgets/WidgetCoinHorizontal';
@@ -24,7 +27,7 @@ const MarketScreen = () => (
               <WidgetTradeHistory />
             </div>
             <div className='content-30'>
-              <WidgetTradeHistory />
+              <WidgetBuySell />
             </div>
           </div>
 
@@ -33,10 +36,10 @@ const MarketScreen = () => (
               <WidgetTradeHistory />
             </div>
             <div className='flex-1 box-right-padding'>
-              <WidgetTradeHistory />
+              <WidgetBuyOrders />
             </div>
             <div className='flex-1'>
-              <WidgetTradeHistory />
+              <WidgetSellOrders />
             </div>
           </div>
         </div>

@@ -6,13 +6,13 @@ const WidgetCoinVertical = memo(() => (
   <Box>
     <div className='box-title box-vertical-padding box-horizontal-padding no-select'>
       <div className='flex flex-center flex-space-between'>
-        <p>About</p>
+        <p>Hakkında</p>
         <button type='button' className='box-icon pointer'>
           <i className='material-icons'>more_vert</i>
         </button>
       </div>
     </div>
-    <div className='widget-coin-vertical box-content'>
+    <div className='widget-coin-vertical box-content-height-nobutton'>
       <div className='center'>
         <div className='icon' />
       </div>
