@@ -1,4 +1,5 @@
 import { memo } from 'react';
+import { Sparklines, SparklinesLine } from 'react-sparklines';
 
 const WidgetMarketRow = memo(() => (
   <div className='market-row flex flex-center flex-space-between'>
@@ -12,7 +13,9 @@ const WidgetMarketRow = memo(() => (
       </p>
     </div>
     <div>
-      <p>graph</p>
+      <Sparklines data={[5, 10, 5, 20, 10]} width={50} height={50}>
+        <SparklinesLine style={{ strokeWidth: 2, fill: 'none' }} color='#32b778' />
+      </Sparklines>
     </div>
     <div>
       <p className='right'>

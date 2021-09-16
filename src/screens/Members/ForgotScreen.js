@@ -42,17 +42,21 @@ const ForgotScreen = () => {
                 <form className='form' onSubmit={handleSubmit} noValidate>
                   <div className='form-elements'>
                     <div className='form-line'>
-                      <label htmlFor='phone'>Telefon numaranız</label>
-                      <FormInput
-                        type='text'
-                        name='phone'
-                        value={formValues.phone}
-                        placeholder='Telefon numaranızı girin'
-                        onChange={handleChange}
-                      />
+                      <div className='full-width'>
+                        <label htmlFor='phone'>Telefon numaranız</label>
+                        <FormInput
+                          type='text'
+                          name='phone'
+                          value={formValues.phone}
+                          placeholder='Telefon numaranızı girin'
+                          onChange={handleChange}
+                        />
+                      </div>
                     </div>
-                    <div className='form-line right'>
-                      <Link to='/'>Giriş yap</Link>
+                    <div className='form-line'>
+                      <div className='full-width right'>
+                        <Link to='/'>Giriş yap</Link>
+                      </div>
                     </div>
                     <div className='form-line'>
                       <div className='buttons'>

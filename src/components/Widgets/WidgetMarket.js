@@ -8,7 +8,7 @@ import WidgetMarketRow from './WidgetMarketRow';
 const WidgetMarket = memo(() => (
   <Box>
     <div className='box-title box-vertical-padding box-horizontal-padding no-select'>Piyasalar</div>
-    <div className='box-content'>
+    <div className='box-content box-content-height'>
       <WidgetMarketRow />
 
       <WidgetMarketRow />
@@ -24,13 +24,12 @@ const WidgetMarket = memo(() => (
       <WidgetMarketRow />
 
       <WidgetMarketRow />
-
-      <div className='box-button box-vertical-padding box-horizontal-padding'>
-        <Link to='/market' className='button button-purple button-medium button-block'>
-          Daha fazla
-          <i className='material-icons button-icon-right'>chevron_right</i>
-        </Link>
-      </div>
+    </div>
+    <div className='box-button box-vertical-padding box-horizontal-padding'>
+      <Link to='/market' className='button button-purple button-medium button-block'>
+        Daha fazla
+        <i className='material-icons button-icon-right'>chevron_right</i>
+      </Link>
     </div>
   </Box>
 ));

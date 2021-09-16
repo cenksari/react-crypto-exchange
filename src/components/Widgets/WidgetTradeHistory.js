@@ -10,7 +10,7 @@ const WidgetTradeHistory = memo(() => (
     <div className='box-title box-vertical-padding box-horizontal-padding no-select'>
       Piyasa geçmişi
     </div>
-    <div className='box-content'>
+    <div className='box-content box-content-height'>
       <div className='trade-history-row'>
         <table>
           <thead>
@@ -42,13 +42,12 @@ const WidgetTradeHistory = memo(() => (
           </tbody>
         </table>
       </div>
-
-      <div className='box-button box-vertical-padding box-horizontal-padding'>
-        <Link to='/market' className='button button-purple button-medium button-block'>
-          Daha fazla
-          <i className='material-icons button-icon-right'>chevron_right</i>
-        </Link>
-      </div>
+    </div>
+    <div className='box-button box-vertical-padding box-horizontal-padding'>
+      <Link to='/market' className='button button-purple button-medium button-block'>
+        Daha fazla
+        <i className='material-icons button-icon-right'>chevron_right</i>
+      </Link>
     </div>
   </Box>
 ));
