@@ -15,11 +15,6 @@ const WidgetLimitsRow = memo(() => (
     <div className='center'>
       <span className='green'>Limit uygun</span>
     </div>
-    <div className='center'>
-      <button type='button' className='delete pointer'>
-        <i className='material-icons'>close</i>
-      </button>
-    </div>
   </div>
 ));
 

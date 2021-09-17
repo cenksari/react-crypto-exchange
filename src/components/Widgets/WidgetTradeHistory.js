@@ -15,10 +15,10 @@ const WidgetTradeHistory = memo(() => (
         <table>
           <thead>
             <tr>
-              <th className='left'>Fiyat</th>
-              <th className='center'>Hacim</th>
-              <th className='center'>İşlem</th>
-              <th className='right'>Zaman</th>
+              <th className='left no-select'>Fiyat</th>
+              <th className='center no-select'>Hacim</th>
+              <th className='center no-select'>İşlem</th>
+              <th className='right no-select'>Zaman</th>
             </tr>
           </thead>
           <tbody>

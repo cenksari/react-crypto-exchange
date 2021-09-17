@@ -34,7 +34,6 @@ const WidgetLimits = memo(() => (
         <div className='center'>
           <span className='gray'>Durum</span>
         </div>
-        <div>&nbsp;</div>
       </div>
 
       <WidgetLimitsRow />

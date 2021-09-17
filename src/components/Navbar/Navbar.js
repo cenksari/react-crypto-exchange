@@ -13,7 +13,7 @@ const Navbar = memo(() => (
     <h3>Main menu</h3>
     <ul>
       <li>
-        <NavbarButton url='/home' icon='dashboard' title='Dashboard' />
+        <NavbarButton url='/dashboard' icon='dashboard' title='Dashboard' />
       </li>
       <li>
         <NavbarButton url='/wallet' icon='account_balance_wallet' title='My wallet' />
@@ -28,11 +28,14 @@ const Navbar = memo(() => (
         <NavbarButton url='/exchange' icon='account_balance' title='Exchange' />
       </li>
       <li>
-        <NavbarButton url='/market' icon='equalizer' title='Market capital' />
+        <NavbarButton url='/capital' icon='equalizer' title='Market capital' />
       </li>
     </ul>
     <h3>Others</h3>
     <ul>
+      <li>
+        <NavbarButton url='/members' icon='account_circle' title='Profile' />
+      </li>
       <li>
         <NavbarButton url='/contacts' icon='contacts' title='Contacts' />
       </li>

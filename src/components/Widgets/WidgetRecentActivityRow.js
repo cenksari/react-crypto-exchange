@@ -7,16 +7,16 @@ const WidgetRecentActivityRow = memo(() => (
         <i className='material-icons'>arrow_upward</i>
       </div>
     </div>
-    <div>
+    <div className='center'>
       <strong>Yükleme</strong>
     </div>
-    <div>
+    <div className='center'>
       <p>06:25:57</p>
     </div>
-    <div>
+    <div className='center'>
       <strong>+$5553,12</strong>
     </div>
-    <div>
+    <div className='center'>
       <span className='green'>Bitmiş</span>
     </div>
   </div>

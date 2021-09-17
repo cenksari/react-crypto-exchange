@@ -20,7 +20,7 @@ const WidgetCoinVertical = memo(() => (
         <div className='center'>
           <h3>Bitcoin</h3>
           <strong>BTC</strong>
-          <div className='coin-price'>1 BTC = 420.000 TRY</div>
+          <div className='coin-price no-select'>1 BTC = 420.000 TRY</div>
         </div>
         <div className='box-horizontal-padding box-vertical-padding'>
           <p>

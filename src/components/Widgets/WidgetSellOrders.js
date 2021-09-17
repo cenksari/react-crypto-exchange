@@ -1,6 +1,7 @@
 import { memo } from 'react';
 
 import Box from '../Common/Box';
+import WidgetSellOrdersRow from './WidgetSellOrdersRow';
 
 const WidgetSellOrders = memo(() => (
   <Box>
@@ -12,8 +13,37 @@ const WidgetSellOrders = memo(() => (
         </button>
       </div>
     </div>
-    <div className='widget-coin-vertical box-content-height-nobutton'>
-      <p>deneme</p>
+    <div className='box-content box-content-height-nobutton'>
+      <div className='orders-row'>
+        <table>
+          <thead>
+            <tr>
+              <th className='left no-select'>Fiyat</th>
+              <th className='center no-select'>Tutar</th>
+              <th className='right no-select'>Toplam</th>
+            </tr>
+          </thead>
+          <tbody>
+            <WidgetSellOrdersRow color='white' />
+
+            <WidgetSellOrdersRow color='green' />
+
+            <WidgetSellOrdersRow color='white' />
+
+            <WidgetSellOrdersRow color='red' />
+
+            <WidgetSellOrdersRow color='green' />
+
+            <WidgetSellOrdersRow color='green' />
+
+            <WidgetSellOrdersRow color='white' />
+
+            <WidgetSellOrdersRow color='white' />
+
+            <WidgetSellOrdersRow color='white' />
+          </tbody>
+        </table>
+      </div>
     </div>
   </Box>
 ));
