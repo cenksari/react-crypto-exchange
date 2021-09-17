@@ -43,12 +43,12 @@ const HeaderRight = memo(() => {
         </ul>
         <ul className='header-icons nowrap'>
           <li>
-            <Link to='/'>
+            <Link to='/search'>
               <i className='material-icons'>search</i>
             </Link>
           </li>
           <li>
-            <Link to='/'>
+            <Link to='/members/notifications'>
               <span className='notification-badge'>23</span>
               <i className='material-icons'>notifications</i>
             </Link>

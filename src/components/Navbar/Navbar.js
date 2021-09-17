@@ -6,7 +6,7 @@ import NavbarButton from './NavbarButton';
 const Navbar = memo(() => (
   <nav className='navbar-inner no-select'>
     <div className='logo'>
-      <Link to='/'>
+      <Link to='/market'>
         <img src='/images/btclever-logo.png' alt='BTClever' draggable='false' />
       </Link>
     </div>
