@@ -436,6 +436,14 @@ body {
   margin-bottom: 15px;
 }
 
+/* Bank info */
+
+.bank-info p {
+  color: #666666;
+  font-size: 0.9em;
+  margin-top: 10px;
+}
+
 /* Tabs */
 
 .tabs {
@@ -527,9 +535,9 @@ body {
 
 .top-search {
   border-radius: 25px;
+  padding: 0 0 0 25px;
   border: 1px solid #ebebeb;
   background-color: #ffffff;
-  padding: 15px 10px 15px 25px;
 }
 
 .top-search i,
@@ -539,10 +547,12 @@ body {
 
 .top-search input {
   width: 250px;
+  padding: 15px 0;
 }
 
 .top-search button {
-  width: 24px;
+  border-radius: 25px;
+  padding: 15px 8px 15px 15px;
 }
 
 /* Data table */
@@ -1224,6 +1234,10 @@ header .header-right .header-user .signout i {
   border: 1px solid #ffffff;
 }
 
+.activity-row div {
+  width: 25%;
+}
+
 .activity-row:hover {
   border: 1px solid #ebebeb;
 }
@@ -1232,9 +1246,11 @@ header .header-right .header-user .signout i {
   width: 50px;
   height: 50px;
   padding-top: 10px;
+  margin-right: 10px;
   text-align: center;
   border-radius: 50em;
   display: inline-block;
+  vertical-align: middle;
 }
 
 .activity-row i {
@@ -1525,6 +1541,8 @@ header .header-right .header-user .signout i {
 
 .upload input[type='file'] {
   opacity: 0;
+  width: 1px;
+  height: 1px;
   position: absolute;
   display: inline-block;
 }

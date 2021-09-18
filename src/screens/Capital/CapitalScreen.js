@@ -5,7 +5,7 @@ import Header from '../../components/Header/Header';
 
 const CapitalScreen = () => (
   <SiteLayout>
-    <Header icon='sort' title='Market capital' />
+    <Header icon='sort' title='Piyasa' />
     <div className='top-buttons flex flex-center flex-space-between'>
       <div>
         <div className='top-search'>
@@ -31,12 +31,12 @@ const CapitalScreen = () => (
     <table className='data-table'>
       <thead>
         <tr>
-          <th className='left'>Rank</th>
+          <th className='left'>Sıra</th>
           <th className='left'>Coin</th>
-          <th className='center'>Last price</th>
-          <th className='center'>Change (24h)</th>
-          <th className='center'>Volume (24h)</th>
-          <th className='left'>Graph</th>
+          <th className='center'>Son fiyat</th>
+          <th className='center'>Değişim (24s)</th>
+          <th className='center'>Hacim (24s)</th>
+          <th className='left'>Grafik</th>
           <th className='right'>&nbsp;</th>
         </tr>
       </thead>

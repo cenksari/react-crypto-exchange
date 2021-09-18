@@ -1,8 +1,9 @@
 import { memo } from 'react';
 import { Link } from 'react-router-dom';
 import { Sparklines, SparklinesLine, SparklinesBars } from 'react-sparklines';
+import PropTypes from 'prop-types';
 
-const WidgetMyAssetsRow = memo(() => (
+const WidgetMyAssetsRow = memo(({ color }) => (
   <div className='assets-row flex flex-center flex-space-between'>
     <div>
       <div className='icon' />
@@ -13,13 +14,13 @@ const WidgetMyAssetsRow = memo(() => (
     </div>
     <div className='bar-chart'>
       <Sparklines data={[30, 20, 25, 35, 30]} width={40} height={40}>
-        <SparklinesBars style={{ strokeWidth: 1, stroke: '#ffffff', fill: '#32b778' }} />
+        <SparklinesBars style={{ strokeWidth: 1, stroke: '#ffffff', fill: color }} />
       </Sparklines>
     </div>
     <div>
       <strong>$18,783.33</strong>
       <span>
-        <em className='green'>45%</em>
+        <em className={color}>45%</em>
         Bu hafta
       </span>
     </div>
@@ -29,7 +30,7 @@ const WidgetMyAssetsRow = memo(() => (
         width={200}
         height={50}
       >
-        <SparklinesLine style={{ strokeWidth: 4 }} color='#32b778' />
+        <SparklinesLine style={{ strokeWidth: 4 }} color={color} />
       </Sparklines>
     </div>
     <div>
@@ -42,5 +43,9 @@ const WidgetMyAssetsRow = memo(() => (
     </div>
   </div>
 ));
+
+WidgetMyAssetsRow.propTypes = {
+  color: PropTypes.string.isRequired,
+};
 
 export default WidgetMyAssetsRow;

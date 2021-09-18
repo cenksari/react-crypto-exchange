@@ -23,17 +23,17 @@ const WidgetRecentActivity = memo(() => (
       </div>
     </div>
     <div className='box-content box-content-height-nobutton'>
-      <WidgetRecentActivityRow />
+      <WidgetRecentActivityRow color='green' />
 
-      <WidgetRecentActivityRow />
+      <WidgetRecentActivityRow color='green' />
 
-      <WidgetRecentActivityRow />
+      <WidgetRecentActivityRow color='red' />
 
-      <WidgetRecentActivityRow />
+      <WidgetRecentActivityRow color='green' />
 
-      <WidgetRecentActivityRow />
+      <WidgetRecentActivityRow color='green' />
 
-      <WidgetRecentActivityRow />
+      <WidgetRecentActivityRow color='red' />
     </div>
   </Box>
 ));

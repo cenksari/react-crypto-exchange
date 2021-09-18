@@ -20,17 +20,17 @@ const WidgetMyAssets = memo(() => (
       </div>
     </div>
     <div className='box-content box-content-height-nobutton'>
-      <WidgetMyAssetsRow />
+      <WidgetMyAssetsRow color='green' />
 
-      <WidgetMyAssetsRow />
+      <WidgetMyAssetsRow color='green' />
 
-      <WidgetMyAssetsRow />
+      <WidgetMyAssetsRow color='red' />
 
-      <WidgetMyAssetsRow />
+      <WidgetMyAssetsRow color='green' />
 
-      <WidgetMyAssetsRow />
+      <WidgetMyAssetsRow color='red' />
 
-      <WidgetMyAssetsRow />
+      <WidgetMyAssetsRow color='green' />
     </div>
   </Box>
 ));

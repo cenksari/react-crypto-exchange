@@ -9,21 +9,21 @@ const WidgetMarket = memo(() => (
   <Box>
     <div className='box-title box-vertical-padding box-horizontal-padding no-select'>Piyasalar</div>
     <div className='box-content box-content-height'>
-      <WidgetMarketRow />
+      <WidgetMarketRow color='green' />
 
-      <WidgetMarketRow />
+      <WidgetMarketRow color='green' />
 
-      <WidgetMarketRow />
+      <WidgetMarketRow color='red' />
 
-      <WidgetMarketRow />
+      <WidgetMarketRow color='green' />
 
-      <WidgetMarketRow />
+      <WidgetMarketRow color='green' />
 
-      <WidgetMarketRow />
+      <WidgetMarketRow color='red' />
 
-      <WidgetMarketRow />
+      <WidgetMarketRow color='green' />
 
-      <WidgetMarketRow />
+      <WidgetMarketRow color='red' />
     </div>
     <div className='box-button box-vertical-padding box-horizontal-padding'>
       <Link to='/market' className='button button-purple button-medium button-block'>

@@ -1,6 +1,7 @@
 import { memo } from 'react';
+import PropTypes from 'prop-types';
 
-const WidgetLimitsRow = memo(() => (
+const WidgetLimitsRow = memo(({ color }) => (
   <div className='limits-row flex flex-center flex-space-between no-select'>
     <div>
       <div className='icon' />
@@ -13,9 +14,13 @@ const WidgetLimitsRow = memo(() => (
       <strong>9.063,100</strong>
     </div>
     <div className='center'>
-      <span className='green'>Limit uygun</span>
+      <span className={color}>{color === 'green' ? 'Limit uygun' : 'Bakiye yetersiz'}</span>
     </div>
   </div>
 ));
+
+WidgetLimitsRow.propTypes = {
+  color: PropTypes.string.isRequired,
+};
 
 export default WidgetLimitsRow;

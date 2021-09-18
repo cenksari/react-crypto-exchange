@@ -21,7 +21,7 @@ const HeaderRight = memo(() => {
               to='/data'
               className={location.pathname.toLowerCase().includes('/data') ? 'active' : 'passive'}
             >
-              Data
+              Veri
             </Link>
           </li>
           <li>
@@ -29,7 +29,7 @@ const HeaderRight = memo(() => {
               to='/docs'
               className={location.pathname.toLowerCase().includes('/docs') ? 'active' : 'passive'}
             >
-              Docs
+              Doküman
             </Link>
           </li>
           <li>

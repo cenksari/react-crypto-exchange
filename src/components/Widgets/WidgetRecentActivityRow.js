@@ -1,14 +1,13 @@
 import { memo } from 'react';
+import PropTypes from 'prop-types';
 
-const WidgetRecentActivityRow = memo(() => (
+const WidgetRecentActivityRow = memo(({ color }) => (
   <div className='activity-row flex flex-center flex-space-between no-select'>
-    <div>
-      <div className='icon green'>
-        <i className='material-icons'>arrow_upward</i>
+    <div className='nowrap'>
+      <div className={color && `icon ${color}`}>
+        <i className='material-icons'>{color === 'green' ? 'arrow_upward' : 'arrow_downward'}</i>
       </div>
-    </div>
-    <div className='center'>
-      <strong>Yükleme</strong>
+      <strong>{color === 'green' ? 'Yükleme' : 'Çekme'}</strong>
     </div>
     <div className='center'>
       <p>06:25:57</p>
@@ -17,9 +16,13 @@ const WidgetRecentActivityRow = memo(() => (
       <strong>+$5553,12</strong>
     </div>
     <div className='center'>
-      <span className='green'>Bitmiş</span>
+      <span className={color}>{color === 'green' ? 'Bitmiş' : 'Bekliyor'}</span>
     </div>
   </div>
 ));
+
+WidgetRecentActivityRow.propTypes = {
+  color: PropTypes.string.isRequired,
+};
 
 export default WidgetRecentActivityRow;

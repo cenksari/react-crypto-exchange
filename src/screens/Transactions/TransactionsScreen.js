@@ -3,7 +3,7 @@ import Header from '../../components/Header/Header';
 
 const TransactionsScreen = () => (
   <SiteLayout>
-    <Header icon='sort' title='Market capital' />
+    <Header icon='sort' title='İşlemler' />
     <div className='top-buttons flex flex-center flex-space-between'>
       <div>
         <div className='top-search'>
@@ -30,13 +30,13 @@ const TransactionsScreen = () => (
       <thead>
         <tr>
           <th className='left'>&nbsp;</th>
-          <th className='left'>Transaction ID</th>
-          <th className='left'>Date</th>
-          <th className='left'>From</th>
-          <th className='left'>To</th>
+          <th className='left'>İşlem</th>
+          <th className='left'>Tarih</th>
+          <th className='left'>Kimden</th>
+          <th className='left'>Kime</th>
           <th className='left'>Coin</th>
-          <th className='center'>Amount</th>
-          <th className='center'>Status</th>
+          <th className='center'>Tutar</th>
+          <th className='center'>Durum</th>
         </tr>
       </thead>
       <tbody>
@@ -48,10 +48,10 @@ const TransactionsScreen = () => (
           </td>
           <td>#12415346563475</td>
           <td>2/5/2020 06:24:45</td>
-          <td>Thomas</td>
+          <td>Tarık</td>
           <td className='nowrap'>
             <div className='icon' />
-            Ashlynn
+            Cenk
           </td>
           <td className='nowrap'>
             <div className='icon' />
@@ -61,7 +61,7 @@ const TransactionsScreen = () => (
             <strong className='green'>+$5.553</strong>
           </td>
           <td className='center'>
-            <span className='status green'>PENDING</span>
+            <span className='status green'>BEKLİYOR</span>
           </td>
         </tr>
       </tbody>

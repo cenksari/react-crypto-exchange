@@ -36,15 +36,15 @@ const WidgetLimits = memo(() => (
         </div>
       </div>
 
-      <WidgetLimitsRow />
+      <WidgetLimitsRow color='green' />
 
-      <WidgetLimitsRow />
+      <WidgetLimitsRow color='red' />
 
-      <WidgetLimitsRow />
+      <WidgetLimitsRow color='green' />
 
-      <WidgetLimitsRow />
+      <WidgetLimitsRow color='green' />
 
-      <WidgetLimitsRow />
+      <WidgetLimitsRow color='red' />
     </div>
   </Box>
 ));

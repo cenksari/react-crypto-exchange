@@ -10,46 +10,46 @@ const Navbar = memo(() => (
         <img src='/images/btclever-logo.png' alt='BTClever' draggable='false' />
       </Link>
     </div>
-    <h3>Main menu</h3>
+    <h3>Ana menü</h3>
     <ul>
       <li>
-        <NavbarButton url='/dashboard' icon='dashboard' title='Dashboard' />
+        <NavbarButton url='/dashboard' icon='dashboard' title='Yatır-çek' />
       </li>
       <li>
-        <NavbarButton url='/wallet' icon='account_balance_wallet' title='My wallet' />
+        <NavbarButton url='/wallet' icon='account_balance_wallet' title='Cüzdanım' />
       </li>
       <li>
-        <NavbarButton url='/transactions' icon='sync' title='Transactions' />
+        <NavbarButton url='/transactions' icon='sync' title='İşlemler' />
       </li>
       <li>
-        <NavbarButton url='/trading' icon='paid' title='Trading' />
+        <NavbarButton url='/trading' icon='paid' title='Ticaret' />
       </li>
       <li>
-        <NavbarButton url='/exchange' icon='account_balance' title='Exchange' />
+        <NavbarButton url='/exchange' icon='account_balance' title='Takas' />
       </li>
       <li>
-        <NavbarButton url='/capital' icon='equalizer' title='Market capital' />
+        <NavbarButton url='/capital' icon='equalizer' title='Piyasa' />
       </li>
     </ul>
-    <h3>Others</h3>
+    <h3>Diğerleri</h3>
     <ul>
       <li>
-        <NavbarButton url='/members' icon='account_circle' title='Profile' />
+        <NavbarButton url='/members' icon='account_circle' title='Profil' />
       </li>
       <li>
-        <NavbarButton url='/contacts' icon='contacts' title='Contacts' />
+        <NavbarButton url='/contacts' icon='contacts' title='Kişiler' />
       </li>
       <li>
-        <NavbarButton url='/messages' icon='chat' title='Messages' />
+        <NavbarButton url='/messages' icon='chat' title='Mesajlar' />
       </li>
       <li>
-        <NavbarButton url='/settings' icon='settings' title='Settings' />
+        <NavbarButton url='/settings' icon='settings' title='Ayarlar' />
       </li>
     </ul>
     <div className='copyright'>
       <strong>BTClever</strong>
       <p>
-        2021 &copy; All rights reserved.
+        2021 &copy; Tüm hakları saklıdır.
         <br />
         <br />
         Made with <span>❤</span> by Btclever
