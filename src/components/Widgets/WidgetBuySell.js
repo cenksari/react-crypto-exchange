@@ -72,7 +72,12 @@ const WidgetBuySell = memo(() => {
                 <div className='buy-sell-line flex flex-center flex-space-between no-select'>
                   <div>
                     <strong>Miktar</strong>
-                    <i className='material-icons'>info</i>
+                    <i
+                      className='material-icons'
+                      title='Lorem ipsum dolor sit amet consecteteur adispicing elit.'
+                    >
+                      info
+                    </i>
                   </div>
                   <div className='right'>
                     <input type='text' id='m' name='m' placeholder='0' />
@@ -99,7 +104,12 @@ const WidgetBuySell = memo(() => {
                 <div className='buy-sell-line flex flex-center flex-space-between no-select'>
                   <div>
                     <strong>Limit fiyatı</strong>
-                    <i className='material-icons'>info</i>
+                    <i
+                      className='material-icons'
+                      title='Lorem ipsum dolor sit amet consecteteur adispicing elit.'
+                    >
+                      info
+                    </i>
                   </div>
                   <div className='right'>
                     <input type='text' id='f' name='f' placeholder='0' />
@@ -109,7 +119,12 @@ const WidgetBuySell = memo(() => {
                 <div className='buy-sell-line flex flex-center flex-space-between no-select'>
                   <div>
                     <strong>Miktar</strong>
-                    <i className='material-icons'>info</i>
+                    <i
+                      className='material-icons'
+                      title='Lorem ipsum dolor sit amet consecteteur adispicing elit.'
+                    >
+                      info
+                    </i>
                   </div>
                   <div className='right'>
                     <input type='text' id='m' name='m' placeholder='0' />
@@ -152,7 +167,12 @@ const WidgetBuySell = memo(() => {
                 <div className='buy-sell-line flex flex-center flex-space-between no-select'>
                   <div>
                     <strong>Stop</strong>
-                    <i className='material-icons'>info</i>
+                    <i
+                      className='material-icons'
+                      title='Lorem ipsum dolor sit amet consecteteur adispicing elit.'
+                    >
+                      info
+                    </i>
                   </div>
                   <div className='right'>
                     <input type='text' id='s' name='s' placeholder='0' />
@@ -162,7 +182,12 @@ const WidgetBuySell = memo(() => {
                 <div className='buy-sell-line flex flex-center flex-space-between no-select'>
                   <div>
                     <strong>Limit</strong>
-                    <i className='material-icons'>info</i>
+                    <i
+                      className='material-icons'
+                      title='Lorem ipsum dolor sit amet consecteteur adispicing elit.'
+                    >
+                      info
+                    </i>
                   </div>
                   <div className='right'>
                     <input type='text' id='l' name='l' placeholder='0' />
@@ -172,7 +197,12 @@ const WidgetBuySell = memo(() => {
                 <div className='buy-sell-line flex flex-center flex-space-between no-select'>
                   <div>
                     <strong>Miktar</strong>
-                    <i className='material-icons'>info</i>
+                    <i
+                      className='material-icons'
+                      title='Lorem ipsum dolor sit amet consecteteur adispicing elit.'
+                    >
+                      info
+                    </i>
                   </div>
                   <div className='right'>
                     <input type='text' id='m' name='m' placeholder='0' />

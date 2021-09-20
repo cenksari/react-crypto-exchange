@@ -26,7 +26,7 @@ const WidgetMarket = memo(() => (
       <WidgetMarketRow color='red' />
     </div>
     <div className='box-button box-vertical-padding box-horizontal-padding'>
-      <Link to='/market' className='button button-purple button-medium button-block'>
+      <Link to='/capital' className='button button-purple button-medium button-block'>
         Daha fazla
         <i className='material-icons button-icon-right'>chevron_right</i>
       </Link>
