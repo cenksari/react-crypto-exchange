@@ -979,11 +979,11 @@ header .header-right .header-user .signout i {
   padding: 20px;
 }
 
-.content .content-30 {
+.content-30 {
   width: 30%;
 }
 
-.content .content-70 {
+.content-70 {
   width: 70%;
 }
 
@@ -1330,7 +1330,7 @@ header .header-right .header-user .signout i {
 .orders-row table td {
   font-size: 0.9em;
   font-weight: 500;
-  padding: 15px;
+  padding: 10px;
 }
 
 .orders-row .white {
@@ -1650,7 +1650,8 @@ header .header-right .header-user .signout i {
 }
 
 @media (max-width: 1000px) {
-  html, body {
+  html,
+  body {
     font-size: 0.9em;
   }
 
@@ -1688,5 +1689,51 @@ header .header-right .header-user .signout i {
 
   .flex-destroy {
     display: block;
+  }
+
+  .data-table {
+    border-radius: 10px;
+  }
+
+  .data-table th {
+    padding: 10px 5px;
+  }
+
+  .data-table td {
+    padding: 5px;
+  }
+
+  .top-buttons {
+    text-align: center;
+  }
+
+  .top-buttons .button {
+    margin-top: 25px;
+    padding: 10px 25px;
+  }
+
+  .top-search input {
+    width: 80%;
+  }
+
+  .top-search button {
+    width: 20%;
+    text-align: right;
+  }
+}
+
+@media (max-width: 550px) {
+  .box-horizontal-padding {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .responsive-hide2 {
+    display: none !important;
+  }
+
+  .top-search input,
+  .top-search button {
+    padding: 10px 15px;
   }
 }

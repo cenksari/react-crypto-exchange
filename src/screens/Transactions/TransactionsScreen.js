@@ -6,7 +6,7 @@ const TransactionsScreen = () => (
     <Header icon='sort' title='İşlemler' />
     <div className='top-buttons flex flex-destroy flex-center flex-space-between'>
       <div>
-        <div className='top-search'>
+        <div className='top-search nowrap'>
           <input type='text' id='search' name='search' placeholder='Aranacak kelime' />
           <button type='button' className='pointer'>
             <i className='material-icons'>search</i>

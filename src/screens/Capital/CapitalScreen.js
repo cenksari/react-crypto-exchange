@@ -8,7 +8,7 @@ const CapitalScreen = () => (
     <Header icon='sort' title='Piyasa' />
     <div className='top-buttons flex flex-destroy flex-center flex-space-between'>
       <div>
-        <div className='top-search'>
+        <div className='top-search nowrap'>
           <input type='text' id='search' name='search' placeholder='Aranacak kelime' />
           <button type='button' className='pointer'>
             <i className='material-icons'>search</i>
@@ -35,7 +35,7 @@ const CapitalScreen = () => (
           <th className='left'>Coin</th>
           <th className='center'>Son fiyat</th>
           <th className='center'>Değişim (24s)</th>
-          <th className='center'>Hacim (24s)</th>
+          <th className='center responsive-hide2'>Hacim (24s)</th>
           <th className='left responsive-hide'>Grafik</th>
           <th className='right'>&nbsp;</th>
         </tr>
@@ -55,7 +55,7 @@ const CapitalScreen = () => (
           <td className='center'>
             <strong className='green'>2.54%</strong>
           </td>
-          <td className='center'>$220.080.878.451</td>
+          <td className='center responsive-hide2'>$220.080.878.451</td>
           <td className='responsive-hide'>
             <div className='line-chart'>
               <Sparklines

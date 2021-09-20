@@ -12,7 +12,7 @@ const WidgetMyAssetsRow = memo(({ color }) => (
       <strong>Bitcoin</strong>
       <span>BTC</span>
     </div>
-    <div className='bar-chart'>
+    <div className='bar-chart responsive-hide2'>
       <Sparklines data={[30, 20, 25, 35, 30]} width={40} height={40}>
         <SparklinesBars style={{ strokeWidth: 1, stroke: '#ffffff', fill: color }} />
       </Sparklines>

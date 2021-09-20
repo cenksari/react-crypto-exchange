@@ -5,7 +5,7 @@ import Box from '../Common/Box';
 const WidgetCoinHorizontal = memo(() => (
   <Box>
     <div className='box-content box-vertical-padding box-horizontal-padding'>
-      <div className='widget-coin-horizontal flex flex-center flex-space-between nowrap'>
+      <div className='widget-coin-horizontal flex flex-center flex-space-around nowrap'>
         <div>
           <div className='icon' />
         </div>
@@ -21,18 +21,18 @@ const WidgetCoinHorizontal = memo(() => (
             <em className='red'>-3.28%</em>
           </strong>
         </div>
-        <div className='divider' />
-        <div>
+        <div className='divider responsive-hide2' />
+        <div className='responsive-hide2'>
           <label className='gray'>Finansman oranı</label>
           <strong>-0.0252%/hr</strong>
         </div>
-        <div className='divider' />
-        <div>
+        <div className='divider responsive-hide2' />
+        <div className='responsive-hide2'>
           <label className='gray'>Hacim</label>
           <strong>104k</strong>
         </div>
-        <div className='divider' />
-        <div>
+        <div className='divider responsive-hide' />
+        <div className='responsive-hide'>
           <input type='text' name='keyword' id='keyword' placeholder='Arama' autoComplete='off' />
           <button type='button' className='pointer'>
             <i className='material-icons'>search</i>
