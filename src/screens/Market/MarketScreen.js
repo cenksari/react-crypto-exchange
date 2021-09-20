@@ -13,7 +13,7 @@ const MarketScreen = () => (
   <MainLayout>
     <div className='content'>
       <Header title='Market' />
-      <div className='flex'>
+      <div className='flex flex-destroy'>
         <div className='content-30 box-right-padding'>
           <WidgetMarket />
 
@@ -22,7 +22,7 @@ const MarketScreen = () => (
         <div className='content-70 flex-1'>
           <WidgetCoinHorizontal />
 
-          <div className='flex'>
+          <div className='flex flex-destroy'>
             <div className='content-70 flex-1 box-right-padding'>
               <WidgetTradeHistory />
             </div>
@@ -31,7 +31,7 @@ const MarketScreen = () => (
             </div>
           </div>
 
-          <div className='flex flex-space-between'>
+          <div className='flex flex-destroy flex-space-between'>
             <div className='flex-1 box-right-padding'>
               <WidgetTradeHistory />
             </div>

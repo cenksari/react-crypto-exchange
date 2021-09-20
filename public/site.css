@@ -535,7 +535,6 @@ body {
 
 .top-search {
   border-radius: 25px;
-  padding: 0 0 0 25px;
   border: 1px solid #ebebeb;
   background-color: #ffffff;
 }
@@ -546,13 +545,16 @@ body {
 }
 
 .top-search input {
-  width: 250px;
-  padding: 15px 0;
+  padding: 15px 0 15px 20px;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
 }
 
 .top-search button {
-  border-radius: 25px;
-  padding: 15px 8px 15px 15px;
+  margin: 0;
+  padding: 15px;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
 }
 
 /* Data table */
@@ -592,10 +594,10 @@ body {
 }
 
 .data-table .rank {
-  width: 50px;
-  height: 50px;
+  width: 35px;
+  height: 35px;
   color: #000000;
-  padding-top: 18px;
+  padding-top: 11px;
   font-weight: 500;
   text-align: center;
   border-radius: 50em;
@@ -623,16 +625,20 @@ body {
 }
 
 .data-table .operation {
-  width: 50px;
-  height: 50px;
+  width: 30px;
+  height: 30px;
   color: #000000;
-  padding-top: 23px;
+  padding-top: 12px;
   font-weight: 500;
   text-align: center;
   border-radius: 50em;
   background-color: #dadada;
   user-select: none;
   -webkit-user-select: none;
+}
+
+.data-table .operation i {
+  font-size: 1.3em;
 }
 
 .data-table .operation.green {
@@ -646,7 +652,7 @@ body {
 }
 
 .data-table .status {
-  width: 120px;
+  width: 110px;
   padding: 15px 0;
   color: #ffffff;
   text-align: center;
@@ -864,8 +870,8 @@ header .header-right .header-user span:last-child {
 }
 
 header .header-right .header-user .profile-picture {
-  width: 40px;
-  height: 40px;
+  width: 35px;
+  height: 35px;
   display: block;
   margin: 0 15px;
   border-radius: 50em;
@@ -873,18 +879,18 @@ header .header-right .header-user .profile-picture {
 }
 
 header .header-right .header-user .signout {
-  width: 40px;
-  height: 40px;
+  width: 35px;
+  height: 35px;
   display: block;
   color: #e28580;
-  padding-top: 6px;
+  padding-top: 5px;
   text-align: center;
   border-radius: 50em;
   background-color: #fceced;
 }
 
 header .header-right .header-user .signout i {
-  font-size: 1.8em;
+  font-size: 1.5em;
 }
 
 /* Navbar */
@@ -1243,9 +1249,9 @@ header .header-right .header-user .signout i {
 }
 
 .activity-row .icon {
-  width: 50px;
-  height: 50px;
-  padding-top: 10px;
+  width: 30px;
+  height: 30px;
+  padding-top: 5px;
   margin-right: 10px;
   text-align: center;
   border-radius: 50em;
@@ -1254,7 +1260,7 @@ header .header-right .header-user .signout i {
 }
 
 .activity-row i {
-  font-size: 2.1em;
+  font-size: 1.5em;
   color: #ffffff;
 }
 
@@ -1291,8 +1297,8 @@ header .header-right .header-user .signout i {
 }
 
 .limits-row .icon {
-  width: 50px;
-  height: 50px;
+  width: 30px;
+  height: 30px;
   margin-right: 10px;
   border-radius: 50em;
   display: inline-block;
@@ -1641,4 +1647,46 @@ header .header-right .header-user .signout i {
 
 .login .box {
   margin-bottom: 0;
+}
+
+@media (max-width: 1000px) {
+  html, body {
+    font-size: 0.9em;
+  }
+
+  header {
+    margin: 10px 0 20px 0;
+  }
+
+  header .header-right .header-user .signout i {
+    font-size: 1.8em;
+  }
+
+  .responsive-hide {
+    display: none !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .content {
+    padding: 10px;
+  }
+
+  .content .content-30,
+  .content .content-70 {
+    width: 100%;
+  }
+
+  .box .box-content-height,
+  .box .box-content-height-nobutton {
+    height: unset;
+  }
+
+  .box-right-padding {
+    padding-right: 0;
+  }
+
+  .flex-destroy {
+    display: block;
+  }
 }

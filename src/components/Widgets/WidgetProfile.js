@@ -25,7 +25,7 @@ const WidgetProfile = memo(() => (
           </label>
         </form>
       </div>
-      <div>
+      <div className='box-horizontal-padding'>
         <div className='center'>
           <h3>Tarık Özbalkan</h3>
           <strong>Seviye 1</strong>

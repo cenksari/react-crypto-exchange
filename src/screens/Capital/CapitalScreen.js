@@ -6,7 +6,7 @@ import Header from '../../components/Header/Header';
 const CapitalScreen = () => (
   <SiteLayout>
     <Header icon='sort' title='Piyasa' />
-    <div className='top-buttons flex flex-center flex-space-between'>
+    <div className='top-buttons flex flex-destroy flex-center flex-space-between'>
       <div>
         <div className='top-search'>
           <input type='text' id='search' name='search' placeholder='Aranacak kelime' />
@@ -36,7 +36,7 @@ const CapitalScreen = () => (
           <th className='center'>Son fiyat</th>
           <th className='center'>Değişim (24s)</th>
           <th className='center'>Hacim (24s)</th>
-          <th className='left'>Grafik</th>
+          <th className='left responsive-hide'>Grafik</th>
           <th className='right'>&nbsp;</th>
         </tr>
       </thead>
@@ -56,7 +56,7 @@ const CapitalScreen = () => (
             <strong className='green'>2.54%</strong>
           </td>
           <td className='center'>$220.080.878.451</td>
-          <td>
+          <td className='responsive-hide'>
             <div className='line-chart'>
               <Sparklines
                 data={[5, 10, 5, 20, 8, 15, 22, 8, 12, 8, 32, 16, 29, 20, 16, 30, 42, 45]}

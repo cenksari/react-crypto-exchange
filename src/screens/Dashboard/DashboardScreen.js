@@ -12,7 +12,7 @@ const DashboardScreen = () => {
   return (
     <SiteLayout>
       <Header icon='sort' title='Yatır-çek' />
-      <div className='flex flex-space-between'>
+      <div className='flex flex-destroy flex-space-between'>
         <div className='flex-1 box-right-padding'>
           <Box>
             <div className='box-title box-vertical-padding box-horizontal-padding no-select'>
@@ -160,7 +160,7 @@ const DashboardScreen = () => {
           </Box>
         </div>
       </div>
-      <div className='flex flex-space-between'>
+      <div className='flex flex-destroy flex-space-between'>
         <div className='flex-1 box-right-padding'>
           <WidgetRecentActivity />
         </div>

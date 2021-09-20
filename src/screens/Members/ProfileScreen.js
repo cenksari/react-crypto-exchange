@@ -9,7 +9,7 @@ import WidgetRecentActivity from '../../components/Widgets/WidgetRecentActivity'
 const ProfileScreen = () => (
   <SiteLayout>
     <Header icon='sort' title='Profil' />
-    <div className='flex'>
+    <div className='flex flex-destroy'>
       <div className='content-30 box-right-padding'>
         <WidgetProfile />
       </div>
@@ -18,7 +18,7 @@ const ProfileScreen = () => (
       </div>
     </div>
 
-    <div className='flex flex-space-between'>
+    <div className='flex flex-space-between flex-destroy'>
       <div className='flex-1 box-right-padding'>
         <WidgetRecentActivity />
       </div>

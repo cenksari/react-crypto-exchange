@@ -24,7 +24,7 @@ const WidgetMyAssetsRow = memo(({ color }) => (
         Bu hafta
       </span>
     </div>
-    <div className='line-chart'>
+    <div className='line-chart responsive-hide'>
       <Sparklines
         data={[5, 10, 5, 20, 8, 15, 22, 8, 12, 8, 32, 16, 29, 20, 16, 30, 42, 45]}
         width={200}

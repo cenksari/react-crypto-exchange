@@ -6,8 +6,8 @@ const HeaderRight = memo(() => {
 
   return (
     <div className='header-right no-select'>
-      <div className='flex flex-v-center'>
-        <ul className='header-menu nowrap'>
+      <div className='flex flex-center'>
+        <ul className='header-menu nowrap responsive-hide'>
           <li>
             <Link
               to='/market'
@@ -66,7 +66,7 @@ const HeaderRight = memo(() => {
               <div className='profile-picture' />
             </Link>
           </li>
-          <li>
+          <li className='responsive-hide'>
             <Link to='/members/signout' className='signout'>
               <i className='material-icons'>power_settings_new</i>
             </Link>

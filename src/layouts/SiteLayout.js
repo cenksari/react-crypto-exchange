@@ -5,7 +5,7 @@ import Navbar from '../components/Navbar/Navbar';
 
 const SiteLayout = memo(({ children }) => (
   <div className='flex'>
-    <div className='navbar full-height'>
+    <div className='navbar full-height responsive-hide'>
       <Navbar />
     </div>
     <div className='content flex-1'>{children}</div>

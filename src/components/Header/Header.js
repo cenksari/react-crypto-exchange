@@ -5,7 +5,7 @@ import HeaderLeft from './HeaderLeft';
 import HeaderRight from './HeaderRight';
 
 const Header = memo(({ icon, title }) => (
-  <header className='flex flex-space-between flex-center'>
+  <header className='flex flex-center flex-space-between'>
     <HeaderLeft icon={icon} title={title} />
     <HeaderRight />
   </header>

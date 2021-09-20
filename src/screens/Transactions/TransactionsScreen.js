@@ -4,7 +4,7 @@ import Header from '../../components/Header/Header';
 const TransactionsScreen = () => (
   <SiteLayout>
     <Header icon='sort' title='İşlemler' />
-    <div className='top-buttons flex flex-center flex-space-between'>
+    <div className='top-buttons flex flex-destroy flex-center flex-space-between'>
       <div>
         <div className='top-search'>
           <input type='text' id='search' name='search' placeholder='Aranacak kelime' />
@@ -30,8 +30,8 @@ const TransactionsScreen = () => (
       <thead>
         <tr>
           <th className='left'>&nbsp;</th>
-          <th className='left'>İşlem</th>
-          <th className='left'>Tarih</th>
+          <th className='left responsive-hide'>İşlem</th>
+          <th className='left responsive-hide'>Tarih</th>
           <th className='left'>Kimden</th>
           <th className='left'>Kime</th>
           <th className='left'>Coin</th>
@@ -46,8 +46,8 @@ const TransactionsScreen = () => (
               <i className='material-icons'>arrow_upward</i>
             </div>
           </td>
-          <td>#12415346563475</td>
-          <td>2/5/2020 06:24:45</td>
+          <td className='responsive-hide'>#12415346563475</td>
+          <td className='responsive-hide'>2/5/2020 06:24:45</td>
           <td>Tarık</td>
           <td className='nowrap'>
             <div className='icon' />
