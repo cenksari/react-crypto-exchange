@@ -18,7 +18,12 @@ const WidgetProfile = memo(() => (
         <form className='upload no-select' noValidate>
           <input type='file' name='file' id='file' accept='.jpg, .jpeg' />
           <label htmlFor='file'>
-            <div className='icon pointer' />
+            <div
+              className='icon cover pointer'
+              style={{
+                backgroundImage: `url('https://lh3.googleusercontent.com/proxy/70CmgghIIVNeYzBnv-fjKkeAKnR1SDkPJJ22oyr2aBYisbr4VSij5HRuQrncxla71blLv0mG307_KsyHIvy1MVKgAg')`,
+              }}
+            />
             <div className='edit pointer'>
               <i className='material-icons'>edit</i>
             </div>
@@ -27,7 +32,7 @@ const WidgetProfile = memo(() => (
       </div>
       <div className='box-horizontal-padding'>
         <div className='center'>
-          <h3>Tarık Özbalkan</h3>
+          <h3>Cenk SARI</h3>
           <strong>Seviye 1</strong>
           <p>Limitlerinizi arttırmak için seviye 2 olmalısınız.</p>
           <Link to='/members/application'>Seviye 2 başvuru</Link>

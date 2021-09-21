@@ -247,6 +247,12 @@ body {
   zoom: 1;
 }
 
+.cover {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
 /* Flexbox */
 
 .flex {
@@ -627,7 +633,7 @@ i, button i, a i {
   width: 30px;
   height: 30px;
   color: #000000;
-  padding-top: 12px;
+  padding-top: 6px;
   font-weight: 500;
   text-align: center;
   border-radius: 50em;
@@ -1199,7 +1205,7 @@ header .header-right .header-user .signout i {
 
 .assets-row strong {
   display: block;
-  font-size: 1.3em;
+  font-size: 1.2em;
   margin-bottom: 10px;
 }
 
@@ -1225,8 +1231,14 @@ header .header-right .header-user .signout i {
 }
 
 .assets-row .line-chart svg {
-  width: 200px;
+  width: 150px;
   height: 50px;
+}
+
+.assets-row .standard-width {
+  width: 150px;
+  overflow: hidden;
+  text-align: center
 }
 
 /* Recent activity widget */
@@ -1660,6 +1672,11 @@ header .header-right .header-user .signout i {
 
   .responsive-hide {
     display: none !important;
+  }
+
+  .assets-row .icon {
+    width: 30px;
+    height: 30px;
   }
 }
 

@@ -1,8 +1,9 @@
 import { memo } from 'react';
+import PropTypes from 'prop-types';
 
 import Box from '../Common/Box';
 
-const WidgetCoinVertical = memo(() => (
+const WidgetCoinVertical = memo(({ item }) => (
   <Box>
     <div className='box-title box-vertical-padding box-horizontal-padding no-select'>
       <div className='flex flex-center flex-space-between'>
@@ -14,20 +15,23 @@ const WidgetCoinVertical = memo(() => (
     </div>
     <div className='widget-coin-vertical box-content-height-nobutton'>
       <div className='center'>
-        <div className='icon' />
+        <div
+          className='icon cover'
+          style={{
+            backgroundImage: `url('${item.icon}')`,
+          }}
+        />
       </div>
       <div>
         <div className='center'>
-          <h3>Bitcoin</h3>
-          <strong>BTC</strong>
-          <div className='coin-price no-select'>1 BTC = 420.000 TRY</div>
+          <h3>{item.name}</h3>
+          <strong>{item.symbol}</strong>
+          <div className='coin-price no-select'>
+            1 {item.symbol} = {item.amount} {item.currency}
+          </div>
         </div>
         <div className='box-horizontal-padding box-vertical-padding'>
-          <p>
-            Bitcoin, Satoshi Nakamoto adını kullanmış bilinmeyen bir kişi veya grup tarafından
-            2008&apos;de icat edilmiş bir kriptoparadır. 2009&apos;da bir açık kaynak kodlu yazılım
-            olarak piyasaya...
-          </p>
+          <p>{item.description}...</p>
           <button type='button' className='pointer'>
             Devamı....
           </button>
@@ -36,5 +40,10 @@ const WidgetCoinVertical = memo(() => (
     </div>
   </Box>
 ));
+
+WidgetCoinVertical.propTypes = {
+  // eslint-disable-next-line react/forbid-prop-types
+  item: PropTypes.object.isRequired,
+};
 
 export default WidgetCoinVertical;

@@ -57,13 +57,18 @@ const HeaderRight = memo(() => {
         <ul className='header-user nowrap'>
           <li>
             <Link to='/members'>
-              <span>Tarık Özbalkan</span>
-              <span>@tarikoz</span>
+              <span>Cenk SARI</span>
+              <span>@cenksari</span>
             </Link>
           </li>
           <li>
             <Link to='/members'>
-              <div className='profile-picture' />
+              <div
+                className='profile-picture cover'
+                style={{
+                  backgroundImage: `url('https://lh3.googleusercontent.com/proxy/70CmgghIIVNeYzBnv-fjKkeAKnR1SDkPJJ22oyr2aBYisbr4VSij5HRuQrncxla71blLv0mG307_KsyHIvy1MVKgAg')`,
+                }}
+              />
             </Link>
           </li>
           <li className='responsive-hide'>
