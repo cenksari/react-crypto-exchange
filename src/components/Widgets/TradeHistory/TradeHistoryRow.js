@@ -1,17 +1,20 @@
 import { memo } from 'react';
 import PropTypes from 'prop-types';
 
-const TradeHistoryRow = memo(({ color }) => (
-  <tr className={color}>
-    <td className='left'>146,70</td>
-    <td className='center'>10</td>
-    <td className='center'>ALIŞ</td>
-    <td className='right'>21:22:15</td>
+const TradeHistoryRow = memo(({ item }) => (
+  <tr className={item.type === 1 ? 'green' : 'red'}>
+    <td className='left'>
+      {item.amount} {item.currency}
+    </td>
+    <td className='center'>{item.weight}</td>
+    <td className='center'>{item.type === 1 ? 'ALIŞ' : 'SATIŞ'}</td>
+    <td className='right'>{item.time}</td>
   </tr>
 ));
 
 TradeHistoryRow.propTypes = {
-  color: PropTypes.string.isRequired,
+  // eslint-disable-next-line react/forbid-prop-types
+  item: PropTypes.object.isRequired,
 };
 
 export default TradeHistoryRow;

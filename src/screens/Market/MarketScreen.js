@@ -21,7 +21,7 @@ const MarketScreen = () => {
       symbol: 'BTC',
       change: '%-3.28',
       currency: 'TRY',
-      exchange: 'BTC/USD',
+      exchange: 'BTC/TRY',
       weight: '104k',
       financialRate: '-0.0252%/hr',
       icon: 'https://icons-for-free.com/iconfiles/png/512/btc+coin+crypto+icon-1320162856490699468.png',
