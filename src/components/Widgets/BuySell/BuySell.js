@@ -1,8 +1,8 @@
 import { memo, useState } from 'react';
 
-import Box from '../Common/Box';
+import Box from '../../Common/Box';
 
-const WidgetBuySell = memo(() => {
+const BuySell = memo(() => {
   const [primaryTab, setPrimaryTab] = useState(0);
   const [secondaryTab, setSecondaryTab] = useState(0);
 
@@ -225,4 +225,4 @@ const WidgetBuySell = memo(() => {
   );
 });
 
-export default WidgetBuySell;
+export default BuySell;

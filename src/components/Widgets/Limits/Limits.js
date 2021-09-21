@@ -1,44 +1,49 @@
 import { memo, useState, useEffect } from 'react';
 
-import Box from '../Common/Box';
-import WidgetLimitsRow from './WidgetLimitsRow';
+import Box from '../../Common/Box';
+import LimitsRow from './LimitsRow';
 
-const WidgetLimits = memo(() => {
+const Limits = memo(() => {
   const [data, setData] = useState([]);
 
   useEffect(() => {
     const dataArray = [
       {
         id: 1,
-        currency: 'TRY',
+        currency: 'Cardano',
+        icon: 'https://cdn4.iconfinder.com/data/icons/crypto-currency-and-coin-2/256/cardano_ada-512.png',
         limit24h: '65.000',
         limit30d: '163,00',
         status: 1,
       },
       {
         id: 2,
-        currency: 'TRY',
+        currency: 'Bitcoin',
+        icon: 'https://icons-for-free.com/iconfiles/png/512/btc+coin+crypto+icon-1320162856490699468.png',
         limit24h: '12.000',
         limit30d: '5.157,00',
         status: 2,
       },
       {
         id: 3,
-        currency: 'TRY',
+        currency: 'Etherium',
+        icon: 'https://icons.iconarchive.com/icons/cjdowner/cryptocurrency-flat/1024/Ethereum-ETH-icon.png',
         limit24h: '5.000',
         limit30d: '63,00',
         status: 1,
       },
       {
         id: 4,
-        currency: 'TRY',
+        currency: 'Ripple',
+        icon: 'https://icons.iconarchive.com/icons/cjdowner/cryptocurrency-flat/1024/Ripple-XRP-icon.png',
         limit24h: '1.000',
         limit30d: '7.500,00',
         status: 1,
       },
       {
         id: 5,
-        currency: 'TRY',
+        currency: 'Dogecoin',
+        icon: 'https://www.kindpng.com/picc/m/202-2028344_dogecoin-doge-icon-metro-symbole-hd-png-download.png',
         limit24h: '100',
         limit30d: '9.063,00',
         status: 2,
@@ -81,10 +86,10 @@ const WidgetLimits = memo(() => {
           </div>
         </div>
 
-        {data && data.map((item) => <WidgetLimitsRow key={item.id.toString()} item={item} />)}
+        {data && data.map((item) => <LimitsRow key={item.id.toString()} item={item} />)}
       </div>
     </Box>
   );
 });
 
-export default WidgetLimits;
+export default Limits;

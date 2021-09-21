@@ -1,9 +1,9 @@
 import { memo } from 'react';
 import PropTypes from 'prop-types';
 
-import Box from '../Common/Box';
+import Box from '../../Common/Box';
 
-const WidgetCoinVertical = memo(({ item }) => (
+const CoinVertical = memo(({ item }) => (
   <Box>
     <div className='box-title box-vertical-padding box-horizontal-padding no-select'>
       <div className='flex flex-center flex-space-between'>
@@ -41,9 +41,9 @@ const WidgetCoinVertical = memo(({ item }) => (
   </Box>
 ));
 
-WidgetCoinVertical.propTypes = {
+CoinVertical.propTypes = {
   // eslint-disable-next-line react/forbid-prop-types
   item: PropTypes.object.isRequired,
 };
 
-export default WidgetCoinVertical;
+export default CoinVertical;

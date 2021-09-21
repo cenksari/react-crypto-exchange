@@ -1,8 +1,8 @@
 import { memo, useState, useEffect } from 'react';
 
-import Box from '../Common/Box';
+import Box from '../../Common/Box';
 
-const WidgetBankProcess = memo(() => {
+const BankProcess = memo(() => {
   const [tab, setTab] = useState(0);
   const [bankDetails, setBankDetails] = useState([]);
   const [selectedBank, setSelectedBank] = useState(1);
@@ -163,4 +163,4 @@ const WidgetBankProcess = memo(() => {
   );
 });
 
-export default WidgetBankProcess;
+export default BankProcess;

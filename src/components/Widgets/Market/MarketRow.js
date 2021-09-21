@@ -2,7 +2,7 @@ import { memo, useState, useEffect } from 'react';
 import { Sparklines, SparklinesLine } from 'react-sparklines';
 import PropTypes from 'prop-types';
 
-const WidgetMarketRow = memo(({ item }) => {
+const MarketRow = memo(({ item }) => {
   const [color, setColor] = useState('');
 
   useEffect(() => {
@@ -31,7 +31,9 @@ const WidgetMarketRow = memo(({ item }) => {
       </div>
       <div>
         <p className='right'>
-          <strong>{item.amount}</strong>
+          <strong>
+            {item.amount} {item.currency}
+          </strong>
           <span className={color}>{item.change}</span>
         </p>
       </div>
@@ -39,9 +41,9 @@ const WidgetMarketRow = memo(({ item }) => {
   );
 });
 
-WidgetMarketRow.propTypes = {
+MarketRow.propTypes = {
   // eslint-disable-next-line react/forbid-prop-types
   item: PropTypes.object.isRequired,
 };
 
-export default WidgetMarketRow;
+export default MarketRow;

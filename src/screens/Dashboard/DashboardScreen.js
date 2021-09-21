@@ -2,15 +2,15 @@ import SiteLayout from '../../layouts/SiteLayout';
 import Header from '../../components/Header/Header';
 
 import Box from '../../components/Common/Box';
-import WidgetBankProcess from '../../components/Widgets/WidgetBankProcess';
-import WidgetRecentActivity from '../../components/Widgets/WidgetRecentActivity';
+import BankProcess from '../../components/Widgets/BankProcess/BankProcess';
+import RecentActivity from '../../components/Widgets/RecentActivity/RecentActivity';
 
 const DashboardScreen = () => (
   <SiteLayout>
     <Header icon='sort' title='Yatır-çek' />
     <div className='flex flex-destroy flex-space-between'>
       <div className='flex-1 box-right-padding'>
-        <WidgetBankProcess />
+        <BankProcess />
       </div>
       <div className='flex-1'>
         <Box>
@@ -44,7 +44,7 @@ const DashboardScreen = () => (
     </div>
     <div className='flex flex-destroy flex-space-between'>
       <div className='flex-1 box-right-padding'>
-        <WidgetRecentActivity />
+        <RecentActivity />
       </div>
       <div className='flex-1'>
         <Box>

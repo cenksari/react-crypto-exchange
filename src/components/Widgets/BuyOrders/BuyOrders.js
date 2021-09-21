@@ -1,9 +1,9 @@
 import { memo } from 'react';
 
-import Box from '../Common/Box';
-import WidgetBuyOrdersRow from './WidgetBuyOrdersRow';
+import Box from '../../Common/Box';
+import BuyOrdersRow from './BuyOrdersRow';
 
-const WidgetBuyOrders = memo(() => (
+const BuyOrders = memo(() => (
   <Box>
     <div className='box-title box-vertical-padding box-horizontal-padding no-select'>
       <div className='flex flex-center flex-space-between'>
@@ -24,23 +24,23 @@ const WidgetBuyOrders = memo(() => (
             </tr>
           </thead>
           <tbody>
-            <WidgetBuyOrdersRow color='green' />
+            <BuyOrdersRow color='green' />
 
-            <WidgetBuyOrdersRow color='green' />
+            <BuyOrdersRow color='green' />
 
-            <WidgetBuyOrdersRow color='red' />
+            <BuyOrdersRow color='red' />
 
-            <WidgetBuyOrdersRow color='white' />
+            <BuyOrdersRow color='white' />
 
-            <WidgetBuyOrdersRow color='green' />
+            <BuyOrdersRow color='green' />
 
-            <WidgetBuyOrdersRow color='green' />
+            <BuyOrdersRow color='green' />
 
-            <WidgetBuyOrdersRow color='white' />
+            <BuyOrdersRow color='white' />
 
-            <WidgetBuyOrdersRow color='white' />
+            <BuyOrdersRow color='white' />
 
-            <WidgetBuyOrdersRow color='white' />
+            <BuyOrdersRow color='white' />
           </tbody>
         </table>
       </div>
@@ -48,4 +48,4 @@ const WidgetBuyOrders = memo(() => (
   </Box>
 ));
 
-export default WidgetBuyOrders;
+export default BuyOrders;

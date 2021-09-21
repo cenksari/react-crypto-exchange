@@ -1,9 +1,9 @@
 import { memo } from 'react';
 import { Link } from 'react-router-dom';
 
-import Box from '../Common/Box';
+import Box from '../../Common/Box';
 
-const WidgetProfile = memo(() => (
+const Profile = memo(() => (
   <Box>
     <div className='box-title box-vertical-padding box-horizontal-padding no-select'>
       <div className='flex flex-center flex-space-between'>
@@ -42,4 +42,4 @@ const WidgetProfile = memo(() => (
   </Box>
 ));
 
-export default WidgetProfile;
+export default Profile;

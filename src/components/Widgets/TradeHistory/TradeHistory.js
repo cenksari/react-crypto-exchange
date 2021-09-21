@@ -2,10 +2,10 @@ import { memo } from 'react';
 
 import { Link } from 'react-router-dom';
 
-import Box from '../Common/Box';
-import WidgetTradeHistoryRow from './WidgetTradeHistoryRow';
+import Box from '../../Common/Box';
+import TradeHistoryRow from './TradeHistoryRow';
 
-const WidgetTradeHistory = memo(() => (
+const TradeHistory = memo(() => (
   <Box>
     <div className='box-title box-vertical-padding box-horizontal-padding no-select'>
       Piyasa geçmişi
@@ -22,23 +22,23 @@ const WidgetTradeHistory = memo(() => (
             </tr>
           </thead>
           <tbody>
-            <WidgetTradeHistoryRow color='green' />
+            <TradeHistoryRow color='green' />
 
-            <WidgetTradeHistoryRow color='green' />
+            <TradeHistoryRow color='green' />
 
-            <WidgetTradeHistoryRow color='red' />
+            <TradeHistoryRow color='red' />
 
-            <WidgetTradeHistoryRow color='red' />
+            <TradeHistoryRow color='red' />
 
-            <WidgetTradeHistoryRow color='green' />
+            <TradeHistoryRow color='green' />
 
-            <WidgetTradeHistoryRow color='green' />
+            <TradeHistoryRow color='green' />
 
-            <WidgetTradeHistoryRow color='green' />
+            <TradeHistoryRow color='green' />
 
-            <WidgetTradeHistoryRow color='green' />
+            <TradeHistoryRow color='green' />
 
-            <WidgetTradeHistoryRow color='red' />
+            <TradeHistoryRow color='red' />
           </tbody>
         </table>
       </div>
@@ -52,4 +52,4 @@ const WidgetTradeHistory = memo(() => (
   </Box>
 ));
 
-export default WidgetTradeHistory;
+export default TradeHistory;

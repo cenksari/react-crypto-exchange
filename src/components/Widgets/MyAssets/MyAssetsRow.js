@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { Sparklines, SparklinesLine, SparklinesBars } from 'react-sparklines';
 import PropTypes from 'prop-types';
 
-const WidgetMyAssetsRow = memo(({ item }) => {
+const MyAssetsRow = memo(({ item }) => {
   const [color, setColor] = useState('');
 
   useEffect(() => {
@@ -29,7 +29,9 @@ const WidgetMyAssetsRow = memo(({ item }) => {
         </Sparklines>
       </div>
       <div className='standard-width'>
-        <strong>{item.amount}</strong>
+        <strong>
+          {item.amount} {item.currency}
+        </strong>
         <span>
           <em className={color}>{item.change}</em>
           {item.changePeriod}
@@ -52,9 +54,9 @@ const WidgetMyAssetsRow = memo(({ item }) => {
   );
 });
 
-WidgetMyAssetsRow.propTypes = {
+MyAssetsRow.propTypes = {
   // eslint-disable-next-line react/forbid-prop-types
   item: PropTypes.object.isRequired,
 };
 
-export default WidgetMyAssetsRow;
+export default MyAssetsRow;
