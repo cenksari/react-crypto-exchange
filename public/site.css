@@ -343,7 +343,9 @@ body {
   background-color: #ffffff;
 }
 
-i, button i, a i {
+i,
+button i,
+a i {
   line-height: 0;
 }
 
@@ -351,6 +353,7 @@ i, button i, a i {
 
 .box {
   width: 100%;
+  position: relative;
   border-radius: 20px;
   margin-bottom: 20px;
   border: 1px solid #ebebeb;
@@ -443,6 +446,42 @@ i, button i, a i {
 .box-text p {
   line-height: 160%;
   margin-bottom: 15px;
+}
+
+.box .box-dropdown {
+  top: 60px;
+  right: 20px;
+  min-width: 150px;
+  position: absolute;
+  background-color: #ffffff;
+  border: 1px solid #ebebeb;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.box .box-dropdown li {
+  display: block !important;
+}
+
+.box .box-dropdown button {
+  margin: 0 !important;
+  padding: 7px !important;
+  min-width: 150px !important;
+  text-align: left !important;
+  color: #000000 !important;
+  font-weight: 500 !important;
+  border-radius: 0 !important;
+}
+
+.box .box-dropdown button i {
+  font-size: 1.5em;
+  color: #999999;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.box .box-dropdown button:hover,
+.box .box-dropdown button:active {
+  background-color: #f5f5f5 !important;
 }
 
 /* Bank info */
@@ -635,11 +674,11 @@ i, button i, a i {
   color: #000000;
   padding-top: 6px;
   font-weight: 500;
+  user-select: none;
   text-align: center;
   border-radius: 50em;
-  background-color: #dadada;
-  user-select: none;
   -webkit-user-select: none;
+  background-color: #dadada;
 }
 
 .data-table .operation i {
@@ -1237,7 +1276,7 @@ header .header-right .header-user .signout i {
 .assets-row .standard-width {
   width: 150px;
   overflow: hidden;
-  text-align: center
+  text-align: center;
 }
 
 /* Recent activity widget */

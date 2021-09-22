@@ -2,10 +2,12 @@ import { useState, useEffect } from 'react';
 
 import SiteLayout from '../../layouts/SiteLayout';
 import Header from '../../components/Header/Header';
+import TopBar from '../../components/Tables/TopBar/TopBar';
 import TransactionRow from '../../components/Tables/Transactions/TransactionRow';
 
 const TransactionsScreen = () => {
-  const [data, setData] = useState(null);
+  const [data, setData] = useState([]);
+  const [keyword, setKeyword] = useState('');
 
   useEffect(() => {
     const dataArray = [
@@ -55,30 +57,24 @@ const TransactionsScreen = () => {
     setData(dataArray);
   }, []);
 
+  const handleSearchValue = (e) => {
+    const { value } = e.target;
+
+    setKeyword(value);
+  };
+
+  const handleSearchSubmit = (e) => {
+    e.preventDefault();
+  };
+
   return (
     <SiteLayout>
       <Header icon='sort' title='İşlemler' />
-      <div className='top-buttons flex flex-destroy flex-center flex-space-between'>
-        <div>
-          <div className='top-search nowrap'>
-            <input type='text' id='search' name='search' placeholder='Aranacak kelime' />
-            <button type='button' className='pointer'>
-              <i className='material-icons'>search</i>
-            </button>
-          </div>
-        </div>
-        <div>
-          <button type='button' className='button button-white button-large'>
-            <i className='material-icons button-icon-left'>event</i>
-            Periyod
-            <i className='material-icons button-icon-right'>keyboard_arrow_down</i>
-          </button>
-          <button type='button' className='button button-purple button-large'>
-            <i className='material-icons button-icon-left'>download</i>
-            CSV indir
-          </button>
-        </div>
-      </div>
+      <TopBar
+        searchValue={keyword}
+        searchOnChange={handleSearchValue}
+        searchSubmit={handleSearchSubmit}
+      />
 
       {data && data.length > 0 && (
         <table className='data-table'>
