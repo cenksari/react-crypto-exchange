@@ -4,10 +4,30 @@ import PropTypes from 'prop-types';
 import Box from '../../Common/Box';
 
 const CoinVertical = memo(({ item }) => {
+  const [showMore, setShowMore] = useState(false);
   const [menuOpened, setMenuOpened] = useState(false);
 
   const handleMenuOpen = () => {
     setMenuOpened(!menuOpened);
+  };
+
+  const handleShowMore = () => {
+    setShowMore(!showMore);
+  };
+
+  const handleSliceDescription = (description) => {
+    if (description) {
+      if (description.length > 100) {
+        return `${item.description
+          .replace(/(\r\n|\n|\r)/gm, ' ')
+          .replace(/\s+/g, ' ')
+          .slice(0, 100)}...`;
+      }
+
+      return description;
+    }
+
+    return '';
   };
 
   return (
@@ -63,9 +83,13 @@ const CoinVertical = memo(({ item }) => {
             </div>
           </div>
           <div className='box-horizontal-padding box-vertical-padding'>
-            <p>{item.description}...</p>
-            <button type='button' className='pointer'>
-              Devamı....
+            {showMore ? (
+              <p>{item.description}</p>
+            ) : (
+              <p>{handleSliceDescription(item.description)}</p>
+            )}
+            <button type='button' className='pointer' onClick={() => handleShowMore()}>
+              {showMore ? 'Daha az...' : 'Devamı...'}
             </button>
           </div>
         </div>

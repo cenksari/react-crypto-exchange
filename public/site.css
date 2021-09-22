@@ -448,9 +448,10 @@ a i {
   margin-bottom: 15px;
 }
 
-.box .box-dropdown {
+.box-dropdown {
   top: 60px;
   right: 20px;
+  z-index: 9999999;
   min-width: 150px;
   position: absolute;
   background-color: #ffffff;
@@ -458,11 +459,12 @@ a i {
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-.box .box-dropdown li {
+.box-dropdown li {
   display: block !important;
 }
 
-.box .box-dropdown button {
+.box-dropdown button {
+  cursor: pointer;
   margin: 0 !important;
   padding: 7px !important;
   min-width: 150px !important;
@@ -472,15 +474,15 @@ a i {
   border-radius: 0 !important;
 }
 
-.box .box-dropdown button i {
+.box-dropdown button i {
   font-size: 1.5em;
   color: #999999;
   margin-right: 10px;
   vertical-align: middle;
 }
 
-.box .box-dropdown button:hover,
-.box .box-dropdown button:active {
+.box-dropdown button:hover,
+.box-dropdown button:active {
   background-color: #f5f5f5 !important;
 }
 
@@ -626,6 +628,7 @@ a i {
 .data-table td {
   font-size: 0.9em;
   padding: 20px 15px;
+  position: relative;
   vertical-align: middle;
 }
 
