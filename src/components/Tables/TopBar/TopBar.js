@@ -10,6 +10,7 @@ const TopBar = memo(({ searchValue, searchOnChange, searchSubmit }) => (
             type='text'
             id='search'
             name='search'
+            autoComplete='off'
             placeholder='Aranacak kelime'
             onChange={searchOnChange}
             value={searchValue}

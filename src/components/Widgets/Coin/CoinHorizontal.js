@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 import Box from '../../Common/Box';
 
-const CoinHorizontal = memo(({ item }) => (
+const CoinHorizontal = memo(({ item, searchValue, searchOnChange, searchSubmit }) => (
   <Box>
     <div className='box-content box-vertical-padding box-horizontal-padding'>
       <div className='widget-coin-horizontal flex flex-center flex-space-around nowrap'>
@@ -34,10 +34,20 @@ const CoinHorizontal = memo(({ item }) => (
         </div>
         <div className='divider responsive-hide' />
         <div className='no-select responsive-hide'>
-          <input type='text' name='keyword' id='keyword' placeholder='Arama' autoComplete='off' />
-          <button type='button' className='pointer'>
-            <i className='material-icons'>search</i>
-          </button>
+          <form onSubmit={searchSubmit} noValidate>
+            <input
+              type='text'
+              name='keyword'
+              id='keyword'
+              placeholder='Arama'
+              autoComplete='off'
+              onChange={searchOnChange}
+              value={searchValue}
+            />
+            <button type='button' className='pointer'>
+              <i className='material-icons'>search</i>
+            </button>
+          </form>
         </div>
       </div>
     </div>
@@ -47,6 +57,9 @@ const CoinHorizontal = memo(({ item }) => (
 CoinHorizontal.propTypes = {
   // eslint-disable-next-line react/forbid-prop-types
   item: PropTypes.object.isRequired,
+  searchValue: PropTypes.string.isRequired,
+  searchSubmit: PropTypes.func.isRequired,
+  searchOnChange: PropTypes.func.isRequired,
 };
 
 export default CoinHorizontal;

@@ -12,6 +12,7 @@ import CoinVertical from '../../components/Widgets/Coin/CoinVertical';
 import CoinHorizontal from '../../components/Widgets/Coin/CoinHorizontal';
 
 const MarketScreen = () => {
+  const [keyword, setKeyword] = useState('');
   const [coinInfo, setCoinInfo] = useState(null);
 
   useEffect(() => {
@@ -32,6 +33,16 @@ const MarketScreen = () => {
     setCoinInfo(coinData);
   }, []);
 
+  const handleSearchValue = (e) => {
+    const { value } = e.target;
+
+    setKeyword(value);
+  };
+
+  const handleSearchSubmit = (e) => {
+    e.preventDefault();
+  };
+
   return (
     <MainLayout>
       <div className='content'>
@@ -43,7 +54,14 @@ const MarketScreen = () => {
             {coinInfo && <CoinVertical item={coinInfo} />}
           </div>
           <div className='content-70 flex-1'>
-            {coinInfo && <CoinHorizontal item={coinInfo} />}
+            {coinInfo && (
+              <CoinHorizontal
+                item={coinInfo}
+                searchValue={keyword}
+                searchOnChange={handleSearchValue}
+                searchSubmit={handleSearchSubmit}
+              />
+            )}
 
             <div className='flex flex-destroy'>
               <div className='content-70 flex-1 box-right-padding'>
