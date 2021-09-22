@@ -1115,6 +1115,8 @@ header .header-right .header-user .signout i {
   display: block;
   font-size: 0.8em;
   margin-bottom: 15px;
+  user-select: none;
+  -webkit-user-select: none;
 }
 
 .widget-coin-horizontal em {

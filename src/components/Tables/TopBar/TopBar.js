@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 const TopBar = memo(({ searchValue, searchOnChange, searchSubmit }) => (
   <div className='top-buttons flex flex-destroy flex-center flex-space-between'>
     <div>
-      <div className='top-search nowrap'>
+      <div className='top-search no-select nowrap'>
         <form onSubmit={searchSubmit} noValidate>
           <input
             type='text'

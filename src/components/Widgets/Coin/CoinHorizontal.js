@@ -33,7 +33,7 @@ const CoinHorizontal = memo(({ item }) => (
           <strong>{item.weight}</strong>
         </div>
         <div className='divider responsive-hide' />
-        <div className='responsive-hide'>
+        <div className='no-select responsive-hide'>
           <input type='text' name='keyword' id='keyword' placeholder='Arama' autoComplete='off' />
           <button type='button' className='pointer'>
             <i className='material-icons'>search</i>

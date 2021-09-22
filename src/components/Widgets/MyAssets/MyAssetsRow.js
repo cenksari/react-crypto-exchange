@@ -42,7 +42,7 @@ const MyAssetsRow = memo(({ item }) => {
           <SparklinesLine style={{ strokeWidth: 4 }} color={color} />
         </Sparklines>
       </div>
-      <div className='nowrap'>
+      <div className='nowrap no-select'>
         <Link to='/'>
           <i className='material-icons'>visibility</i>
         </Link>
