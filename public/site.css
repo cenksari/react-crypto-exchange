@@ -953,6 +953,7 @@ header .header-right .header-user .signout i {
 
 .navbar {
   width: 25%;
+  overflow: auto;
   padding: 20px 0 20px 20px;
   background-color: #ffffff;
   border-right: 1px solid #ebebeb;
@@ -1033,6 +1034,7 @@ header .header-right .header-user .signout i {
 
 .content {
   padding: 20px;
+  overflow: auto;
 }
 
 .content-30 {
@@ -1712,6 +1714,14 @@ header .header-right .header-user .signout i {
 @media (max-width: 1200px) {
   header .header-right .header-menu {
     display: none;
+  }
+
+  .navbar ul li a {
+    font-size: 0.95em;
+  }
+
+  .navbar ul li a i {
+    margin-right: 10px;
   }
 }
 

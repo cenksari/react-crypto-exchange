@@ -8,7 +8,7 @@ const SiteLayout = memo(({ children }) => (
     <div className='navbar full-height responsive-hide'>
       <Navbar />
     </div>
-    <div className='content content-70 flex-1'>{children}</div>
+    <div className='content full-height flex-1'>{children}</div>
   </div>
 ));
 
