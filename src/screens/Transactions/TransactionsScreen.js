@@ -18,8 +18,7 @@ const TransactionsScreen = () => {
         date: '2/5/2020 06:24:45',
         from: 'Tarık',
         to: 'Cenk',
-        toPicture:
-          'https://lh3.googleusercontent.com/proxy/70CmgghIIVNeYzBnv-fjKkeAKnR1SDkPJJ22oyr2aBYisbr4VSij5HRuQrncxla71blLv0mG307_KsyHIvy1MVKgAg',
+        toPicture: 'https://pbs.twimg.com/profile_images/1265581417364369408/b7CxjEfi_400x400.jpg',
         coin: 'Bitcoin',
         icon: 'https://icons-for-free.com/iconfiles/png/512/btc+coin+crypto+icon-1320162856490699468.png',
         amount: '5.553',
@@ -32,8 +31,7 @@ const TransactionsScreen = () => {
         date: '3/5/2020 18:35:12',
         from: 'Tarık',
         to: 'Cenk',
-        toPicture:
-          'https://lh3.googleusercontent.com/proxy/70CmgghIIVNeYzBnv-fjKkeAKnR1SDkPJJ22oyr2aBYisbr4VSij5HRuQrncxla71blLv0mG307_KsyHIvy1MVKgAg',
+        toPicture: 'https://pbs.twimg.com/profile_images/1265581417364369408/b7CxjEfi_400x400.jpg',
         coin: 'Etherium',
         icon: 'https://icons.iconarchive.com/icons/cjdowner/cryptocurrency-flat/1024/Ethereum-ETH-icon.png',
         amount: '3.000',

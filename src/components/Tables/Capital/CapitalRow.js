@@ -21,7 +21,7 @@ const CapitalRow = memo(({ item, index }) => {
   return (
     <tr>
       <td>
-        <div className='rank accent'>#{index}</div>
+        <div className='rank accent no-select'>#{index}</div>
       </td>
       <td className='nowrap'>
         <div className='icon cover' style={{ backgroundImage: `url('${item.icon}')` }} />
@@ -38,7 +38,7 @@ const CapitalRow = memo(({ item, index }) => {
       <td className='center responsive-hide2'>{item.weight}</td>
       <td className='responsive-hide'>
         <div className='line-chart'>
-          <Sparklines data={item.lineChartData} width={200} height={50}>
+          <Sparklines data={item.lineChartData} width={150} height={50}>
             <SparklinesLine style={{ strokeWidth: 4 }} color={color} />
           </Sparklines>
         </div>

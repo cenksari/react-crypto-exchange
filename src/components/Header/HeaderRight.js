@@ -7,7 +7,7 @@ const HeaderRight = memo(() => {
   return (
     <div className='header-right no-select'>
       <div className='flex flex-center'>
-        <ul className='header-menu nowrap responsive-hide'>
+        <ul className='header-menu nowrap'>
           <li>
             <Link
               to='/market'
@@ -66,7 +66,7 @@ const HeaderRight = memo(() => {
               <div
                 className='profile-picture cover'
                 style={{
-                  backgroundImage: `url('https://lh3.googleusercontent.com/proxy/70CmgghIIVNeYzBnv-fjKkeAKnR1SDkPJJ22oyr2aBYisbr4VSij5HRuQrncxla71blLv0mG307_KsyHIvy1MVKgAg')`,
+                  backgroundImage: `url('https://pbs.twimg.com/profile_images/1265581417364369408/b7CxjEfi_400x400.jpg')`,
                 }}
               />
             </Link>

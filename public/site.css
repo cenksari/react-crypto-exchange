@@ -579,6 +579,11 @@ a i {
 
 .top-buttons button {
   margin: 0 10px;
+  padding: 15px 30px;
+}
+
+.top-buttons button:last-child {
+  margin-right: 0;
 }
 
 /* Top search */
@@ -618,8 +623,9 @@ a i {
 }
 
 .data-table th {
+  font-size: 0.9em;
   font-weight: 500;
-  padding: 20px 15px;
+  padding: 20px 10px;
   user-select: none;
   -webkit-user-select: none;
   border-bottom: 3px solid #f2f4ff;
@@ -627,7 +633,7 @@ a i {
 
 .data-table td {
   font-size: 0.9em;
-  padding: 20px 15px;
+  padding: 10px 10px;
   position: relative;
   vertical-align: middle;
 }
@@ -667,7 +673,7 @@ a i {
 }
 
 .data-table .line-chart svg {
-  width: 200px;
+  width: 150px;
   height: 50px;
 }
 
@@ -810,7 +816,7 @@ header {
 header .header-left i {
   font-size: 2.2em;
   color: #666666;
-  margin-right: 20px;
+  margin-right: 10px;
   vertical-align: middle;
 }
 
@@ -1699,7 +1705,13 @@ header .header-right .header-user .signout i {
   margin-bottom: 0;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1200px) {
+  header .header-right .header-menu {
+    display: none;
+  }
+}
+
+@media (max-width: 1020px) {
   html,
   body {
     font-size: 0.9em;
