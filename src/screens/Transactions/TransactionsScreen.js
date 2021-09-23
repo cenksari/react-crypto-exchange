@@ -13,7 +13,7 @@ const TransactionsScreen = () => {
     const dataArray = [
       {
         id: 1,
-        type: 1,
+        type: 2,
         transaction: '12415346563475',
         date: '2/5/2020 06:24:45',
         from: 'Tarık',
@@ -26,7 +26,7 @@ const TransactionsScreen = () => {
       },
       {
         id: 2,
-        type: 1,
+        type: 2,
         transaction: '12453465987451',
         date: '3/5/2020 18:35:12',
         from: 'Tarık',
@@ -39,7 +39,7 @@ const TransactionsScreen = () => {
       },
       {
         id: 3,
-        type: 2,
+        type: 1,
         transaction: '24153459987415',
         date: '4/5/2020 13:42:01',
         from: 'Cenk',

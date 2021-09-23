@@ -705,8 +705,8 @@ a i {
 }
 
 .data-table .status {
-  padding: 15px;
   color: #ffffff;
+  padding: 10px 15px;
   text-align: center;
   border-radius: 25px;
   display: inline-block;
@@ -811,6 +811,10 @@ a i {
 
 header {
   margin-bottom: 40px;
+}
+
+header .header-left button {
+  background: transparent;
 }
 
 header .header-left i {
@@ -1790,6 +1794,10 @@ header .header-right .header-user .signout i {
 }
 
 @media (max-width: 550px) {
+  .header .header-left h1 {
+    display: none;
+  }
+
   .box-horizontal-padding {
     padding-left: 10px;
     padding-right: 10px;

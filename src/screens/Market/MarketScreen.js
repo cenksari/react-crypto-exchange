@@ -20,7 +20,7 @@ const MarketScreen = () => {
       id: 1,
       name: 'Bitcoin',
       symbol: 'BTC',
-      change: '%-3.28',
+      change: '-%3.28',
       currency: 'TRY',
       exchange: 'BTC/TRY',
       weight: '104k',

@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 const Status = memo(({ status }) => {
   if (status === 1) {
-    return <span className='status green'>TAMAMLANMIŞ</span>;
+    return <span className='status green'>BİTMİŞ</span>;
   }
 
   if (status === 2) {
