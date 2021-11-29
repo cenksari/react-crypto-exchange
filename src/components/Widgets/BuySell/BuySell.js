@@ -139,7 +139,7 @@ const BuySell = memo(() => {
               </>
             )}
 
-            {secondaryTab === 2 && <></>}
+            {secondaryTab === 2 && <p>test</p>}
           </>
         )}
 
@@ -217,7 +217,7 @@ const BuySell = memo(() => {
               </>
             )}
 
-            {secondaryTab === 1 && <></>}
+            {secondaryTab === 1 && <p>test</p>}
           </>
         )}
       </div>

@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Link, useHistory } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 import MainLayout from '../../layouts/MainLayout';
 import Box from '../../components/Common/Box';
@@ -7,7 +7,7 @@ import FormInput from '../../components/Forms/FormInput';
 import FormButton from '../../components/Forms/FormButton';
 
 const SigninScreen = () => {
-  const history = useHistory();
+  const navigate = useNavigate();
 
   const [formValues, setFormValues] = useState({
     phone: '',
@@ -26,7 +26,7 @@ const SigninScreen = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    history.push('/market');
+    navigate('/market');
   };
 
   return (

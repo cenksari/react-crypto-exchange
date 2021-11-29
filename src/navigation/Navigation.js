@@ -1,4 +1,4 @@
-import { Route, Switch } from 'react-router';
+import { Routes, Route } from 'react-router';
 
 import MarketScreen from '../screens/Market/MarketScreen';
 import CapitalScreen from '../screens/Capital/CapitalScreen';
@@ -13,17 +13,17 @@ import ForgotScreen from '../screens/Members/ForgotScreen';
 import ProfileScreen from '../screens/Members/ProfileScreen';
 
 const Navigation = () => (
-  <Switch>
-    <Route exact path='/' component={SigninScreen} />
-    <Route exact path='/market' component={MarketScreen} />
-    <Route exact path='/members' component={ProfileScreen} />
-    <Route exact path='/capital' component={CapitalScreen} />
-    <Route exact path='/dashboard' component={DashboardScreen} />
-    <Route exact path='/transactions' component={TransactionsScreen} />
-    <Route exact path='/members/forgot-password' component={ForgotScreen} />
-    <Route exact path='/members/signup' component={SignupScreen} />
-    <Route path='*' component={NotFoundScreen} status={404} />
-  </Switch>
+  <Routes>
+    <Route path='/' element={<SigninScreen />} />
+    <Route path='/market' element={<MarketScreen />} />
+    <Route path='/members' element={<ProfileScreen />} />
+    <Route path='/capital' element={<CapitalScreen />} />
+    <Route path='/dashboard' element={<DashboardScreen />} />
+    <Route path='/transactions' element={<TransactionsScreen />} />
+    <Route path='/members/forgot-password' element={<ForgotScreen />} />
+    <Route path='/members/signup' element={<SignupScreen />} />
+    <Route path='*' element={<NotFoundScreen />} status={404} />
+  </Routes>
 );
 
 export default Navigation;
