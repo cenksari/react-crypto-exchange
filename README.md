@@ -6,17 +6,17 @@ If you like this resource, please follow me on GitHub. Thank you!
 
 ## Screenshots
 
-![Dashboard](https://i.ibb.co/GWqG0HV/1-dashboard.jpg)
+![Dashboard](https://github.com/cenksari/react-crypto-exchange/blob/master/screenshots/1-dashboard.jpg?raw=true)
 
-![Profile](https://i.ibb.co/6ZC0Ybd/2-profile.jpg)
+![Profile](https://github.com/cenksari/react-crypto-exchange/blob/master/screenshots/2-profile.jpg?raw=true)
 
-![Deposit](https://i.ibb.co/TwR9Nyh/3-deposit.jpg)
+![Deposit](https://github.com/cenksari/react-crypto-exchange/blob/master/screenshots/3-deposit.jpg?raw=true)
 
-![Transactions](https://i.ibb.co/rFfjpd9/4-transactions.jpg)
+![Transactions](https://github.com/cenksari/react-crypto-exchange/blob/master/screenshots/4-transactions.jpg?raw=true)
 
-![Market](https://i.ibb.co/1vq1wnQ/5-market.jpg)
+![Market](https://github.com/cenksari/react-crypto-exchange/blob/master/screenshots/5-market.jpg?raw=true)
 
-![Signin](https://i.ibb.co/Qbjg2xD/6-signin.jpg)
+![Signin](https://github.com/cenksari/react-crypto-exchange/blob/master/screenshots/6-signin.jpg?raw=true)
 
 ## Authors
 @cenksari
