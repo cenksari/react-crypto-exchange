@@ -20,7 +20,10 @@ const DashboardScreen = () => (
             </div>
           </div>
           <div className='box-content box-text box-horizontal-padding box-content-height-nobutton'>
-            <p>&bull; EFT transferlerinde alıcı/lehdar kısmına BTCLEVER yazılması gerekmektedir.</p>
+            <p>
+              &bull; EFT transferlerinde alıcı/lehdar kısmına Crypto Exchange yazılması
+              gerekmektedir.
+            </p>
             <p>
               &bull; Adınıza açılmış olan tüm bireysel, vadesiz, Türk Lirası hesaplarınızdan,
               listelenen hesaplara Havale/EFT işlemi gerçekleştirebilirsiniz. Farklı kişiye ait

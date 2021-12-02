@@ -7,7 +7,7 @@ const Navbar = memo(() => (
   <nav className='navbar-inner no-select'>
     <div className='logo'>
       <Link to='/market'>
-        <img src='/images/btclever-logo.png' alt='BTClever' draggable='false' />
+        <img src='/images/logo.png' alt='Crypto Exchange' draggable='false' />
       </Link>
     </div>
     <h3>Ana menü</h3>
@@ -47,12 +47,12 @@ const Navbar = memo(() => (
       </li>
     </ul>
     <div className='copyright'>
-      <strong>BTClever</strong>
+      <strong>Crypto Exchange</strong>
       <p>
         2021 &copy; Tüm hakları saklıdır.
         <br />
         <br />
-        Made with <span>❤</span> by Btclever
+        Made with <span>❤</span> by Cenk SARI
       </p>
     </div>
   </nav>

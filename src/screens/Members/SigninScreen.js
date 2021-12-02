@@ -37,12 +37,12 @@ const SigninScreen = () => {
             <div className='box-vertical-padding box-horizontal-padding'>
               <div>
                 <div className='form-logo center'>
-                  <img src='/images/btclever-logo.png' alt='BTClever' draggable='false' />
+                  <img src='/images/logo.png' alt='Crypto Exchange' draggable='false' />
                 </div>
                 <h1 className='form-title center'>Üye girişi</h1>
                 <p className='form-desc center'>
-                  Lütfen tarayıcınızın adres çubuğunda <strong>https://pro.btclever.com</strong>{' '}
-                  yazdığından emin olunuz.
+                  Lütfen tarayıcınızın adres çubuğunda{' '}
+                  <strong>https://pro.cryptoexchange.com</strong> yazdığından emin olunuz.
                 </p>
                 <form className='form' onSubmit={handleSubmit} noValidate>
                   <div className='form-elements'>
