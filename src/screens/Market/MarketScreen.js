@@ -10,6 +10,7 @@ import SellOrders from '../../components/Widgets/SellOrders/SellOrders';
 import TradeHistory from '../../components/Widgets/TradeHistory/TradeHistory';
 import CoinVertical from '../../components/Widgets/Coin/CoinVertical';
 import CoinHorizontal from '../../components/Widgets/Coin/CoinHorizontal';
+import CandleStick from '../../components/Widgets/CandleStick/CandleStick';
 
 const MarketScreen = () => {
   const [keyword, setKeyword] = useState('');
@@ -65,7 +66,7 @@ const MarketScreen = () => {
 
             <div className='flex flex-destroy'>
               <div className='content-70 flex-1 box-right-padding'>
-                <TradeHistory />
+                <CandleStick />
               </div>
               <div className='content-30'>
                 <BuySell />
