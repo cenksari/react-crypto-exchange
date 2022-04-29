@@ -9,7 +9,7 @@ module.exports = {
     ecmaFeatures: {
       jsx: true,
     },
-    ecmaVersion: 12,
+    ecmaVersion: 13,
     sourceType: 'module',
   },
   plugins: ['react', 'react-hooks', 'prettier'],
@@ -28,6 +28,5 @@ module.exports = {
     'jsx-quotes': ['error', 'prefer-single'],
     'react/jsx-filename-extension': 'off',
     'jsx-a11y/label-has-associated-control': 'off',
-    'jsx-a11y/media-has-caption': 'off',
   },
 };
