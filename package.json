@@ -5,9 +5,9 @@
   "dependencies": {
     "apexcharts": "^3.35.3",
     "prop-types": "^15.8.1",
-    "react": "^18.1.0",
+    "react": "^18.2.0",
     "react-apexcharts": "^1.4.0",
-    "react-dom": "^18.1.0",
+    "react-dom": "^18.2.0",
     "react-router": "^6.3.0",
     "react-router-dom": "^6.3.0",
     "react-scripts": "^5.0.1",
@@ -42,7 +42,7 @@
     "eslint-plugin-jsx-a11y": "^6.5.1",
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-react": "^7.30.0",
-    "eslint-plugin-react-hooks": "^4.5.0",
-    "prettier": "^2.6.2"
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "prettier": "^2.7.1"
   }
 }
