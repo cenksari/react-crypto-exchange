@@ -1,4 +1,4 @@
-import { Routes, Route } from 'react-router';
+import { Routes, Route } from 'react-router-dom';
 
 import MarketScreen from '../screens/Market/MarketScreen';
 import CapitalScreen from '../screens/Capital/CapitalScreen';
