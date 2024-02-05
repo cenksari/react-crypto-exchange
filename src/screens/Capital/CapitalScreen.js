@@ -129,7 +129,9 @@ const CapitalScreen = () => {
               <th className='center'>Değişim (24s)</th>
               <th className='center responsive-hide2'>Hacim (24s)</th>
               <th className='left responsive-hide'>Grafik</th>
-              <th className='right'>&nbsp;</th>
+              <th aria-label='empty' className='right'>
+                &nbsp;
+              </th>
             </tr>
           </thead>
           <tbody>

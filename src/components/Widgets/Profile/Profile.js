@@ -53,7 +53,7 @@ const Profile = memo(() => {
               <div
                 className='icon cover pointer'
                 style={{
-                  backgroundImage: `url('https://pbs.twimg.com/profile_images/1265581417364369408/b7CxjEfi_400x400.jpg')`,
+                  backgroundImage: `url('https://www.cenksari.com/content/profile.jpg')`,
                 }}
               />
               <div className='edit pointer'>

@@ -18,7 +18,7 @@ const TransactionsScreen = () => {
         date: '2/5/2020 06:24:45',
         from: 'Tarık',
         to: 'Cenk',
-        toPicture: 'https://pbs.twimg.com/profile_images/1265581417364369408/b7CxjEfi_400x400.jpg',
+        toPicture: 'https://www.cenksari.com/content/profile.jpg',
         coin: 'Bitcoin',
         icon: 'https://icons-for-free.com/iconfiles/png/512/btc+coin+crypto+icon-1320162856490699468.png',
         amount: '5.553',
@@ -31,7 +31,7 @@ const TransactionsScreen = () => {
         date: '3/5/2020 18:35:12',
         from: 'Tarık',
         to: 'Cenk',
-        toPicture: 'https://pbs.twimg.com/profile_images/1265581417364369408/b7CxjEfi_400x400.jpg',
+        toPicture: 'https://www.cenksari.com/content/profile.jpg',
         coin: 'Etherium',
         icon: 'https://icons.iconarchive.com/icons/cjdowner/cryptocurrency-flat/1024/Ethereum-ETH-icon.png',
         amount: '3.000',
@@ -78,7 +78,9 @@ const TransactionsScreen = () => {
         <table className='data-table'>
           <thead>
             <tr>
-              <th className='left'>&nbsp;</th>
+              <th aria-label='empty' className='left'>
+                &nbsp;
+              </th>
               <th className='left responsive-hide'>İşlem</th>
               <th className='left responsive-hide'>Tarih</th>
               <th className='left'>Kimden</th>

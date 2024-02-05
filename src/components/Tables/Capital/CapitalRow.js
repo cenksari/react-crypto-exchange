@@ -36,7 +36,7 @@ const CapitalRow = memo(({ item, index }) => {
         <strong className={color}>{item.change}</strong>
       </td>
       <td className='center responsive-hide2'>{item.weight}</td>
-      <td className='responsive-hide'>
+      <td aria-label='chart' className='responsive-hide'>
         <div className='line-chart'>
           <Sparklines data={item.lineChartData} width={150} height={50}>
             <SparklinesLine style={{ strokeWidth: 4 }} color={color} />

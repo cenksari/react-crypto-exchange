@@ -1,18 +1,26 @@
 module.exports = {
-  root: true,
   env: {
     browser: true,
     es2021: true,
   },
   extends: ['plugin:react/recommended', 'airbnb', 'prettier'],
-  parserOptions: {
-    ecmaFeatures: {
-      jsx: true,
+  overrides: [
+    {
+      env: {
+        node: true,
+      },
+      files: ['.eslintrc.{js,cjs}'],
+      parserOptions: {
+        sourceType: 'script',
+      },
     },
-    ecmaVersion: 13,
+  ],
+  parserOptions: {
+    ecmaVersion: 'latest',
     sourceType: 'module',
   },
   plugins: ['react', 'react-hooks', 'prettier'],
+
   rules: {
     semi: 'error',
     'no-console': 'warn',
@@ -20,7 +28,6 @@ module.exports = {
     'no-unused-vars': 'error',
     'no-use-before-define': 'error',
     'newline-before-return': 'error',
-    'react/prop-types': 'off',
     'linebreak-style': 'off',
     'prettier/prettier': 'error',
     'react/react-in-jsx-scope': 'off',

@@ -7,7 +7,7 @@ import Status from './Status';
 
 const TransactionRow = memo(({ item }) => (
   <tr>
-    <td>
+    <td aria-label='type'>
       <Icon type={item.type} />
     </td>
     <td className='responsive-hide'>#{item.transaction}</td>
@@ -21,10 +21,10 @@ const TransactionRow = memo(({ item }) => (
       <div className='icon cover' style={{ backgroundImage: `url('${item.icon}')` }} />
       <strong>{item.coin}</strong>
     </td>
-    <td className='center'>
+    <td aria-label='amount' className='center'>
       <Amount type={item.type} amount={item.amount} />
     </td>
-    <td className='center'>
+    <td aria-label='status' className='center'>
       <Status status={item.status} />
     </td>
   </tr>

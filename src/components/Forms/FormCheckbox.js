@@ -19,6 +19,7 @@ const FormCheckbox = memo(({ name, text, onChange, checked }) => (
 FormCheckbox.propTypes = {
   name: PropTypes.string.isRequired,
   text: PropTypes.string.isRequired,
+  checked: PropTypes.bool.isRequired,
   onChange: PropTypes.func.isRequired,
 };
 
