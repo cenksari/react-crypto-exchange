@@ -20,7 +20,6 @@ module.exports = {
     sourceType: 'module',
   },
   plugins: ['react', 'react-hooks', 'prettier'],
-
   rules: {
     semi: 'error',
     'no-console': 'warn',

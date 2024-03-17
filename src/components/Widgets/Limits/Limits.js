@@ -19,7 +19,7 @@ const Limits = memo(() => {
       {
         id: 2,
         currency: 'Bitcoin',
-        icon: 'https://icons-for-free.com/iconfiles/png/512/btc+coin+crypto+icon-1320162856490699468.png',
+        icon: 'https://icons.iconarchive.com/icons/cjdowner/cryptocurrency-flat/256/Bitcoin-BTC-icon.png',
         limit24h: '12.000',
         limit30d: '5.157,00',
         status: 2,

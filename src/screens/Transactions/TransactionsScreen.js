@@ -20,7 +20,7 @@ const TransactionsScreen = () => {
         to: 'Cenk',
         toPicture: 'https://www.cenksari.com/content/profile.jpg',
         coin: 'Bitcoin',
-        icon: 'https://icons-for-free.com/iconfiles/png/512/btc+coin+crypto+icon-1320162856490699468.png',
+        icon: 'https://icons.iconarchive.com/icons/cjdowner/cryptocurrency-flat/256/Bitcoin-BTC-icon.png',
         amount: '5.553',
         status: 1,
       },

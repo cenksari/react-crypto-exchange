@@ -26,7 +26,7 @@ const MarketScreen = () => {
       exchange: 'BTC/TRY',
       weight: '104k',
       financialRate: '-0.0252%/hr',
-      icon: 'https://icons-for-free.com/iconfiles/png/512/btc+coin+crypto+icon-1320162856490699468.png',
+      icon: 'https://icons.iconarchive.com/icons/cjdowner/cryptocurrency-flat/256/Bitcoin-BTC-icon.png',
       amount: '18.783,33',
       description: `Bitcoin, Satoshi Nakamoto adını kullanmış bilinmeyen bir kişi veya grup tarafından 2008'de icat edilmiş bir kriptoparadır. 2009'da bir açık kaynak kodlu yazılım olarak piyasaya`,
     };

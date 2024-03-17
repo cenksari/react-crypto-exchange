@@ -1,16 +1,15 @@
 import { Routes, Route } from 'react-router-dom';
 
+import SigninScreen from '../screens/Members/SigninScreen';
+import SignupScreen from '../screens/Members/SignupScreen';
+import ForgotScreen from '../screens/Members/ForgotScreen';
+import ProfileScreen from '../screens/Members/ProfileScreen';
 import MarketScreen from '../screens/Market/MarketScreen';
 import CapitalScreen from '../screens/Capital/CapitalScreen';
 import DashboardScreen from '../screens/Dashboard/DashboardScreen';
 import TransactionsScreen from '../screens/Transactions/TransactionsScreen';
 
 import NotFoundScreen from '../screens/NotFound/NotFoundScreen';
-
-import SigninScreen from '../screens/Members/SigninScreen';
-import SignupScreen from '../screens/Members/SignupScreen';
-import ForgotScreen from '../screens/Members/ForgotScreen';
-import ProfileScreen from '../screens/Members/ProfileScreen';
 
 const Navigation = () => (
   <Routes>

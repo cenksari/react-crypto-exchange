@@ -13,7 +13,7 @@ const Market = memo(() => {
       {
         id: 1,
         name: 'BTC/USD',
-        icon: 'https://icons-for-free.com/iconfiles/png/512/btc+coin+crypto+icon-1320162856490699468.png',
+        icon: 'https://icons.iconarchive.com/icons/cjdowner/cryptocurrency-flat/256/Bitcoin-BTC-icon.png',
         date: 'Eylül 2021',
         amount: '18.783,33',
         currency: 'TRY',

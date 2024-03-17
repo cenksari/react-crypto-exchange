@@ -7,7 +7,11 @@ const Navbar = memo(() => (
   <nav className='navbar-inner no-select'>
     <div className='logo'>
       <Link to='/market'>
-        <img src='/images/logo.png' alt='Crypto Exchange' draggable='false' />
+        <img
+          src={`${process.env.PUBLIC_URL}/images/logo.png`}
+          alt='Crypto Exchange'
+          draggable='false'
+        />
       </Link>
     </div>
     <h3>Ana menü</h3>

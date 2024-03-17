@@ -32,7 +32,11 @@ const ForgotScreen = () => {
             <div className='box-vertical-padding box-horizontal-padding'>
               <div>
                 <div className='form-logo center'>
-                  <img src='/images/logo.png' alt='Crypto Exchange' draggable='false' />
+                  <img
+                    src={`${process.env.PUBLIC_URL}/images/logo.png`}
+                    alt='Crypto Exchange'
+                    draggable='false'
+                  />
                 </div>
                 <h1 className='form-title center'>Şifre sıfırlama</h1>
                 <p className='form-desc center'>

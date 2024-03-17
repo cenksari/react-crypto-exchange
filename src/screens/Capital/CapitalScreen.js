@@ -15,7 +15,7 @@ const CapitalScreen = () => {
         id: 1,
         name: 'Bitcoin',
         symbol: 'BTC',
-        icon: 'https://icons-for-free.com/iconfiles/png/512/btc+coin+crypto+icon-1320162856490699468.png',
+        icon: 'https://icons.iconarchive.com/icons/cjdowner/cryptocurrency-flat/256/Bitcoin-BTC-icon.png',
         amount: '18.783,33',
         currency: 'TRY',
         change: '%45',
