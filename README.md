@@ -3,9 +3,10 @@ You are free to download, change and use it anywhere. I will regularly update th
 
 If you like this resource, please follow me on GitHub. Thank you!
 
+## Demo
+[https://cenksari.github.io/react-crypto-exchange/](https://cenksari.github.io/react-crypto-exchange/)
 
 ## Screenshots
-
 ![Dashboard](https://github.com/cenksari/react-crypto-exchange/blob/master/screenshots/1-dashboard.jpg?raw=true)
 
 ![Profile](https://github.com/cenksari/react-crypto-exchange/blob/master/screenshots/2-profile.jpg?raw=true)
