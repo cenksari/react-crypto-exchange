@@ -14,7 +14,7 @@
     "react-sparklines": "^1.7.0"
   },
   "scripts": {
-    "start": "set HTTPS=true&react-scripts start",
+    "start": "react-scripts start",
     "build": "react-scripts build",
     "deploy": "gh-pages -d build"
   },
