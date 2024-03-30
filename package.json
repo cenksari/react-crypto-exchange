@@ -1,10 +1,10 @@
 {
   "name": "react-crypto-exchange",
-  "version": "0.1.9",
+  "version": "0.1.10",
   "private": true,
   "homepage": "https://cenksari.github.io/react-crypto-exchange",
   "dependencies": {
-    "apexcharts": "^3.47.0",
+    "apexcharts": "^3.48.0",
     "prop-types": "^15.8.1",
     "react": "^18.2.0",
     "react-apexcharts": "^1.4.1",
