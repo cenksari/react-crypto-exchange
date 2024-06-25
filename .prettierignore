@@ -1,0 +1,8 @@
+**/*.txt
+**/*.png
+**/*.jpg
+**/*.ico
+**/*.env
+**/*.lock
+**/*ignore
+**/*license

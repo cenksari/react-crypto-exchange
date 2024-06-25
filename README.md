@@ -1,12 +1,15 @@
 # React Crypto Exchange Template
+
 You are free to download, change and use it anywhere. I will regularly update this template with new resources and pages I found on the web. Don't hesitate to participate by sending a PR! Maybe your first on Github :)
 
 If you like this resource, please follow me on GitHub. Thank you!
 
 ## Demo
+
 [https://cenksari.github.io/react-crypto-exchange/](https://cenksari.github.io/react-crypto-exchange/)
 
 ## Screenshots
+
 ![Dashboard](https://github.com/cenksari/react-crypto-exchange/blob/master/screenshots/1-dashboard.jpg?raw=true)
 
 ![Profile](https://github.com/cenksari/react-crypto-exchange/blob/master/screenshots/2-profile.jpg?raw=true)
@@ -20,10 +23,13 @@ If you like this resource, please follow me on GitHub. Thank you!
 ![Signin](https://github.com/cenksari/react-crypto-exchange/blob/master/screenshots/6-signin.jpg?raw=true)
 
 ## Authors
+
 @cenksari
 
 ## Contributing
+
 Open an issue or a pull request to suggest changes or additions.
 
 ## License
+
 Free
