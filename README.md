@@ -6,7 +6,7 @@ If you like this resource, please follow me on GitHub. Thank you!
 
 ## Demo
 
-[https://cenksari.github.io/react-crypto-exchange/](https://cenksari.github.io/react-crypto-exchange/)
+[https://react-crypto-exchange.vercel.app/](https://react-crypto-exchange.vercel.app/)
 
 ## Screenshots
 
