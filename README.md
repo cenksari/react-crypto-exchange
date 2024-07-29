@@ -4,16 +4,16 @@ Are you ready to dive into the world of cryptocurrency trading? Look no further!
 
 **Key Features**
 
-* **Real-time Market Data**: Stay up-to-date with the latest market trends and prices.
-* **User Profile Management**: Manage your account, view transaction history, and track your portfolio.
-* **Secure Transactions**: Execute trades with confidence using our secure transaction processing system.
-* **Multi-Currency Support**: Trade with a variety of cryptocurrencies and fiat currencies.
-* **Responsive Design**: Accessible on any device, ensuring a seamless user experience across all platforms.
+- **Real-time Market Data**: Stay up-to-date with the latest market trends and prices.
+- **User Profile Management**: Manage your account, view transaction history, and track your portfolio.
+- **Secure Transactions**: Execute trades with confidence using our secure transaction processing system.
+- **Multi-Currency Support**: Trade with a variety of cryptocurrencies and fiat currencies.
+- **Responsive Design**: Accessible on any device, ensuring a seamless user experience across all platforms.
 
 **Why Choose This Template?**
 
-* **Easy Customization**: Tailor the template to fit your brand's unique style and needs.
-* **Fast Development**: Get your exchange up and running quickly with our pre-built components and features.
+- **Easy Customization**: Tailor the template to fit your brand's unique style and needs.
+- **Fast Development**: Get your exchange up and running quickly with our pre-built components and features.
 
 **Get Started Today!**
 
