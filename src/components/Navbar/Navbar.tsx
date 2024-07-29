@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 // components
 import NavbarButton from './NavbarButton';
 
-const Navbar = () => (
+const Navbar = (): React.JSX.Element => (
   <nav className='navbar-inner no-select'>
     <div className='logo'>
       <Link to='/market'>

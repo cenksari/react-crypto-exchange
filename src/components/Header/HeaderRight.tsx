@@ -2,7 +2,7 @@ import React from 'react';
 
 import { Link, useLocation } from 'react-router-dom';
 
-const HeaderRight = () => {
+const HeaderRight = (): React.JSX.Element => {
   const location = useLocation();
 
   return (

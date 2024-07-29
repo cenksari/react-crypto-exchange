@@ -90,7 +90,7 @@ const dataArray: IPriceList[] = [
   },
 ];
 
-const BuyOrders = () => {
+const BuyOrders = (): React.JSX.Element => {
   const [data, setData] = React.useState<IPriceList[]>([]);
   const [menuOpened, setMenuOpened] = React.useState<boolean>(false);
 
