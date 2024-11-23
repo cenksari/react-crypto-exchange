@@ -1,14 +1,14 @@
-import React from 'react';
+import { useState, useEffect } from 'react';
 
 // interfaces
 interface IProps {
   item: any;
 }
 
-const BuyOrdersRow = ({ item }: IProps): React.JSX.Element => {
-  const [color, setColor] = React.useState<string>('white');
+const BuyOrdersRow = ({ item }: IProps): JSX.Element => {
+  const [color, setColor] = useState<string>('white');
 
-  React.useEffect(() => {
+  useEffect(() => {
     if (item.type === 1) {
       setColor('green');
     } else if (item.type === 2) {

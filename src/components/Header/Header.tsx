@@ -1,5 +1,3 @@
-import React from 'react';
-
 // components
 import HeaderLeft from './HeaderLeft';
 import HeaderRight from './HeaderRight';
@@ -10,7 +8,7 @@ interface IProps {
   title: string;
 }
 
-const Header = ({ icon, title }: IProps): React.JSX.Element => (
+const Header = ({ icon, title }: IProps): JSX.Element => (
   <header className='flex flex-center flex-space-between'>
     <HeaderLeft icon={icon} title={title} />
     <HeaderRight />

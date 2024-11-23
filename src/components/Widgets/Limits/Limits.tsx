@@ -1,4 +1,4 @@
-import React from 'react';
+import { useState, useEffect } from 'react';
 
 // components
 import Box from '../../Common/Box';
@@ -58,10 +58,10 @@ const dataArray: ICrypto[] = [
   },
 ];
 
-const Limits = (): React.JSX.Element => {
-  const [data, setData] = React.useState<ICrypto[]>([]);
+const Limits = (): JSX.Element => {
+  const [data, setData] = useState<ICrypto[]>([]);
 
-  React.useEffect(() => {
+  useEffect(() => {
     setData(dataArray);
   }, []);
 

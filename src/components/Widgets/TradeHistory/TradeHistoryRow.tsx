@@ -1,11 +1,9 @@
-import React from 'react';
-
 // interfaces
 interface IProps {
   item: any;
 }
 
-const TradeHistoryRow = ({ item }: IProps): React.JSX.Element => (
+const TradeHistoryRow = ({ item }: IProps): JSX.Element => (
   <tr className={item.type === 1 ? 'green' : 'red'}>
     <td className='left'>
       {item.amount} {item.currency}

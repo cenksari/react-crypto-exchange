@@ -1,4 +1,4 @@
-import React from 'react';
+import { useState } from 'react';
 
 import { Link } from 'react-router-dom';
 
@@ -13,8 +13,8 @@ interface IFormProps {
   phone: string;
 }
 
-const ForgotScreen = (): React.JSX.Element => {
-  const [formValues, setFormValues] = React.useState<IFormProps>({
+const ForgotScreen = (): JSX.Element => {
+  const [formValues, setFormValues] = useState<IFormProps>({
     phone: '',
   });
 

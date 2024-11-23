@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "target": "es5",
+    "target": "esnext",
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
@@ -22,9 +22,9 @@
     "**/*.tsx",
     "**/*.cjs",
     "**/*.mjs",
-    ".eslintrc.cjs",
-    ".prettierrc.cjs",
-    "declaration.d.ts"
+    ".prettierrc.mjs",
+    "declaration.d.ts",
+    "eslint.config.mjs"
   ],
   "exclude": ["node_modules"]
 }

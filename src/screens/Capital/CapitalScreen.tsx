@@ -1,4 +1,4 @@
-import React from 'react';
+import { useState, useEffect } from 'react';
 
 // components
 import SiteLayout from '../../layouts/SiteLayout';
@@ -108,11 +108,11 @@ const dataArray: ICrypto[] = [
   },
 ];
 
-const CapitalScreen = (): React.JSX.Element => {
-  const [data, setData] = React.useState<ICrypto[]>([]);
-  const [keyword, setKeyword] = React.useState<string>('');
+const CapitalScreen = (): JSX.Element => {
+  const [data, setData] = useState<ICrypto[]>([]);
+  const [keyword, setKeyword] = useState<string>('');
 
-  React.useEffect(() => {
+  useEffect(() => {
     setData(dataArray);
   }, []);
 

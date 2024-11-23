@@ -1,4 +1,4 @@
-import React from 'react';
+import { useState, useEffect } from 'react';
 
 import { Sparklines, SparklinesLine } from 'react-sparklines';
 
@@ -7,10 +7,10 @@ interface IProps {
   item: any;
 }
 
-const MarketRow = ({ item }: IProps): React.JSX.Element => {
-  const [color, setColor] = React.useState<string>('');
+const MarketRow = ({ item }: IProps): JSX.Element => {
+  const [color, setColor] = useState<string>('');
 
-  React.useEffect(() => {
+  useEffect(() => {
     if (item.status === 1) {
       setColor('green');
     } else {

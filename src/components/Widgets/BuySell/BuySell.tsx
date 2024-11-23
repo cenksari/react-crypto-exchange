@@ -1,11 +1,11 @@
-import React from 'react';
+import { useState } from 'react';
 
 // components
 import Box from '../../Common/Box';
 
-const BuySell = (): React.JSX.Element => {
-  const [primaryTab, setPrimaryTab] = React.useState<number>(0);
-  const [secondaryTab, setSecondaryTab] = React.useState<number>(0);
+const BuySell = (): JSX.Element => {
+  const [primaryTab, setPrimaryTab] = useState<number>(0);
+  const [secondaryTab, setSecondaryTab] = useState<number>(0);
 
   /**
    * Handles the primary tab change event.

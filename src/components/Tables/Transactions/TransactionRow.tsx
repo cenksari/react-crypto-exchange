@@ -1,5 +1,3 @@
-import React from 'react';
-
 // components
 import Icon from './Icon';
 import Amount from './Amount';
@@ -10,7 +8,7 @@ interface IProps {
   item: any;
 }
 
-const TransactionRow = ({ item }: IProps): React.JSX.Element => (
+const TransactionRow = ({ item }: IProps): JSX.Element => (
   <tr>
     <td aria-label='type'>
       <Icon type={item.type} />

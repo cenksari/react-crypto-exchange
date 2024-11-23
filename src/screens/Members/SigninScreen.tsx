@@ -1,4 +1,4 @@
-import React from 'react';
+import { useState } from 'react';
 
 import { Link, useNavigate } from 'react-router-dom';
 
@@ -14,10 +14,10 @@ interface IFormProps {
   password: string;
 }
 
-const SigninScreen = (): React.JSX.Element => {
+const SigninScreen = (): JSX.Element => {
   const navigate = useNavigate();
 
-  const [formValues, setFormValues] = React.useState<IFormProps>({
+  const [formValues, setFormValues] = useState<IFormProps>({
     phone: '',
     password: '',
   });

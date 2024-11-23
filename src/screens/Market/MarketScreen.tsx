@@ -1,4 +1,4 @@
-import React from 'react';
+import { useState, useEffect } from 'react';
 
 // components
 import MainLayout from '../../layouts/MainLayout';
@@ -42,11 +42,11 @@ const coinData: ICrypto = {
   description: `Bitcoin, Satoshi Nakamoto adını kullanmış bilinmeyen bir kişi veya grup tarafından 2008'de icat edilmiş bir kriptoparadır. 2009'da bir açık kaynak kodlu yazılım olarak piyasaya`,
 };
 
-const MarketScreen = (): React.JSX.Element => {
-  const [keyword, setKeyword] = React.useState<string>('');
-  const [coinInfo, setCoinInfo] = React.useState<ICrypto | null>(null);
+const MarketScreen = (): JSX.Element => {
+  const [keyword, setKeyword] = useState<string>('');
+  const [coinInfo, setCoinInfo] = useState<ICrypto | null>(null);
 
-  React.useEffect(() => {
+  useEffect(() => {
     setCoinInfo(coinData);
   }, []);
 

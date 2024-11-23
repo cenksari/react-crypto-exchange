@@ -1,5 +1,3 @@
-import React from 'react';
-
 // interfaces
 interface IProps {
   searchValue: string;
@@ -7,7 +5,7 @@ interface IProps {
   searchOnChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
 }
 
-const TopBar = ({ searchValue, searchOnChange, searchSubmit }: IProps): React.JSX.Element => (
+const TopBar = ({ searchValue, searchOnChange, searchSubmit }: IProps): JSX.Element => (
   <div className='top-buttons flex flex-destroy flex-center flex-space-between'>
     <div>
       <div className='top-search no-select nowrap'>

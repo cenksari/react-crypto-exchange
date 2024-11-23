@@ -1,5 +1,3 @@
-import React from 'react';
-
 // components
 import Box from '../../Common/Box';
 
@@ -16,7 +14,7 @@ const CoinHorizontal = ({
   searchValue,
   searchOnChange,
   searchSubmit,
-}: IProps): React.JSX.Element => (
+}: IProps): JSX.Element => (
   <Box>
     <div className='box-content box-vertical-padding box-horizontal-padding'>
       <div className='widget-coin-horizontal flex flex-center flex-space-around nowrap'>

@@ -1,5 +1,3 @@
-import React from 'react';
-
 // components
 import StatusName from './StatusName';
 
@@ -8,7 +6,7 @@ interface IProps {
   item: any;
 }
 
-const LimitsRow = ({ item }: IProps): React.JSX.Element => (
+const LimitsRow = ({ item }: IProps): JSX.Element => (
   <div className='limits-row flex flex-center flex-space-between no-select'>
     <div>
       <div className='icon cover' style={{ backgroundImage: `url('${item.icon}')` }} />

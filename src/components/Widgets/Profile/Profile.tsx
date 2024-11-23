@@ -1,12 +1,12 @@
-import React from 'react';
+import { useState } from 'react';
 
 import { Link } from 'react-router-dom';
 
 // components
 import Box from '../../Common/Box';
 
-const Profile = (): React.JSX.Element => {
-  const [menuOpened, setMenuOpened] = React.useState<boolean>(false);
+const Profile = (): JSX.Element => {
+  const [menuOpened, setMenuOpened] = useState<boolean>(false);
 
   /**
    * Toggles the state of the menu to open or close.

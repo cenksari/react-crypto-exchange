@@ -1,4 +1,4 @@
-import React from 'react';
+import { useState, useEffect } from 'react';
 
 import ReactApexChart from 'react-apexcharts';
 
@@ -275,10 +275,10 @@ const data: ISeries = {
   },
 };
 
-const CandleStick = (): React.JSX.Element => {
-  const [state, setState] = React.useState<ISeries | null>(null);
+const CandleStick = (): JSX.Element => {
+  const [state, setState] = useState<ISeries | null>(null);
 
-  React.useEffect(() => {
+  useEffect(() => {
     setState(data);
   }, []);
 

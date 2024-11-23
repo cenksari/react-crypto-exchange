@@ -1,4 +1,4 @@
-import React from 'react';
+import { useState, useEffect } from 'react';
 
 // components
 import SiteLayout from '../../layouts/SiteLayout';
@@ -64,11 +64,11 @@ const dataArray: ITransaction[] = [
   },
 ];
 
-const TransactionsScreen = (): React.JSX.Element => {
-  const [data, setData] = React.useState<ITransaction[]>([]);
-  const [keyword, setKeyword] = React.useState<string>('');
+const TransactionsScreen = (): JSX.Element => {
+  const [data, setData] = useState<ITransaction[]>([]);
+  const [keyword, setKeyword] = useState<string>('');
 
-  React.useEffect(() => {
+  useEffect(() => {
     setData(dataArray);
   }, []);
 

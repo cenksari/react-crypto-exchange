@@ -1,12 +1,10 @@
-import React from 'react';
-
 // interfaces
 interface IProps {
   type: number;
   amount: string;
 }
 
-const Amount = ({ type, amount }: IProps): React.JSX.Element => {
+const Amount = ({ type, amount }: IProps): JSX.Element => {
   if (type === 1) {
     return <strong className='red'>{amount}</strong>;
   }

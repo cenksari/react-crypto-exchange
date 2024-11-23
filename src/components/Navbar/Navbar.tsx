@@ -1,11 +1,9 @@
-import React from 'react';
-
 import { Link } from 'react-router-dom';
 
 // components
 import NavbarButton from './NavbarButton';
 
-const Navbar = (): React.JSX.Element => (
+const Navbar = (): JSX.Element => (
   <nav className='navbar-inner no-select'>
     <div className='logo'>
       <Link to='/market'>

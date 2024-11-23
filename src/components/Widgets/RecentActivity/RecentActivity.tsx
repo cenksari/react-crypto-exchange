@@ -1,4 +1,4 @@
-import React from 'react';
+import { useState, useEffect } from 'react';
 
 // components
 import Box from '../../Common/Box';
@@ -66,10 +66,10 @@ const dataArray: IActivity[] = [
   },
 ];
 
-const RecentActivity = (): React.JSX.Element => {
-  const [data, setData] = React.useState<IActivity[]>([]);
+const RecentActivity = (): JSX.Element => {
+  const [data, setData] = useState<IActivity[]>([]);
 
-  React.useEffect(() => {
+  useEffect(() => {
     setData(dataArray);
   }, []);
 

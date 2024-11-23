@@ -1,4 +1,4 @@
-import React from 'react';
+import { useState } from 'react';
 
 // components
 import Box from '../../Common/Box';
@@ -8,9 +8,9 @@ interface IProps {
   item: any;
 }
 
-const CoinVertical = ({ item }: IProps): React.JSX.Element => {
-  const [showMore, setShowMore] = React.useState<boolean>(false);
-  const [menuOpened, setMenuOpened] = React.useState<boolean>(false);
+const CoinVertical = ({ item }: IProps): JSX.Element => {
+  const [showMore, setShowMore] = useState<boolean>(false);
+  const [menuOpened, setMenuOpened] = useState<boolean>(false);
 
   /**
    * Toggles the state of the menu to open or close.

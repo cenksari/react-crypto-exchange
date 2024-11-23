@@ -1,4 +1,4 @@
-import React from 'react';
+import { useState, useEffect } from 'react';
 
 import { Link } from 'react-router-dom';
 import { Sparklines, SparklinesLine, SparklinesBars } from 'react-sparklines';
@@ -8,10 +8,10 @@ interface IProps {
   item: any;
 }
 
-const MyAssetsRow = ({ item }: IProps): React.JSX.Element => {
-  const [color, setColor] = React.useState<string>('');
+const MyAssetsRow = ({ item }: IProps): JSX.Element => {
+  const [color, setColor] = useState<string>('');
 
-  React.useEffect(() => {
+  useEffect(() => {
     if (item.status === 1) {
       setColor('green');
     } else {

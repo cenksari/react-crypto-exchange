@@ -1,5 +1,3 @@
-import React from 'react';
-
 import { Routes, Route } from 'react-router-dom';
 
 // pages
@@ -12,7 +10,7 @@ import CapitalScreen from '../screens/Capital/CapitalScreen';
 import DashboardScreen from '../screens/Dashboard/DashboardScreen';
 import TransactionsScreen from '../screens/Transactions/TransactionsScreen';
 
-const Navigation = (): React.JSX.Element => (
+const Navigation = (): JSX.Element => (
   <Routes>
     <Route path='/' element={<SigninScreen />} />
     <Route path='/market' element={<MarketScreen />} />

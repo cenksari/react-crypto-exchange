@@ -1,11 +1,9 @@
-import React from 'react';
-
 // interfaces
 interface IProps {
   status: number;
 }
 
-const Status = ({ status }: IProps): React.JSX.Element => {
+const Status = ({ status }: IProps): JSX.Element => {
   if (status === 1) {
     return <span className='status green'>BİTMİŞ</span>;
   }

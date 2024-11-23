@@ -1,4 +1,4 @@
-import React from 'react';
+import { useState, useEffect } from 'react';
 
 import { Link } from 'react-router-dom';
 
@@ -92,10 +92,10 @@ const dataArray: IHistory[] = [
   },
 ];
 
-const TradeHistory = (): React.JSX.Element => {
-  const [data, setData] = React.useState<IHistory[]>([]);
+const TradeHistory = (): JSX.Element => {
+  const [data, setData] = useState<IHistory[]>([]);
 
-  React.useEffect(() => {
+  useEffect(() => {
     setData(dataArray);
   }, []);
 

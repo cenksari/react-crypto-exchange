@@ -1,5 +1,3 @@
-import React from 'react';
-
 // interfaces
 interface IProps {
   type: string;
@@ -9,7 +7,7 @@ interface IProps {
   onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void;
 }
 
-const FormInput = ({ type, name, value, placeholder, onChange }: IProps): React.JSX.Element => (
+const FormInput = ({ type, name, value, placeholder, onChange }: IProps): JSX.Element => (
   <input
     id={name}
     name={name}

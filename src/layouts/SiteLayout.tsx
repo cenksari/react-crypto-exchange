@@ -1,5 +1,3 @@
-import React from 'react';
-
 // components
 import Navbar from '../components/Navbar/Navbar';
 
@@ -8,7 +6,7 @@ interface IProps {
   children: React.ReactNode;
 }
 
-const SiteLayout = ({ children }: IProps): React.JSX.Element => (
+const SiteLayout = ({ children }: IProps): JSX.Element => (
   <div className='flex'>
     <div className='navbar full-height responsive-hide'>
       <Navbar />

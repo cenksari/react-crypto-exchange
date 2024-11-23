@@ -1,4 +1,4 @@
-import React from 'react';
+import { useState, useEffect } from 'react';
 
 import { Link } from 'react-router-dom';
 
@@ -100,10 +100,10 @@ const dataArray: ICrypto[] = [
   },
 ];
 
-const Market = (): React.JSX.Element => {
-  const [data, setData] = React.useState<ICrypto[]>([]);
+const Market = (): JSX.Element => {
+  const [data, setData] = useState<ICrypto[]>([]);
 
-  React.useEffect(() => {
+  useEffect(() => {
     setData(dataArray);
   }, []);
 

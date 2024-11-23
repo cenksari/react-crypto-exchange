@@ -1,5 +1,3 @@
-import React from 'react';
-
 import { Link, useLocation } from 'react-router-dom';
 
 // interfaces
@@ -9,7 +7,7 @@ interface IProps {
   title: string;
 }
 
-const NavbarButton = ({ url, icon, title }: IProps): React.JSX.Element => {
+const NavbarButton = ({ url, icon, title }: IProps): JSX.Element => {
   const location = useLocation();
 
   return (

@@ -1,5 +1,3 @@
-import React from 'react';
-
 // interfaces
 interface IProps {
   name: string;
@@ -8,7 +6,7 @@ interface IProps {
   onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void;
 }
 
-const FormCheckbox = ({ name, text, onChange, checked }: IProps): React.JSX.Element => (
+const FormCheckbox = ({ name, text, onChange, checked }: IProps): JSX.Element => (
   <label className='checkbox-container'>
     {text}
     <input

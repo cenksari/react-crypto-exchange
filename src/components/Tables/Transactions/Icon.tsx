@@ -1,11 +1,9 @@
-import React from 'react';
-
 // interfaces
 interface IProps {
   type: number;
 }
 
-const Icon = ({ type }: IProps): React.JSX.Element => {
+const Icon = ({ type }: IProps): JSX.Element => {
   if (type === 1) {
     return (
       <div className='operation red'>

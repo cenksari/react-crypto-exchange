@@ -1,4 +1,4 @@
-import React from 'react';
+import { useState } from 'react';
 
 import { Link } from 'react-router-dom';
 
@@ -30,8 +30,8 @@ interface IFormProps {
   agreeToPolicies3: boolean;
 }
 
-const SignupScreen = (): React.JSX.Element => {
-  const [formValues, setFormValues] = React.useState<IFormProps>({
+const SignupScreen = (): JSX.Element => {
+  const [formValues, setFormValues] = useState<IFormProps>({
     email: '',
     phone: '',
     password: '',

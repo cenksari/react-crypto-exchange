@@ -1,4 +1,4 @@
-import React from 'react';
+import { useState, useEffect } from 'react';
 
 import { Sparklines, SparklinesLine } from 'react-sparklines';
 
@@ -8,11 +8,11 @@ interface IProps {
   index: number;
 }
 
-const CapitalRow = ({ item, index }: IProps): React.JSX.Element => {
-  const [color, setColor] = React.useState<string>('');
-  const [menuOpened, setMenuOpened] = React.useState<boolean>(false);
+const CapitalRow = ({ item, index }: IProps): JSX.Element => {
+  const [color, setColor] = useState<string>('');
+  const [menuOpened, setMenuOpened] = useState<boolean>(false);
 
-  React.useEffect(() => {
+  useEffect(() => {
     if (item.status === 1) {
       setColor('green');
     } else {

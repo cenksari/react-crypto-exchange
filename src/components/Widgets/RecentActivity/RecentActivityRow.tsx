@@ -1,5 +1,3 @@
-import React from 'react';
-
 // components
 import StatusName from './StatusName';
 import ProcessType from './ProcessType';
@@ -9,7 +7,7 @@ interface IProps {
   item: any;
 }
 
-const RecentActivityRow = ({ item }: IProps): React.JSX.Element => (
+const RecentActivityRow = ({ item }: IProps): JSX.Element => (
   <div className='activity-row flex flex-center flex-space-between no-select'>
     <ProcessType type={item.type} />
     <div className='center'>

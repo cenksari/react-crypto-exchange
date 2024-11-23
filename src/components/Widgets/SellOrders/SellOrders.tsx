@@ -1,4 +1,4 @@
-import React from 'react';
+import { useState, useEffect } from 'react';
 
 // components
 import Box from '../../Common/Box';
@@ -90,11 +90,11 @@ const dataArray: IOrder[] = [
   },
 ];
 
-const SellOrders = (): React.JSX.Element => {
-  const [data, setData] = React.useState<IOrder[]>([]);
-  const [menuOpened, setMenuOpened] = React.useState<boolean>(false);
+const SellOrders = (): JSX.Element => {
+  const [data, setData] = useState<IOrder[]>([]);
+  const [menuOpened, setMenuOpened] = useState<boolean>(false);
 
-  React.useEffect(() => {
+  useEffect(() => {
     setData(dataArray);
   }, []);
 

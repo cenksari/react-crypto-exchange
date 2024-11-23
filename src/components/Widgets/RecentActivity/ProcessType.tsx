@@ -1,11 +1,9 @@
-import React from 'react';
-
 // interfaces
 interface IProps {
   type: number;
 }
 
-const ProcessType = ({ type }: IProps): React.JSX.Element => {
+const ProcessType = ({ type }: IProps): JSX.Element => {
   if (type === 1) {
     return (
       <div className='nowrap'>

@@ -1,5 +1,3 @@
-import React from 'react';
-
 // interfaces
 interface IProps {
   type: string;
@@ -7,7 +5,7 @@ interface IProps {
   onClick: (e: React.FormEvent) => void;
 }
 
-const FormButton = ({ type, text, onClick }: IProps): React.JSX.Element => (
+const FormButton = ({ type, text, onClick }: IProps): JSX.Element => (
   <button
     onClick={onClick}
     type={type === 'submit' ? 'submit' : 'button'}

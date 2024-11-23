@@ -1,12 +1,10 @@
-import React from 'react';
-
 // interfaces
 interface IProps {
   icon?: string;
   title: string;
 }
 
-const HeaderLeft = ({ icon, title }: IProps): React.JSX.Element => (
+const HeaderLeft = ({ icon, title }: IProps): JSX.Element => (
   <div className='header-left nowrap no-select'>
     {icon && (
       <button type='button' className='pointer'>

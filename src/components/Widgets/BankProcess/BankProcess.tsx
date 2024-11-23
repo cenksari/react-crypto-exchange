@@ -1,4 +1,4 @@
-import React from 'react';
+import { useState, useEffect } from 'react';
 
 // components
 import Box from '../../Common/Box';
@@ -37,12 +37,12 @@ const dataArray: IBankDetails[] = [
   },
 ];
 
-const BankProcess = (): React.JSX.Element => {
-  const [tab, setTab] = React.useState<number>(0);
-  const [bankDetails, setBankDetails] = React.useState<IBankDetails[]>([]);
-  const [selectedBank, setSelectedBank] = React.useState<IBankDetails | null>(null);
+const BankProcess = (): JSX.Element => {
+  const [tab, setTab] = useState<number>(0);
+  const [bankDetails, setBankDetails] = useState<IBankDetails[]>([]);
+  const [selectedBank, setSelectedBank] = useState<IBankDetails | null>(null);
 
-  React.useEffect(() => {
+  useEffect(() => {
     setBankDetails(dataArray);
 
     setSelectedBank(dataArray[0]);

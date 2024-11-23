@@ -1,5 +1,3 @@
-import React from 'react';
-
 // components
 import SiteLayout from '../../layouts/SiteLayout';
 import Header from '../../components/Header/Header';
@@ -8,7 +6,7 @@ import Profile from '../../components/Widgets/Profile/Profile';
 import MyAssets from '../../components/Widgets/MyAssets/MyAssets';
 import RecentActivity from '../../components/Widgets/RecentActivity/RecentActivity';
 
-const ProfileScreen = (): React.JSX.Element => (
+const ProfileScreen = (): JSX.Element => (
   <SiteLayout>
     <Header icon='sort' title='Profil' />
     <div className='flex flex-destroy'>

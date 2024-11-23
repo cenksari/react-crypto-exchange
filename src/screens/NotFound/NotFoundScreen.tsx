@@ -1,8 +1,6 @@
-import React from 'react';
-
 import { Link } from 'react-router-dom';
 
-const NotFoundScreen = (): React.JSX.Element => (
+const NotFoundScreen = (): JSX.Element => (
   <div className='full-height flex flex-column flex-center'>
     <img
       src={`${process.env.PUBLIC_URL}/images/logo.png`}
