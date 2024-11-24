@@ -1,6 +1,7 @@
-import { useState, useEffect } from 'react';
+import { useRef, useState, useEffect } from 'react';
 
-import { Link } from 'react-router-dom';
+// hooks
+import useClickOutside from '../../../hooks/useClickOutside';
 
 // components
 import Box from '../../Common/Box';
@@ -93,18 +94,59 @@ const dataArray: IHistory[] = [
 ];
 
 const TradeHistory = (): JSX.Element => {
+  const ref = useRef<any>(null);
+
   const [data, setData] = useState<IHistory[]>([]);
+  const [menuOpened, setMenuOpened] = useState<boolean>(false);
+
+  useClickOutside(ref, () => setMenuOpened(false));
 
   useEffect(() => {
     setData(dataArray);
   }, []);
 
+  /**
+   * Toggles the state of the menu to open or close.
+   */
+  const handleMenuOpen = (): void => {
+    setMenuOpened(!menuOpened);
+  };
+
   return (
     <Box>
       <div className='box-title box-vertical-padding box-horizontal-padding no-select'>
-        Piyasa geçmişi
+        <div ref={ref} className='flex flex-center flex-space-between'>
+          Piyasa geçmişi
+          <button type='button' className='box-icon pointer' onClick={() => handleMenuOpen()}>
+            <i className='material-icons'>more_vert</i>
+          </button>
+          {menuOpened && (
+            <div className='box-dropdown'>
+              <ul>
+                <li>
+                  <button type='button'>
+                    <i className='material-icons'>settings</i>
+                    Button 1
+                  </button>
+                </li>
+                <li>
+                  <button type='button'>
+                    <i className='material-icons'>favorite</i>
+                    Button 2
+                  </button>
+                </li>
+                <li>
+                  <button type='button'>
+                    <i className='material-icons'>info</i>
+                    Button 3
+                  </button>
+                </li>
+              </ul>
+            </div>
+          )}
+        </div>
       </div>
-      <div className='box-content box-content-height'>
+      <div className='box-content box-content-height-nobutton'>
         <div className='trade-history-row'>
           {data && data.length > 0 && (
             <table>
@@ -124,12 +166,6 @@ const TradeHistory = (): JSX.Element => {
             </table>
           )}
         </div>
-      </div>
-      <div className='box-button box-vertical-padding box-horizontal-padding'>
-        <Link to='/market' className='button button-purple button-medium button-block'>
-          Daha fazla
-          <i className='material-icons button-icon-right'>chevron_right</i>
-        </Link>
       </div>
     </Box>
   );

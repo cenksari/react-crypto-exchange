@@ -144,6 +144,7 @@ button,
 .readonly-input {
   border: none;
   border-radius: 0;
+  appearance: none;
   vertical-align: middle;
   -webkit-appearance: none;
   transition: all 0.5s ease;
@@ -1101,8 +1102,7 @@ header .header-right .header-user .signout i {
 }
 
 .trade-history-row table td {
-  font-size: 0.9em;
-  font-weight: 500;
+  font-size: 0.8em;
   padding-bottom: 20px;
 }
 
@@ -1389,9 +1389,8 @@ header .header-right .header-user .signout i {
 }
 
 .orders-row table td {
-  font-size: 0.9em;
-  font-weight: 500;
   padding: 10px;
+  font-size: 0.8em;
 }
 
 .orders-row .white {
