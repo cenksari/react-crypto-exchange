@@ -263,6 +263,9 @@ const data: ISeries = {
     chart: {
       type: 'candlestick',
       height: 470,
+      toolbar: {
+        show: false,
+      },
     },
     xaxis: {
       type: 'datetime',
