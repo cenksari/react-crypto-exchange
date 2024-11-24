@@ -17,8 +17,7 @@ const MyAssetsRow = ({ item }: IProps): JSX.Element => {
     } else {
       setColor('red');
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  }, [item.status]);
 
   return (
     <div className='assets-row flex flex-center flex-space-between'>

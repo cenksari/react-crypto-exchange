@@ -5,9 +5,17 @@ interface IProps {
   value: string;
   placeholder: string;
   onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void;
+  onKeyDown?: (e: React.KeyboardEvent<HTMLInputElement>) => void;
 }
 
-const FormInput = ({ type, name, value, placeholder, onChange }: IProps): JSX.Element => (
+const FormInput = ({
+  type,
+  name,
+  value,
+  placeholder,
+  onChange,
+  onKeyDown,
+}: IProps): JSX.Element => (
   <input
     id={name}
     name={name}
@@ -15,6 +23,7 @@ const FormInput = ({ type, name, value, placeholder, onChange }: IProps): JSX.El
     value={value}
     autoComplete='off'
     onChange={onChange}
+    onKeyDown={onKeyDown}
     placeholder={placeholder}
   />
 );

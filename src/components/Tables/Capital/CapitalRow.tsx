@@ -1,6 +1,9 @@
-import { useState, useEffect } from 'react';
+import { useRef, useState, useEffect } from 'react';
 
 import { Sparklines, SparklinesLine } from 'react-sparklines';
+
+// hooks
+import useClickOutside from '../../../hooks/useClickOutside';
 
 // interfaces
 interface IProps {
@@ -9,8 +12,12 @@ interface IProps {
 }
 
 const CapitalRow = ({ item, index }: IProps): JSX.Element => {
+  const ref = useRef<any>(null);
+
   const [color, setColor] = useState<string>('');
   const [menuOpened, setMenuOpened] = useState<boolean>(false);
+
+  useClickOutside(ref, () => setMenuOpened(false));
 
   useEffect(() => {
     if (item.status === 1) {
@@ -18,8 +25,7 @@ const CapitalRow = ({ item, index }: IProps): JSX.Element => {
     } else {
       setColor('red');
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  }, [item.status]);
 
   /**
    * Toggles the state of the menu to open or close.
@@ -53,7 +59,7 @@ const CapitalRow = ({ item, index }: IProps): JSX.Element => {
           </Sparklines>
         </div>
       </td>
-      <td className='right'>
+      <td ref={ref} className='right'>
         <button type='button' className='pointer' onClick={() => handleMenuOpen()}>
           <i className='material-icons'>more_vert</i>
         </button>

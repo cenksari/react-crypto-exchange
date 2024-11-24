@@ -38,15 +38,15 @@ const BuySell = (): JSX.Element => {
         <div className='tabs no-select'>
           <button
             type='button'
-            className={primaryTab === 0 ? 'active' : 'passive'}
             onClick={() => handlePrimaryTab(0)}
+            className={primaryTab === 0 ? 'active' : 'passive'}
           >
             AL
           </button>
           <button
             type='button'
-            className={primaryTab === 1 ? 'active' : 'passive'}
             onClick={() => handlePrimaryTab(1)}
+            className={primaryTab === 1 ? 'active' : 'passive'}
           >
             SAT
           </button>
@@ -57,22 +57,22 @@ const BuySell = (): JSX.Element => {
             <div className='secondary-tabs flex flex-center flex-space-between no-select'>
               <button
                 type='button'
-                className={secondaryTab === 0 ? 'active' : 'passive'}
                 onClick={() => handleSecondaryTab(0)}
+                className={secondaryTab === 0 ? 'active' : 'passive'}
               >
                 Market
               </button>
               <button
                 type='button'
-                className={secondaryTab === 1 ? 'active' : 'passive'}
                 onClick={() => handleSecondaryTab(1)}
+                className={secondaryTab === 1 ? 'active' : 'passive'}
               >
                 Limit
               </button>
               <button
                 type='button'
-                className={secondaryTab === 2 ? 'active' : 'passive'}
                 onClick={() => handleSecondaryTab(2)}
+                className={secondaryTab === 2 ? 'active' : 'passive'}
               >
                 Stop-limit
               </button>
@@ -159,15 +159,15 @@ const BuySell = (): JSX.Element => {
             <div className='secondary-tabs flex flex-center flex-space-around no-select'>
               <button
                 type='button'
-                className={secondaryTab === 0 ? 'active' : 'passive'}
                 onClick={() => handleSecondaryTab(0)}
+                className={secondaryTab === 0 ? 'active' : 'passive'}
               >
                 Market
               </button>
               <button
                 type='button'
-                className={secondaryTab === 1 ? 'active' : 'passive'}
                 onClick={() => handleSecondaryTab(1)}
+                className={secondaryTab === 1 ? 'active' : 'passive'}
               >
                 Limit
               </button>

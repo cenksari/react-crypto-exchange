@@ -2,9 +2,12 @@ import { useState } from 'react';
 
 import { Link } from 'react-router-dom';
 
+// hooks
+import useFormEvents from '../../hooks/useFormEvents';
+
 // components
-import MainLayout from '../../layouts/MainLayout';
 import Box from '../../components/Common/Box';
+import MainLayout from '../../layouts/MainLayout';
 import FormInput from '../../components/Forms/FormInput';
 import FormButton from '../../components/Forms/FormButton';
 
@@ -14,6 +17,8 @@ interface IFormProps {
 }
 
 const ForgotScreen = (): JSX.Element => {
+  const { onlyNumbers } = useFormEvents();
+
   const [formValues, setFormValues] = useState<IFormProps>({
     phone: '',
   });
@@ -52,9 +57,9 @@ const ForgotScreen = (): JSX.Element => {
               <div>
                 <div className='form-logo center'>
                   <img
-                    src={`${process.env.PUBLIC_URL}/images/logo.png`}
-                    alt='Crypto Exchange'
                     draggable='false'
+                    alt='Crypto Exchange'
+                    src={`${process.env.PUBLIC_URL}/images/logo.png`}
                   />
                 </div>
                 <h1 className='form-title center'>Şifre sıfırlama</h1>
@@ -70,6 +75,7 @@ const ForgotScreen = (): JSX.Element => {
                         <FormInput
                           type='text'
                           name='phone'
+                          onKeyDown={onlyNumbers}
                           onChange={handleChange}
                           value={formValues.phone}
                           placeholder='Telefon numaranızı girin'

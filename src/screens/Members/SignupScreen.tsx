@@ -2,6 +2,9 @@ import { useState } from 'react';
 
 import { Link } from 'react-router-dom';
 
+// hooks
+import useFormEvents from '../../hooks/useFormEvents';
+
 // components
 import Box from '../../components/Common/Box';
 import MainLayout from '../../layouts/MainLayout';
@@ -31,6 +34,8 @@ interface IFormProps {
 }
 
 const SignupScreen = (): JSX.Element => {
+  const { onlyNumbers, onlyEmail } = useFormEvents();
+
   const [formValues, setFormValues] = useState<IFormProps>({
     email: '',
     phone: '',
@@ -100,9 +105,9 @@ const SignupScreen = (): JSX.Element => {
               <div>
                 <div className='form-logo center'>
                   <img
-                    src={`${process.env.PUBLIC_URL}/images/logo.png`}
-                    alt='Crypto Exchange'
                     draggable='false'
+                    alt='Crypto Exchange'
+                    src={`${process.env.PUBLIC_URL}/images/logo.png`}
                   />
                 </div>
                 <h1 className='form-title center'>Hesap oluşturma</h1>
@@ -118,6 +123,7 @@ const SignupScreen = (): JSX.Element => {
                         <FormInput
                           type='email'
                           name='email'
+                          onKeyDown={onlyEmail}
                           onChange={handleChange}
                           value={formValues.email}
                           placeholder='E-posta adresinizi girin'
@@ -196,6 +202,7 @@ const SignupScreen = (): JSX.Element => {
                         <FormInput
                           type='text'
                           name='identityNumber'
+                          onKeyDown={onlyNumbers}
                           onChange={handleChange}
                           value={formValues.identityNumber}
                           placeholder='Kimlik numaranızı girin'
@@ -242,6 +249,7 @@ const SignupScreen = (): JSX.Element => {
                         <FormInput
                           type='text'
                           name='phone'
+                          onKeyDown={onlyNumbers}
                           onChange={handleChange}
                           value={formValues.phone}
                           placeholder='Telefon numaranızı girin'

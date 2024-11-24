@@ -8,9 +8,9 @@ const Navbar = (): JSX.Element => (
     <div className='logo'>
       <Link to='/market'>
         <img
-          src={`${process.env.PUBLIC_URL}/images/logo.png`}
-          alt='Crypto Exchange'
           draggable='false'
+          alt='Crypto Exchange'
+          src={`${process.env.PUBLIC_URL}/images/logo.png`}
         />
       </Link>
     </div>

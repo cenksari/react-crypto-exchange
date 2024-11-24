@@ -16,8 +16,7 @@ const MarketRow = ({ item }: IProps): JSX.Element => {
     } else {
       setColor('red');
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  }, [item.status]);
 
   return (
     <div className='market-row flex flex-center flex-space-between'>

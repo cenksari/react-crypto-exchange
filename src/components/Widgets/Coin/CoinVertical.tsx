@@ -1,4 +1,7 @@
-import { useState } from 'react';
+import { useRef, useState } from 'react';
+
+// hooks
+import useClickOutside from '../../../hooks/useClickOutside';
 
 // components
 import Box from '../../Common/Box';
@@ -9,8 +12,12 @@ interface IProps {
 }
 
 const CoinVertical = ({ item }: IProps): JSX.Element => {
+  const ref = useRef<any>(null);
+
   const [showMore, setShowMore] = useState<boolean>(false);
   const [menuOpened, setMenuOpened] = useState<boolean>(false);
+
+  useClickOutside(ref, () => setMenuOpened(false));
 
   /**
    * Toggles the state of the menu to open or close.
@@ -49,7 +56,7 @@ const CoinVertical = ({ item }: IProps): JSX.Element => {
   return (
     <Box>
       <div className='box-title box-vertical-padding box-horizontal-padding no-select'>
-        <div className='flex flex-center flex-space-between'>
+        <div ref={ref} className='flex flex-center flex-space-between'>
           <p>Hakkında</p>
           <button type='button' className='box-icon pointer' onClick={() => handleMenuOpen()}>
             <i className='material-icons'>more_vert</i>

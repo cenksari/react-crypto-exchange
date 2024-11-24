@@ -2,6 +2,9 @@ import { useState } from 'react';
 
 import { Link, useNavigate } from 'react-router-dom';
 
+// hooks
+import useFormEvents from '../../hooks/useFormEvents';
+
 // components
 import Box from '../../components/Common/Box';
 import MainLayout from '../../layouts/MainLayout';
@@ -16,6 +19,7 @@ interface IFormProps {
 
 const SigninScreen = (): JSX.Element => {
   const navigate = useNavigate();
+  const { onlyNumbers } = useFormEvents();
 
   const [formValues, setFormValues] = useState<IFormProps>({
     phone: '',
@@ -58,9 +62,9 @@ const SigninScreen = (): JSX.Element => {
               <div>
                 <div className='form-logo center'>
                   <img
-                    src={`${process.env.PUBLIC_URL}/images/logo.png`}
-                    alt='Crypto Exchange'
                     draggable='false'
+                    alt='Crypto Exchange'
+                    src={`${process.env.PUBLIC_URL}/images/logo.png`}
                   />
                 </div>
                 <h1 className='form-title center'>Üye girişi</h1>
@@ -76,6 +80,7 @@ const SigninScreen = (): JSX.Element => {
                         <FormInput
                           type='text'
                           name='phone'
+                          onKeyDown={onlyNumbers}
                           onChange={handleChange}
                           value={formValues.phone}
                           placeholder='Telefon numaranızı girin'

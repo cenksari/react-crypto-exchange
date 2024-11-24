@@ -1,4 +1,7 @@
-import { useState, useEffect } from 'react';
+import { useRef, useState, useEffect } from 'react';
+
+// hooks
+import useClickOutside from '../../../hooks/useClickOutside';
 
 // components
 import Box from '../../Common/Box';
@@ -91,8 +94,12 @@ const dataArray: IOrder[] = [
 ];
 
 const SellOrders = (): JSX.Element => {
+  const ref = useRef<any>(null);
+
   const [data, setData] = useState<IOrder[]>([]);
   const [menuOpened, setMenuOpened] = useState<boolean>(false);
+
+  useClickOutside(ref, () => setMenuOpened(false));
 
   useEffect(() => {
     setData(dataArray);
@@ -108,7 +115,7 @@ const SellOrders = (): JSX.Element => {
   return (
     <Box>
       <div className='box-title box-vertical-padding box-horizontal-padding no-select'>
-        <div className='flex flex-center flex-space-between'>
+        <div ref={ref} className='flex flex-center flex-space-between'>
           <p>Satış emirleri</p>
           <button type='button' className='box-icon pointer' onClick={() => handleMenuOpen()}>
             <i className='material-icons'>more_vert</i>

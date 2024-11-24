@@ -1,6 +1,9 @@
-import { useState, useEffect } from 'react';
+import { useRef, useState, useEffect } from 'react';
 
 import { Link } from 'react-router-dom';
+
+// hooks
+import useClickOutside from '../../../hooks/useClickOutside';
 
 // components
 import Box from '../../Common/Box';
@@ -117,8 +120,12 @@ const dataArray: ICrypto[] = [
 ];
 
 const MyAssets = (): JSX.Element => {
+  const ref = useRef<any>(null);
+
   const [data, setData] = useState<ICrypto[]>([]);
   const [menuOpened, setMenuOpened] = useState<boolean>(false);
+
+  useClickOutside(ref, () => setMenuOpened(false));
 
   useEffect(() => {
     setData(dataArray);
@@ -136,7 +143,7 @@ const MyAssets = (): JSX.Element => {
       <div className='box-title box-vertical-padding box-horizontal-padding no-select'>
         <div className='flex flex-center flex-space-between'>
           <p>Kripto değerlerim</p>
-          <div>
+          <div ref={ref}>
             <Link to='/' type='button' className='button button-purple button-small'>
               Kripto al
             </Link>

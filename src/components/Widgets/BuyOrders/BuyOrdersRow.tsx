@@ -14,8 +14,7 @@ const BuyOrdersRow = ({ item }: IProps): JSX.Element => {
     } else if (item.type === 2) {
       setColor('red');
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  }, [item.type]);
 
   return (
     <tr className={color}>

@@ -290,10 +290,10 @@ const CandleStick = (): JSX.Element => {
       <div className='box-content box-content-height-nobutton'>
         {state && (
           <ReactApexChart
-            options={state.options}
-            series={state.series}
-            type='candlestick'
             height={470}
+            type='candlestick'
+            series={state.series}
+            options={state.options}
           />
         )}
       </div>

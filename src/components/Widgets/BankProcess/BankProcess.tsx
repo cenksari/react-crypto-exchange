@@ -78,8 +78,8 @@ const BankProcess = (): JSX.Element => {
             <li>
               <button
                 type='button'
-                className={tab === 0 ? 'active' : 'passive'}
                 onClick={() => setTab(0)}
+                className={tab === 0 ? 'active' : 'passive'}
               >
                 Yatır
               </button>
@@ -87,8 +87,8 @@ const BankProcess = (): JSX.Element => {
             <li>
               <button
                 type='button'
-                className={tab === 1 ? 'active' : 'passive'}
                 onClick={() => setTab(1)}
+                className={tab === 1 ? 'active' : 'passive'}
               >
                 Çek
               </button>
