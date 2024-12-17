@@ -7,7 +7,7 @@ interface IProps {
   title: string;
 }
 
-const NavbarButton = ({ url, icon, title }: IProps): JSX.Element => {
+const NavbarButton: React.FC<IProps> = ({ url, icon, title }) => {
   const location = useLocation();
 
   return (

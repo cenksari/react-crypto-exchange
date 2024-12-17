@@ -64,7 +64,7 @@ const dataArray: ITransaction[] = [
   },
 ];
 
-const TransactionsScreen = (): JSX.Element => {
+const TransactionsScreen: React.FC = () => {
   const [data, setData] = useState<ITransaction[]>([]);
   const [keyword, setKeyword] = useState<string>('');
 

@@ -8,7 +8,7 @@ interface IProps {
   item: any;
 }
 
-const TransactionRow = ({ item }: IProps): JSX.Element => (
+const TransactionRow: React.FC<IProps> = ({ item }) => (
   <tr>
     <td aria-label='type'>
       <Icon type={item.type} />

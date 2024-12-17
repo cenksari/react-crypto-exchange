@@ -93,7 +93,7 @@ const dataArray: IHistory[] = [
   },
 ];
 
-const TradeHistory = (): JSX.Element => {
+const TradeHistory: React.FC = () => {
   const ref = useRef<any>(null);
 
   const [data, setData] = useState<IHistory[]>([]);

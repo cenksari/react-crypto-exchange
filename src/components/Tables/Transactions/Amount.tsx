@@ -4,7 +4,7 @@ interface IProps {
   amount: string;
 }
 
-const Amount = ({ type, amount }: IProps): JSX.Element => {
+const Amount: React.FC<IProps> = ({ type, amount }) => {
   if (type === 1) {
     return <strong className='red'>{amount}</strong>;
   }

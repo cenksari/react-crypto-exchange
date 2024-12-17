@@ -3,7 +3,7 @@ interface IProps {
   status: number;
 }
 
-const Status = ({ status }: IProps): JSX.Element => {
+const Status: React.FC<IProps> = ({ status }) => {
   if (status === 1) {
     return <span className='status green'>BİTMİŞ</span>;
   }

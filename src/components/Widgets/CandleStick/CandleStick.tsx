@@ -278,7 +278,7 @@ const data: ISeries = {
   },
 };
 
-const CandleStick = (): JSX.Element => {
+const CandleStick: React.FC = () => {
   const [state, setState] = useState<ISeries | null>(null);
 
   useEffect(() => {

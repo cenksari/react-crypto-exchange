@@ -93,7 +93,7 @@ const dataArray: IPriceList[] = [
   },
 ];
 
-const BuyOrders = (): JSX.Element => {
+const BuyOrders: React.FC = () => {
   const ref = useRef<any>(null);
 
   const [data, setData] = useState<IPriceList[]>([]);

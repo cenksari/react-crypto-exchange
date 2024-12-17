@@ -3,7 +3,7 @@ interface IProps {
   status: number;
 }
 
-const StatusName = ({ status }: IProps): JSX.Element => {
+const StatusName: React.FC<IProps> = ({ status }) => {
   if (status === 1) {
     return <span className='green'>Limit uygun</span>;
   }

@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 
-const NotFoundScreen = (): JSX.Element => (
+const NotFoundScreen: React.FC = () => (
   <div className='full-height flex flex-column flex-center'>
     <img
       draggable='false'

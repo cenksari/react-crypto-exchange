@@ -33,7 +33,7 @@ interface IFormProps {
   agreeToPolicies3: boolean;
 }
 
-const SignupScreen = (): JSX.Element => {
+const SignupScreen: React.FC = () => {
   const { onlyNumbers, onlyEmail } = useFormEvents();
 
   const [formValues, setFormValues] = useState<IFormProps>({

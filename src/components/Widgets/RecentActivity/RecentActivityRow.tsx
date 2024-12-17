@@ -7,7 +7,7 @@ interface IProps {
   item: any;
 }
 
-const RecentActivityRow = ({ item }: IProps): JSX.Element => (
+const RecentActivityRow: React.FC<IProps> = ({ item }) => (
   <div className='activity-row flex flex-center flex-space-between no-select'>
     <ProcessType type={item.type} />
     <div className='center'>

@@ -3,7 +3,7 @@ interface IProps {
   item: any;
 }
 
-const TradeHistoryRow = ({ item }: IProps): JSX.Element => (
+const TradeHistoryRow: React.FC<IProps> = ({ item }) => (
   <tr className={item.type === 1 ? 'green' : 'red'}>
     <td className='left'>
       {item.amount} {item.currency}

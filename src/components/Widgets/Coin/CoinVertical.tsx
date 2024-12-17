@@ -11,7 +11,7 @@ interface IProps {
   item: any;
 }
 
-const CoinVertical = ({ item }: IProps): JSX.Element => {
+const CoinVertical: React.FC<IProps> = ({ item }) => {
   const ref = useRef<any>(null);
 
   const [showMore, setShowMore] = useState<boolean>(false);

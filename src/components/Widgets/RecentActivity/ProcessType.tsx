@@ -3,7 +3,7 @@ interface IProps {
   type: number;
 }
 
-const ProcessType = ({ type }: IProps): JSX.Element => {
+const ProcessType: React.FC<IProps> = ({ type }) => {
   if (type === 1) {
     return (
       <div className='nowrap'>

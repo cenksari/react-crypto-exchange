@@ -108,7 +108,7 @@ const dataArray: ICrypto[] = [
   },
 ];
 
-const CapitalScreen = (): JSX.Element => {
+const CapitalScreen: React.FC = () => {
   const [data, setData] = useState<ICrypto[]>([]);
   const [keyword, setKeyword] = useState<string>('');
 

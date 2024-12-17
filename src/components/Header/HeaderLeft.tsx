@@ -4,7 +4,7 @@ interface IProps {
   title: string;
 }
 
-const HeaderLeft = ({ icon, title }: IProps): JSX.Element => (
+const HeaderLeft: React.FC<IProps> = ({ icon, title }) => (
   <div className='header-left nowrap no-select'>
     {icon && (
       <button type='button' className='pointer'>

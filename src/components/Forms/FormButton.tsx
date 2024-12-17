@@ -5,7 +5,7 @@ interface IProps {
   onClick: (e: React.FormEvent) => void;
 }
 
-const FormButton = ({ type, text, onClick }: IProps): JSX.Element => (
+const FormButton: React.FC<IProps> = ({ type, text, onClick }) => (
   <button
     onClick={onClick}
     type={type === 'submit' ? 'submit' : 'button'}

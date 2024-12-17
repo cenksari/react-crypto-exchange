@@ -119,7 +119,7 @@ const dataArray: ICrypto[] = [
   },
 ];
 
-const MyAssets = (): JSX.Element => {
+const MyAssets: React.FC = () => {
   const ref = useRef<any>(null);
 
   const [data, setData] = useState<ICrypto[]>([]);

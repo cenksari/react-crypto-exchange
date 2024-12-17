@@ -3,7 +3,7 @@ interface IProps {
   type: number;
 }
 
-const Icon = ({ type }: IProps): JSX.Element => {
+const Icon: React.FC<IProps> = ({ type }) => {
   if (type === 1) {
     return (
       <div className='operation red'>

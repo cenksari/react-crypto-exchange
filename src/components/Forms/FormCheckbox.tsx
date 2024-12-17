@@ -6,7 +6,7 @@ interface IProps {
   onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void;
 }
 
-const FormCheckbox = ({ name, text, onChange, checked }: IProps): JSX.Element => (
+const FormCheckbox: React.FC<IProps> = ({ name, text, onChange, checked }) => (
   <label className='checkbox-container'>
     {text}
     <input

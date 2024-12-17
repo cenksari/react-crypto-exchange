@@ -5,7 +5,7 @@ interface IProps {
   searchOnChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
 }
 
-const TopBar = ({ searchValue, searchOnChange, searchSubmit }: IProps): JSX.Element => (
+const TopBar: React.FC<IProps> = ({ searchValue, searchOnChange, searchSubmit }) => (
   <div className='top-buttons flex flex-destroy flex-center flex-space-between'>
     <div>
       <div className='top-search no-select nowrap'>

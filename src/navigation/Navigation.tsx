@@ -10,7 +10,7 @@ import CapitalScreen from '../screens/Capital/CapitalScreen';
 import DashboardScreen from '../screens/Dashboard/DashboardScreen';
 import TransactionsScreen from '../screens/Transactions/TransactionsScreen';
 
-const Navigation = (): JSX.Element => (
+const Navigation: React.FC = () => (
   <Routes>
     <Route path='/' element={<SigninScreen />} />
     <Route path='/market' element={<MarketScreen />} />

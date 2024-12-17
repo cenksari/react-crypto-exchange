@@ -37,7 +37,7 @@ const dataArray: IBankDetails[] = [
   },
 ];
 
-const BankProcess = (): JSX.Element => {
+const BankProcess: React.FC = () => {
   const [tab, setTab] = useState<number>(0);
   const [bankDetails, setBankDetails] = useState<IBankDetails[]>([]);
   const [selectedBank, setSelectedBank] = useState<IBankDetails | null>(null);

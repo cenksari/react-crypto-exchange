@@ -16,7 +16,7 @@ interface IFormProps {
   phone: string;
 }
 
-const ForgotScreen = (): JSX.Element => {
+const ForgotScreen: React.FC = () => {
   const { onlyNumbers } = useFormEvents();
 
   const [formValues, setFormValues] = useState<IFormProps>({

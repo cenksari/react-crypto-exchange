@@ -93,7 +93,7 @@ const dataArray: IOrder[] = [
   },
 ];
 
-const SellOrders = (): JSX.Element => {
+const SellOrders: React.FC = () => {
   const ref = useRef<any>(null);
 
   const [data, setData] = useState<IOrder[]>([]);

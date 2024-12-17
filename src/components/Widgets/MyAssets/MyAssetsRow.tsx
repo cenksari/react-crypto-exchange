@@ -8,7 +8,7 @@ interface IProps {
   item: any;
 }
 
-const MyAssetsRow = ({ item }: IProps): JSX.Element => {
+const MyAssetsRow: React.FC<IProps> = ({ item }) => {
   const [color, setColor] = useState<string>('');
 
   useEffect(() => {

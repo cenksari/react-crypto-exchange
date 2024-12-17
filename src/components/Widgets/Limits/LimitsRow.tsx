@@ -6,7 +6,7 @@ interface IProps {
   item: any;
 }
 
-const LimitsRow = ({ item }: IProps): JSX.Element => (
+const LimitsRow: React.FC<IProps> = ({ item }) => (
   <div className='limits-row flex flex-center flex-space-between no-select'>
     <div className='flex flex-v-center'>
       <div className='icon cover' style={{ backgroundImage: `url('${item.icon}')` }} />

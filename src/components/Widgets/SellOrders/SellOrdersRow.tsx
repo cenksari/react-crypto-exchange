@@ -5,7 +5,7 @@ interface IProps {
   item: any;
 }
 
-const SellOrdersRow = ({ item }: IProps): JSX.Element => {
+const SellOrdersRow: React.FC<IProps> = ({ item }) => {
   const [color, setColor] = useState<string>('white');
 
   useEffect(() => {

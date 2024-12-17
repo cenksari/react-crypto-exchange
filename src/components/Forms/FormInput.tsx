@@ -8,14 +8,7 @@ interface IProps {
   onKeyDown?: (e: React.KeyboardEvent<HTMLInputElement>) => void;
 }
 
-const FormInput = ({
-  type,
-  name,
-  value,
-  placeholder,
-  onChange,
-  onKeyDown,
-}: IProps): JSX.Element => (
+const FormInput: React.FC<IProps> = ({ type, name, value, placeholder, onChange, onKeyDown }) => (
   <input
     id={name}
     name={name}

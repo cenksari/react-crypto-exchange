@@ -11,7 +11,7 @@ interface IProps {
   index: number;
 }
 
-const CapitalRow = ({ item, index }: IProps): JSX.Element => {
+const CapitalRow: React.FC<IProps> = ({ item, index }) => {
   const ref = useRef<any>(null);
 
   const [color, setColor] = useState<string>('');

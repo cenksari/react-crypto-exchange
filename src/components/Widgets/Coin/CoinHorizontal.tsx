@@ -9,12 +9,7 @@ interface IProps {
   searchOnChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
 }
 
-const CoinHorizontal = ({
-  item,
-  searchValue,
-  searchOnChange,
-  searchSubmit,
-}: IProps): JSX.Element => (
+const CoinHorizontal: React.FC<IProps> = ({ item, searchValue, searchOnChange, searchSubmit }) => (
   <Box>
     <div className='box-content box-vertical-padding box-horizontal-padding'>
       <div className='widget-coin-horizontal flex flex-center flex-space-around nowrap'>

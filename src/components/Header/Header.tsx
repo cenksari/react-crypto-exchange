@@ -8,7 +8,7 @@ interface IProps {
   title: string;
 }
 
-const Header = ({ icon, title }: IProps): JSX.Element => (
+const Header: React.FC<IProps> = ({ icon, title }) => (
   <header className='flex flex-center flex-space-between'>
     <HeaderLeft icon={icon} title={title} />
     <HeaderRight />

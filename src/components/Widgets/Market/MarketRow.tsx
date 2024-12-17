@@ -7,7 +7,7 @@ interface IProps {
   item: any;
 }
 
-const MarketRow = ({ item }: IProps): JSX.Element => {
+const MarketRow: React.FC<IProps> = ({ item }) => {
   const [color, setColor] = useState<string>('');
 
   useEffect(() => {

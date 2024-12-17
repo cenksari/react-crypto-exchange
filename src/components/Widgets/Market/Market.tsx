@@ -100,7 +100,7 @@ const dataArray: ICrypto[] = [
   },
 ];
 
-const Market = (): JSX.Element => {
+const Market: React.FC = () => {
   const [data, setData] = useState<ICrypto[]>([]);
 
   useEffect(() => {

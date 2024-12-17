@@ -3,6 +3,6 @@ interface IProps {
   children: React.ReactNode;
 }
 
-const MainLayout = ({ children }: IProps): JSX.Element => <div>{children}</div>;
+const MainLayout: React.FC<IProps> = ({ children }) => <div>{children}</div>;
 
 export default MainLayout;

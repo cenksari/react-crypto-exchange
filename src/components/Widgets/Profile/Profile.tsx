@@ -8,7 +8,7 @@ import useClickOutside from '../../../hooks/useClickOutside';
 // components
 import Box from '../../Common/Box';
 
-const Profile = (): JSX.Element => {
+const Profile: React.FC = () => {
   const ref = useRef<any>(null);
 
   const [menuOpened, setMenuOpened] = useState<boolean>(false);

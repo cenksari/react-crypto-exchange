@@ -5,7 +5,7 @@ import Header from '../../components/Header/Header';
 import BankProcess from '../../components/Widgets/BankProcess/BankProcess';
 import RecentActivity from '../../components/Widgets/RecentActivity/RecentActivity';
 
-const DashboardScreen = (): JSX.Element => (
+const DashboardScreen: React.FC = () => (
   <SiteLayout>
     <Header icon='sort' title='Yatır-çek' />
     <div className='flex flex-destroy flex-space-between'>

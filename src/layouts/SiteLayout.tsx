@@ -6,7 +6,7 @@ interface IProps {
   children: React.ReactNode;
 }
 
-const SiteLayout = ({ children }: IProps): JSX.Element => (
+const SiteLayout: React.FC<IProps> = ({ children }) => (
   <div className='flex'>
     <div className='navbar full-height responsive-hide'>
       <Navbar />

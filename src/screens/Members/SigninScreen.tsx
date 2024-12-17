@@ -17,7 +17,7 @@ interface IFormProps {
   password: string;
 }
 
-const SigninScreen = (): JSX.Element => {
+const SigninScreen: React.FC = () => {
   const navigate = useNavigate();
   const { onlyNumbers } = useFormEvents();
 

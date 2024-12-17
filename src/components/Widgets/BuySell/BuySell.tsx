@@ -3,7 +3,7 @@ import { useState } from 'react';
 // components
 import Box from '../../Common/Box';
 
-const BuySell = (): JSX.Element => {
+const BuySell: React.FC = () => {
   const [primaryTab, setPrimaryTab] = useState<number>(0);
   const [secondaryTab, setSecondaryTab] = useState<number>(0);
 

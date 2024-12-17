@@ -6,7 +6,7 @@ import Profile from '../../components/Widgets/Profile/Profile';
 import MyAssets from '../../components/Widgets/MyAssets/MyAssets';
 import RecentActivity from '../../components/Widgets/RecentActivity/RecentActivity';
 
-const ProfileScreen = (): JSX.Element => (
+const ProfileScreen: React.FC = () => (
   <SiteLayout>
     <Header icon='sort' title='Profil' />
     <div className='flex flex-destroy'>

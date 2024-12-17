@@ -58,7 +58,7 @@ const dataArray: ICrypto[] = [
   },
 ];
 
-const Limits = (): JSX.Element => {
+const Limits: React.FC = () => {
   const [data, setData] = useState<ICrypto[]>([]);
 
   useEffect(() => {

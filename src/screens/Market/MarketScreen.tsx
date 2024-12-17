@@ -42,7 +42,7 @@ const coinData: ICrypto = {
   description: `Bitcoin, Satoshi Nakamoto adını kullanmış bilinmeyen bir kişi veya grup tarafından 2008'de icat edilmiş bir kriptoparadır. 2009'da bir açık kaynak kodlu yazılım olarak piyasaya`,
 };
 
-const MarketScreen = (): JSX.Element => {
+const MarketScreen: React.FC = () => {
   const [keyword, setKeyword] = useState<string>('');
   const [coinInfo, setCoinInfo] = useState<ICrypto | null>(null);
 

@@ -66,7 +66,7 @@ const dataArray: IActivity[] = [
   },
 ];
 
-const RecentActivity = (): JSX.Element => {
+const RecentActivity: React.FC = () => {
   const [data, setData] = useState<IActivity[]>([]);
 
   useEffect(() => {
