@@ -41,10 +41,10 @@ const ForgotScreen: React.FC = () => {
   /**
    * Handles the form submission for the forgot password screen.
    *
-   * @param {React.FormEvent} e - The form submission event.
+   * @param {React.FormEvent<HTMLFormElement>} e - The form submission event.
    * @returns {void}
    */
-  const handleSubmit = (e: React.FormEvent): void => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>): void => {
     e.preventDefault();
   };
 
@@ -62,40 +62,41 @@ const ForgotScreen: React.FC = () => {
                     src={`${process.env.PUBLIC_URL}/images/logo.png`}
                   />
                 </div>
-                <h1 className='form-title center'>Şifre sıfırlama</h1>
+                <h1 className='form-title center'>Password reset</h1>
                 <p className='form-desc center'>
-                  Lütfen kayıtlı telefon numaranızı giriniz. Şifre sıfırlama bilgilerinizi
-                  göndereceğiz.
+                  Please enter your registered phone number. We will send you the password reset
+                  information.
                 </p>
                 <form className='form' onSubmit={handleSubmit} noValidate>
                   <div className='form-elements'>
                     <div className='form-line'>
                       <div className='full-width'>
-                        <label htmlFor='phone'>Telefon numaranız</label>
+                        <label htmlFor='phone'>Phone number</label>
                         <FormInput
                           type='text'
                           name='phone'
                           onKeyDown={onlyNumbers}
                           onChange={handleChange}
                           value={formValues.phone}
-                          placeholder='Telefon numaranızı girin'
+                          placeholder='Enter your phone number'
                         />
                       </div>
                     </div>
                     <div className='form-line'>
                       <div className='full-width right'>
-                        <Link to='/'>Giriş yap</Link>
+                        <Link to='/'>Sign in</Link>
                       </div>
                     </div>
                     <div className='form-line'>
                       <div className='buttons'>
-                        <FormButton type='submit' text='Gönder' onClick={handleSubmit} />
+                        <FormButton text='Send' />
                       </div>
                     </div>
                     <div className='form-line'>
                       <div className='center'>
                         <p>
-                          Hesabınız yoksa <Link to='/members/signup'>yeni hesap</Link> oluşturun.
+                          If you don't have an account, create a{' '}
+                          <Link to='/members/signup'>new account</Link>.
                         </p>
                       </div>
                     </div>

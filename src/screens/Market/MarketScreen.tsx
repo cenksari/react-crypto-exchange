@@ -65,10 +65,10 @@ const MarketScreen: React.FC = () => {
   /**
    * Handles the search form submission.
    *
-   * @param {React.FormEvent} e - The form submission event.
+   * @param {React.FormEvent<HTMLFormElement>} e - The form submission event.
    * @returns {void}
    */
-  const handleSearchSubmit = (e: React.FormEvent): void => {
+  const handleSearchSubmit = (e: React.FormEvent<HTMLFormElement>): void => {
     e.preventDefault();
   };
 

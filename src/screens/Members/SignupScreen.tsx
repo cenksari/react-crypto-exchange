@@ -89,10 +89,10 @@ const SignupScreen: React.FC = () => {
   /**
    * Handles the form submission for the sign-up screen.
    *
-   * @param {React.FormEvent} e - The form submission event.
+   * @param {React.FormEvent<HTMLFormElement>} e - The form submission event.
    * @returns {void}
    */
-  const handleSubmit = (e: React.FormEvent): void => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>): void => {
     e.preventDefault();
   };
 
@@ -110,138 +110,107 @@ const SignupScreen: React.FC = () => {
                     src={`${process.env.PUBLIC_URL}/images/logo.png`}
                   />
                 </div>
-                <h1 className='form-title center'>Hesap oluşturma</h1>
+                <h1 className='form-title center'>Sign up</h1>
                 <p className='form-desc center'>
-                  Lütfen aşağıdaki bilgileri girin. Aktivasyon bilgilerinizi telefon numaranıza
-                  göndereceğiz.
+                  Please enter the information below. We will send your activation details to your
+                  phone number.
                 </p>
-                <form className='form' onSubmit={handleSubmit} noValidate>
+                <form noValidate className='form' onSubmit={handleSubmit}>
                   <div className='form-elements'>
                     <div className='form-line'>
                       <div className='full-width'>
-                        <label htmlFor='email'>E-posta adresiniz</label>
+                        <label htmlFor='email'>Email address</label>
                         <FormInput
                           type='email'
                           name='email'
                           onKeyDown={onlyEmail}
                           onChange={handleChange}
                           value={formValues.email}
-                          placeholder='E-posta adresinizi girin'
+                          placeholder='Enter your email address'
                         />
                       </div>
                     </div>
                     <div className='form-line'>
                       <div className='full-width'>
-                        <label htmlFor='password'>Şifreniz</label>
+                        <label htmlFor='password'>Password</label>
                         <FormInput
                           type='password'
                           name='password'
                           onChange={handleChange}
                           value={formValues.password}
-                          placeholder='Şifrenizi girin'
+                          placeholder='Enter your password'
                         />
                       </div>
                     </div>
                     <div className='form-line'>
                       <div className='full-width'>
-                        <label htmlFor='password1'>Şifrenizi doğrulayın</label>
+                        <label htmlFor='password1'>Password confirmation</label>
                         <FormInput
                           type='password'
                           name='password1'
                           onChange={handleChange}
                           value={formValues.password1}
-                          placeholder='Şifrenizi tekrar girin'
+                          placeholder='Re-enter your password'
                         />
                       </div>
                     </div>
                     <div className='form-line'>
                       <div className='full-width'>
-                        <label htmlFor='name'>Adınız</label>
+                        <label htmlFor='name'>Name</label>
                         <FormInput
                           type='text'
                           name='name'
                           onChange={handleChange}
                           value={formValues.name}
-                          placeholder='Adınızı girin'
+                          placeholder='Enter your name'
                         />
                       </div>
                     </div>
                     <div className='form-line'>
                       <div className='full-width'>
-                        <label htmlFor='lastname'>Soyadınız</label>
+                        <label htmlFor='lastname'>Last name</label>
                         <FormInput
                           type='text'
                           name='lastname'
                           onChange={handleChange}
                           value={formValues.lastname}
-                          placeholder='Soyadınızı girin'
-                        />
-                      </div>
-                    </div>
-
-                    <div className='form-line'>
-                      <div className='full-width'>
-                        <FormCheckbox
-                          name='citizenship'
-                          onChange={handleCheckboxChange}
-                          checked={formValues.citizenship}
-                          text='Türkiye Cumhuriyeti vatandaşıyım.'
-                        />
-                      </div>
-                    </div>
-
-                    <div className='form-line clearfix'>
-                      <div className='half-width'>
-                        <label htmlFor='identityType'>Kimlik tipi</label>
-                        <select name='identityType' id='identityType'>
-                          <option value='1'>TC kimlik no</option>
-                        </select>
-                      </div>
-                      <div className='half-width'>
-                        <label htmlFor='identityNumber'>Kimlik numarası</label>
-                        <FormInput
-                          type='text'
-                          name='identityNumber'
-                          onKeyDown={onlyNumbers}
-                          onChange={handleChange}
-                          value={formValues.identityNumber}
-                          placeholder='Kimlik numaranızı girin'
+                          placeholder='Enter your last name'
                         />
                       </div>
                     </div>
 
                     <div className='form-line clearfix'>
                       <div className='three-width'>
-                        <label htmlFor='day'>Doğum tarihi</label>
+                        <label htmlFor='day'>Birth date</label>
                         <select name='day' id='day'>
-                          <option value='1'>Gün</option>
+                          <option value='1'>Day</option>
                         </select>
                       </div>
                       <div className='three-width'>
                         <label htmlFor='month'>&nbsp;</label>
                         <select name='month' id='month'>
-                          <option value='1'>Ay</option>
+                          <option value='1'>Month</option>
                         </select>
                       </div>
                       <div className='three-width'>
                         <label htmlFor='year'>&nbsp;</label>
                         <select name='year' id='year'>
-                          <option value='1'>Yıl</option>
+                          <option value='1'>Year</option>
                         </select>
                       </div>
                     </div>
 
                     <div className='form-line clearfix'>
                       <div className='three-width'>
-                        <label htmlFor='country'>Telefon</label>
+                        <label htmlFor='country'>Phone number</label>
                         <select name='country' id='country'>
-                          <option value='1'>Ülke kodu</option>
+                          <option value='1'>Country code</option>
                         </select>
                       </div>
                       <div className='three-width'>
                         <label htmlFor='operator'>&nbsp;</label>
                         <select name='operator' id='operator'>
-                          <option value='1'>Operatör kodu</option>
+                          <option value='1'>Operator code</option>
                         </select>
                       </div>
                       <div className='three-width'>
@@ -252,7 +221,7 @@ const SignupScreen: React.FC = () => {
                           onKeyDown={onlyNumbers}
                           onChange={handleChange}
                           value={formValues.phone}
-                          placeholder='Telefon numaranızı girin'
+                          placeholder='Enter your phone number'
                         />
                       </div>
                     </div>
@@ -263,39 +232,19 @@ const SignupScreen: React.FC = () => {
                           name='agreeToPolicies1'
                           onChange={handleCheckboxChange}
                           checked={formValues.agreeToPolicies1}
-                          text={`KVVK Aydınlatma Metni'ni okudum ve kullanıcı sözleşmesini kabul ediyorum.`}
-                        />
-                      </div>
-                    </div>
-                    <div className='form-line'>
-                      <div className='full-width'>
-                        <FormCheckbox
-                          name='agreeToPolicies2'
-                          onChange={handleCheckboxChange}
-                          checked={formValues.agreeToPolicies2}
-                          text={`KVVK Açık Rıza Metni'ni okudum, inceledim. Bu metin kapsamında kişisel verilerimin işlenmesi ve aktarılmasını onaylıyorum.`}
-                        />
-                      </div>
-                    </div>
-                    <div className='form-line'>
-                      <div className='full-width'>
-                        <FormCheckbox
-                          name='agreeToPolicies3'
-                          onChange={handleCheckboxChange}
-                          checked={formValues.agreeToPolicies3}
-                          text='Ürün ve hizmetlerle ilgili KVVK Aydınlatma Metni kapsamında e-posta, telefon ve elektronik iletişim kanalları yoluyla ticari elektronik iletiler almayı kabul ediyorum.'
+                          text={`I have read the Privacy Policy and Terms of Use, and I accept the User Agreement.`}
                         />
                       </div>
                     </div>
                     <div className='form-line'>
                       <div className='buttons'>
-                        <FormButton type='submit' text='Hesap oluştur' onClick={handleSubmit} />
+                        <FormButton text='Sign up' />
                       </div>
                     </div>
                     <div className='form-line'>
                       <div className='center'>
                         <p>
-                          Hesabınız var mı? <Link to='/'>giriş yapın</Link>.
+                          Do you have an account? <Link to='/'>Sign in</Link>.
                         </p>
                       </div>
                     </div>

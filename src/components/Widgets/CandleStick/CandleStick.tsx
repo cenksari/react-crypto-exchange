@@ -288,7 +288,7 @@ const CandleStick: React.FC = () => {
   return (
     <Box>
       <div className='box-title box-vertical-padding box-horizontal-padding no-select'>
-        Piyasa geçmişi
+        Market history
       </div>
       <div className='box-content box-content-height-nobutton'>
         {state && (

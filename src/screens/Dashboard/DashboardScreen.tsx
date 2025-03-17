@@ -7,7 +7,7 @@ import RecentActivity from '../../components/Widgets/RecentActivity/RecentActivi
 
 const DashboardScreen: React.FC = () => (
   <SiteLayout>
-    <Header icon='sort' title='Yatır-çek' />
+    <Header icon='sort' title='Deposit / Withdraw' />
     <div className='flex flex-destroy flex-space-between'>
       <div className='flex-1 box-right-padding'>
         <BankProcess />
@@ -16,30 +16,30 @@ const DashboardScreen: React.FC = () => (
         <Box>
           <div className='box-title box-vertical-padding box-horizontal-padding no-select'>
             <div className='flex flex-center flex-space-between'>
-              <p>Önemli</p>
+              <p>Important information</p>
             </div>
           </div>
           <div className='box-content box-text box-horizontal-padding box-content-height-nobutton'>
             <p>
-              &bull; EFT transferlerinde alıcı/lehdar kısmına Crypto Exchange yazılması
-              gerekmektedir.
+              &bull; For EFT transfers, the recipient/beneficiary section must include "Crypto
+              Exchange."
             </p>
             <p>
-              &bull; Adınıza açılmış olan tüm bireysel, vadesiz, Türk Lirası hesaplarınızdan,
-              listelenen hesaplara Havale/EFT işlemi gerçekleştirebilirsiniz. Farklı kişiye ait
-              hesaplardan yapılan gönderimler kabul edilmeyecektir.
+              &bull; You can make Transfer/EFT transactions from all your individual, non-term,
+              Turkish Lira accounts opened in your name to the listed accounts. Transfers from
+              accounts belonging to other individuals will not be accepted.
             </p>
             <p>
-              &bull; ATM kullanılarak yapılan transferler (kartlı/kartsız), gönderici bilgilerini
-              teyit etmek mümkün olmadığı için kabul edilmeyecektir.
+              &bull; Transfers made using ATMs (with or without a card) will not be accepted as it
+              is not possible to verify the sender's information.
             </p>
             <p>
-              &bull; Gönderdiğiniz miktar kontrollerin ardından sistem tarafından otomatik olarak
-              hesabınıza yansıtılacaktır, ayrıca bir bildirimde bulunmanıza gerek yoktur.
+              &bull; The amount you send will be automatically reflected in your account after
+              checks, and no additional notification is required.
             </p>
             <p>
-              &bull; Kimlik doğrulama işleminizi tamamladığınız için açıklama kısmına sabit yatırma
-              kodu girmeniz gerekmemektedir.
+              &bull; Since you have completed your identity verification, you do not need to enter a
+              fixed deposit code in the description section.
             </p>
           </div>
         </Box>
@@ -53,27 +53,27 @@ const DashboardScreen: React.FC = () => (
         <Box>
           <div className='box-title box-vertical-padding box-horizontal-padding no-select'>
             <div className='flex flex-center flex-space-between'>
-              <p>Önemli</p>
+              <p>Important information</p>
             </div>
           </div>
           <div className='box-content box-text box-horizontal-padding box-content-height-nobutton'>
             <p>
-              &bull; Adınıza açılmış (bireysel, vadesiz, TL) tüm banka hesaplarınıza çekim
-              yapabilirsiniz. Farklı bir kişiye transfer işleminiz gerçekleşmeyecektir.
+              &bull; You can make withdrawals from all the bank accounts opened in your name
+              (individual, non-term, TL). Transfers to another person will not be processed.
             </p>
-            <p>&bull; Minimum çekim tutarı 10 TL&apos;dir.</p>
-            <p>&bull; Çekim işlemi sırasında 3 TL işlem ücreti tahsil edilir.</p>
+            <p>&bull; The minimum withdrawal amount is 10 TL.</p>
+            <p>&bull; A processing fee of 3 TL will be charged for withdrawal transactions.</p>
             <p>
-              &bull; Bir çekim talimatı verdiğinizde bu tutar kullanılabilir bakiyenizden
-              düşecektir.
-            </p>
-            <p>
-              &bull; Henüz gerçekleşmemiş talimatlarınızı iptal edebilirsiniz. Bu durumda talimat
-              tutarı tekrar kullanılabilir bakiyenize aktarılır.
+              &bull; When you issue a withdrawal instruction, the amount will be deducted from your
+              available balance.
             </p>
             <p>
-              &bull; Bankaların mesai saatleri dışında verilen çekim talimatları, bankaların mesaiye
-              başlaması ile birlikte işleme alınır.
+              &bull; You can cancel any instructions that have not been processed yet. In this case,
+              the instruction amount will be returned to your available balance.
+            </p>
+            <p>
+              &bull; Withdrawal instructions given outside of bank working hours will be processed
+              once the banks begin their working hours.
             </p>
           </div>
         </Box>

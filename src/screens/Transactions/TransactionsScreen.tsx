@@ -87,16 +87,16 @@ const TransactionsScreen: React.FC = () => {
   /**
    * Handles the search form submission.
    *
-   * @param {React.FormEvent} e - The form submission event.
+   * @param {React.FormEvent<HTMLFormElement>} e - The form submission event.
    * @returns {void}
    */
-  const handleSearchSubmit = (e: React.FormEvent): void => {
+  const handleSearchSubmit = (e: React.FormEvent<HTMLFormElement>): void => {
     e.preventDefault();
   };
 
   return (
     <SiteLayout>
-      <Header icon='sort' title='İşlemler' />
+      <Header icon='sort' title='Transactions' />
       <TopBar
         searchValue={keyword}
         searchSubmit={handleSearchSubmit}
@@ -110,13 +110,13 @@ const TransactionsScreen: React.FC = () => {
               <th aria-label='empty' className='left'>
                 &nbsp;
               </th>
-              <th className='left responsive-hide'>İşlem</th>
-              <th className='left responsive-hide'>Tarih</th>
-              <th className='left'>Kimden</th>
-              <th className='left'>Kime</th>
+              <th className='left responsive-hide'>Order</th>
+              <th className='left responsive-hide'>Date</th>
+              <th className='left'>From</th>
+              <th className='left'>To</th>
               <th className='left'>Coin</th>
-              <th className='center'>Miktar</th>
-              <th className='center'>Durum</th>
+              <th className='center'>Amount</th>
+              <th className='center'>Status</th>
             </tr>
           </thead>
           <tbody>

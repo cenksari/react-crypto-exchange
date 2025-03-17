@@ -23,15 +23,13 @@ const BuySell: React.FC = () => {
    *
    * @param {number} tabNum - The number of the tab to be selected.
    */
-  const handleSecondaryTab = (tabNum: number): void => {
-    setSecondaryTab(tabNum);
-  };
+  const handleSecondaryTab = (tabNum: number): void => setSecondaryTab(tabNum);
 
   return (
     <Box>
       <div className='box-title box-vertical-padding box-horizontal-padding no-select'>
         <div className='flex flex-center flex-space-between'>
-          <p>Al-sat</p>
+          <p>Buy-sell</p>
         </div>
       </div>
       <div className='box-horizontal-padding box-content-height-nobutton'>
@@ -41,14 +39,14 @@ const BuySell: React.FC = () => {
             onClick={() => handlePrimaryTab(0)}
             className={primaryTab === 0 ? 'active' : 'passive'}
           >
-            AL
+            BUY
           </button>
           <button
             type='button'
             onClick={() => handlePrimaryTab(1)}
             className={primaryTab === 1 ? 'active' : 'passive'}
           >
-            SAT
+            SELL
           </button>
         </div>
 
@@ -82,7 +80,7 @@ const BuySell: React.FC = () => {
               <>
                 <div className='buy-sell-line flex flex-center flex-space-between no-select'>
                   <div>
-                    <strong>Miktar</strong>
+                    <strong>Amount</strong>
                     <i
                       className='material-icons'
                       title='Lorem ipsum dolor sit amet consecteteur adispicing elit.'
@@ -104,7 +102,7 @@ const BuySell: React.FC = () => {
                 </div>
                 <div className='box-button box-vertical-padding'>
                   <button type='button' className='button button-green button-medium button-block'>
-                    Alış emri ver
+                    Place a buy order
                   </button>
                 </div>
               </>
@@ -114,7 +112,7 @@ const BuySell: React.FC = () => {
               <>
                 <div className='buy-sell-line flex flex-center flex-space-between no-select'>
                   <div>
-                    <strong>Limit fiyatı</strong>
+                    <strong>Limit price</strong>
                     <i
                       className='material-icons'
                       title='Lorem ipsum dolor sit amet consecteteur adispicing elit.'
@@ -129,7 +127,7 @@ const BuySell: React.FC = () => {
                 </div>
                 <div className='buy-sell-line flex flex-center flex-space-between no-select'>
                   <div>
-                    <strong>Miktar</strong>
+                    <strong>Amount</strong>
                     <i
                       className='material-icons'
                       title='Lorem ipsum dolor sit amet consecteteur adispicing elit.'
@@ -144,7 +142,7 @@ const BuySell: React.FC = () => {
                 </div>
                 <div className='box-button box-vertical-padding'>
                   <button type='button' className='button button-green button-medium button-block'>
-                    Alış emri ver
+                    Place a buy order
                   </button>
                 </div>
               </>
@@ -207,7 +205,7 @@ const BuySell: React.FC = () => {
                 </div>
                 <div className='buy-sell-line flex flex-center flex-space-between no-select'>
                   <div>
-                    <strong>Miktar</strong>
+                    <strong>Amount</strong>
                     <i
                       className='material-icons'
                       title='Lorem ipsum dolor sit amet consecteteur adispicing elit.'
@@ -222,7 +220,7 @@ const BuySell: React.FC = () => {
                 </div>
                 <div className='box-button box-vertical-padding'>
                   <button type='button' className='button button-red button-medium button-block'>
-                    Satış emri ver
+                    Place a sell order
                   </button>
                 </div>
               </>

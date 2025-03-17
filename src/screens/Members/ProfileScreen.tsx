@@ -8,7 +8,7 @@ import RecentActivity from '../../components/Widgets/RecentActivity/RecentActivi
 
 const ProfileScreen: React.FC = () => (
   <SiteLayout>
-    <Header icon='sort' title='Profil' />
+    <Header icon='sort' title='My profile' />
     <div className='flex flex-destroy'>
       <div className='content-30 box-right-padding'>
         <Profile />

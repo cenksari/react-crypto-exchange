@@ -131,16 +131,16 @@ const CapitalScreen: React.FC = () => {
   /**
    * Handles the search form submission.
    *
-   * @param {React.FormEvent} e - The form submission event.
+   * @param {React.FormEvent<HTMLFormElement>} e - The form submission event.
    * @returns {void}
    */
-  const handleSearchSubmit = (e: React.FormEvent): void => {
+  const handleSearchSubmit = (e: React.FormEvent<HTMLFormElement>): void => {
     e.preventDefault();
   };
 
   return (
     <SiteLayout>
-      <Header icon='sort' title='Piyasa' />
+      <Header icon='sort' title='Market' />
       <TopBar
         searchValue={keyword}
         searchSubmit={handleSearchSubmit}
@@ -151,12 +151,12 @@ const CapitalScreen: React.FC = () => {
         <table className='data-table'>
           <thead>
             <tr>
-              <th className='left'>Sıra</th>
+              <th className='left'>#</th>
               <th className='left'>Coin</th>
-              <th className='center'>Son fiyat</th>
-              <th className='center'>Değişim (24s)</th>
-              <th className='center responsive-hide2'>Hacim (24s)</th>
-              <th className='left responsive-hide'>Grafik</th>
+              <th className='center'>Latest price</th>
+              <th className='center'>Change (24h)</th>
+              <th className='center responsive-hide2'>Weight (24h)</th>
+              <th className='left responsive-hide'>Graphic</th>
               <th aria-label='empty' className='right'>
                 &nbsp;
               </th>

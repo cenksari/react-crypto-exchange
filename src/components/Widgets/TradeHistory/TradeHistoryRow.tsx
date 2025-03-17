@@ -9,7 +9,7 @@ const TradeHistoryRow: React.FC<IProps> = ({ item }) => (
       {item.amount} {item.currency}
     </td>
     <td className='center'>{item.weight}</td>
-    <td className='center'>{item.type === 1 ? 'ALIŞ' : 'SATIŞ'}</td>
+    <td className='center'>{item.type === 1 ? 'BUY' : 'SELL'}</td>
     <td className='right'>{item.time}</td>
   </tr>
 );

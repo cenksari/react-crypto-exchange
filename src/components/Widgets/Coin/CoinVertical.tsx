@@ -22,16 +22,12 @@ const CoinVertical: React.FC<IProps> = ({ item }) => {
   /**
    * Toggles the state of the menu to open or close.
    */
-  const handleMenuOpen = (): void => {
-    setMenuOpened(!menuOpened);
-  };
+  const handleMenuOpen = (): void => setMenuOpened(!menuOpened);
 
   /**
    * Toggles the state of showMore to true or false.
    */
-  const handleShowMore = (): void => {
-    setShowMore(!showMore);
-  };
+  const handleShowMore = (): void => setShowMore(!showMore);
 
   /**
    * Slices the description of the item.
@@ -112,7 +108,7 @@ const CoinVertical: React.FC<IProps> = ({ item }) => {
               <p>{handleSliceDescription(item.description)}</p>
             )}
             <button type='button' className='pointer' onClick={() => handleShowMore()}>
-              {showMore ? 'Daha az...' : 'Devamı...'}
+              {showMore ? 'See less...' : 'See more...'}
             </button>
           </div>
         </div>

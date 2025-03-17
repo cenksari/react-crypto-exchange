@@ -34,7 +34,7 @@ const dataArray: ICrypto[] = [
     amount: '18.783,33',
     currency: 'TRY',
     change: '%45',
-    changePeriod: 'Bu hafta',
+    changePeriod: 'This week',
     barChartData: [30, 20, 25, 35, 30],
     lineChartData: [5, 10, 5, 20, 8, 15, 22, 8, 12, 8, 32, 16, 29, 20, 16, 30, 42, 45],
     status: 1,
@@ -47,7 +47,7 @@ const dataArray: ICrypto[] = [
     amount: '3.125,25',
     currency: 'TRY',
     change: '-%30',
-    changePeriod: 'Bu hafta',
+    changePeriod: 'This week',
     barChartData: [30, 20, 25, 35, 10],
     lineChartData: [5, 10, 5, 20, 8, 15, 22, 8, 12, 8, 32, 16, 29, 20, 16, 30, 42, 10],
     status: 2,
@@ -60,7 +60,7 @@ const dataArray: ICrypto[] = [
     amount: '125,12',
     currency: 'TRY',
     change: '%3',
-    changePeriod: 'Bu hafta',
+    changePeriod: 'This week',
     barChartData: [30, 20, 25, 35, 30],
     lineChartData: [5, 10, 5, 20, 8, 15, 22, 8, 12, 8, 32, 16, 29, 20, 16, 30, 42, 43],
     status: 1,
@@ -73,7 +73,7 @@ const dataArray: ICrypto[] = [
     amount: '10,05',
     currency: 'TRY',
     change: '%16',
-    changePeriod: 'Bu hafta',
+    changePeriod: 'This week',
     barChartData: [30, 20, 25, 35, 30],
     lineChartData: [5, 10, 5, 20, 8, 15, 22, 8, 12, 8, 32, 16, 29, 20, 16, 30, 42, 44],
     status: 1,
@@ -86,7 +86,7 @@ const dataArray: ICrypto[] = [
     amount: '3,05',
     currency: 'TRY',
     change: '-%3',
-    changePeriod: 'Bu hafta',
+    changePeriod: 'This week',
     barChartData: [30, 20, 25, 35, 20],
     lineChartData: [5, 10, 5, 20, 8, 15, 22, 8, 12, 8, 32, 16, 29, 20, 16, 30, 42, 30],
     status: 2,
@@ -99,7 +99,7 @@ const dataArray: ICrypto[] = [
     amount: '1,05',
     currency: 'TRY',
     change: '-%6',
-    changePeriod: 'Bu hafta',
+    changePeriod: 'This week',
     barChartData: [30, 20, 25, 35, 25],
     lineChartData: [5, 10, 5, 20, 8, 15, 22, 8, 12, 8, 32, 16, 29, 20, 16, 30, 42, 40],
     status: 2,
@@ -112,7 +112,7 @@ const dataArray: ICrypto[] = [
     amount: '10,12',
     currency: 'TRY',
     change: '%6',
-    changePeriod: 'Bu hafta',
+    changePeriod: 'This week',
     barChartData: [30, 20, 25, 35, 25],
     lineChartData: [5, 10, 5, 20, 8, 15, 22, 8, 12, 8, 32, 16, 29, 20, 16, 30, 42, 40],
     status: 1,
@@ -134,18 +134,16 @@ const MyAssets: React.FC = () => {
   /**
    * Toggles the state of the menu to open or close.
    */
-  const handleMenuOpen = (): void => {
-    setMenuOpened(!menuOpened);
-  };
+  const handleMenuOpen = (): void => setMenuOpened(!menuOpened);
 
   return (
     <Box>
       <div className='box-title box-vertical-padding box-horizontal-padding no-select'>
         <div className='flex flex-center flex-space-between'>
-          <p>Kripto değerlerim</p>
+          <p>My assets</p>
           <div ref={ref}>
             <Link to='/' type='button' className='button button-purple button-small'>
-              Kripto al
+              Buy crypto
             </Link>
             <button type='button' className='box-icon pointer' onClick={() => handleMenuOpen()}>
               <i className='material-icons'>more_vert</i>

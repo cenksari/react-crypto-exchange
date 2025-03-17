@@ -70,16 +70,16 @@ const Limits: React.FC = () => {
       <div className='box-title box-vertical-padding box-horizontal-padding no-select'>
         <div className='flex flex-center flex-space-between'>
           <div>
-            <p>Limitler</p>
+            <p>Limits</p>
           </div>
           <ul>
             <li>
               <button type='button' className='active'>
-                Yatırma
+                Deposit
               </button>
             </li>
             <li>
-              <button type='button'>Çekme</button>
+              <button type='button'>Withdrawal</button>
             </li>
           </ul>
         </div>
@@ -88,13 +88,13 @@ const Limits: React.FC = () => {
         <div className='limits-header-row flex flex-center flex-space-between no-select'>
           <div>&nbsp;</div>
           <div className='center'>
-            <span className='gray'>24s limit</span>
+            <span className='gray'>24h limit</span>
           </div>
           <div className='center'>
-            <span className='gray'>30g limit</span>
+            <span className='gray'>30d limit</span>
           </div>
           <div className='center'>
-            <span className='gray'>Durum</span>
+            <span className='gray'>Status</span>
           </div>
         </div>
 

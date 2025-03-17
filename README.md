@@ -31,17 +31,19 @@ If you like this resource, please follow me on GitHub. Thank you!
 
 ## Screenshots
 
-![Dashboard](https://github.com/cenksari/react-crypto-exchange/blob/master/screenshots/1-dashboard.jpg?raw=true)
+![Dashboard](https://github.com/cenksari/react-crypto-exchange/blob/master/screenshots/1-dashboard.png?raw=true)
 
-![Profile](https://github.com/cenksari/react-crypto-exchange/blob/master/screenshots/2-profile.jpg?raw=true)
+![Profile](https://github.com/cenksari/react-crypto-exchange/blob/master/screenshots/2-profile.png?raw=true)
 
-![Deposit](https://github.com/cenksari/react-crypto-exchange/blob/master/screenshots/3-deposit.jpg?raw=true)
+![Deposit](https://github.com/cenksari/react-crypto-exchange/blob/master/screenshots/3-deposit.png?raw=true)
 
-![Transactions](https://github.com/cenksari/react-crypto-exchange/blob/master/screenshots/4-transactions.jpg?raw=true)
+![Transactions](https://github.com/cenksari/react-crypto-exchange/blob/master/screenshots/4-transactions.png?raw=true)
 
-![Market](https://github.com/cenksari/react-crypto-exchange/blob/master/screenshots/5-market.jpg?raw=true)
+![Market](https://github.com/cenksari/react-crypto-exchange/blob/master/screenshots/5-market.png?raw=true)
 
-![Signin](https://github.com/cenksari/react-crypto-exchange/blob/master/screenshots/6-signin.jpg?raw=true)
+![Signin](https://github.com/cenksari/react-crypto-exchange/blob/master/screenshots/6-signin.png?raw=true)
+
+![Signup](https://github.com/cenksari/react-crypto-exchange/blob/master/screenshots/7-signup.png?raw=true)
 
 ## Installation
 

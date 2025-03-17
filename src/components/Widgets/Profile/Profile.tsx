@@ -18,15 +18,13 @@ const Profile: React.FC = () => {
   /**
    * Toggles the state of the menu to open or close.
    */
-  const handleMenuOpen = (): void => {
-    setMenuOpened(!menuOpened);
-  };
+  const handleMenuOpen = (): void => setMenuOpened(!menuOpened);
 
   return (
     <Box>
       <div className='box-title box-vertical-padding box-horizontal-padding no-select'>
         <div ref={ref} className='flex flex-center flex-space-between'>
-          <p>Profilim</p>
+          <p>My profile</p>
           <button type='button' className='box-icon pointer' onClick={() => handleMenuOpen()}>
             <i className='material-icons'>more_vert</i>
           </button>
@@ -59,7 +57,7 @@ const Profile: React.FC = () => {
       </div>
       <div className='widget-profile box-content box-content-height-nobutton'>
         <div className='center'>
-          <form className='upload no-select' noValidate>
+          <form noValidate className='upload no-select'>
             <input type='file' name='file' id='file' accept='.jpg, .jpeg' />
             <label htmlFor='file'>
               <div
@@ -77,9 +75,9 @@ const Profile: React.FC = () => {
         <div className='box-horizontal-padding'>
           <div className='center'>
             <h3>Cenk SARI</h3>
-            <strong>Seviye 1</strong>
-            <p>Limitlerinizi arttırmak için seviye 2 olmalısınız.</p>
-            <Link to='/members/application'>Seviye 2 başvuru</Link>
+            <strong>Level 1</strong>
+            <p>You must be Level 2 to increase your limits.</p>
+            <Link to='/members/application'>Level 2 application</Link>
           </div>
         </div>
       </div>

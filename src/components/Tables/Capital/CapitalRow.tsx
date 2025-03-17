@@ -30,9 +30,7 @@ const CapitalRow: React.FC<IProps> = ({ item, index }) => {
   /**
    * Toggles the state of the menu to open or close.
    */
-  const handleMenuOpen = (): void => {
-    setMenuOpened(!menuOpened);
-  };
+  const handleMenuOpen = (): void => setMenuOpened(!menuOpened);
 
   return (
     <tr>

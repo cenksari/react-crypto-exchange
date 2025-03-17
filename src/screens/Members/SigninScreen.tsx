@@ -19,6 +19,7 @@ interface IFormProps {
 
 const SigninScreen: React.FC = () => {
   const navigate = useNavigate();
+
   const { onlyNumbers } = useFormEvents();
 
   const [formValues, setFormValues] = useState<IFormProps>({
@@ -44,10 +45,10 @@ const SigninScreen: React.FC = () => {
   /**
    * Handles the form submission for the sign-in screen.
    *
-   * @param {React.FormEvent} e - The form submission event.
+   * @param {React.FormEvent<HTMLFormElement>} e - The form submission event.
    * @returns {void}
    */
-  const handleSubmit = (e: React.FormEvent): void => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>): void => {
     e.preventDefault();
 
     navigate('/market');
@@ -67,52 +68,53 @@ const SigninScreen: React.FC = () => {
                     src={`${process.env.PUBLIC_URL}/images/logo.png`}
                   />
                 </div>
-                <h1 className='form-title center'>Üye girişi</h1>
+                <h1 className='form-title center'>Sign in</h1>
                 <p className='form-desc center'>
-                  Lütfen tarayıcınızın adres çubuğunda{' '}
-                  <strong>https://pro.cryptoexchange.com</strong> yazdığından emin olunuz.
+                  Please make sure that <strong>https://pro.cryptoexchange.com</strong> is written
+                  in your browser's address bar.
                 </p>
-                <form className='form' onSubmit={handleSubmit} noValidate>
+                <form noValidate className='form' onSubmit={handleSubmit}>
                   <div className='form-elements'>
                     <div className='form-line'>
                       <div className='full-width'>
-                        <label htmlFor='phone'>Telefon numaranız</label>
+                        <label htmlFor='phone'>Phone number</label>
                         <FormInput
                           type='text'
                           name='phone'
                           onKeyDown={onlyNumbers}
                           onChange={handleChange}
                           value={formValues.phone}
-                          placeholder='Telefon numaranızı girin'
+                          placeholder='Enter your phone number'
                         />
                       </div>
                     </div>
                     <div className='form-line'>
                       <div className='full-width'>
-                        <label htmlFor='password'>Şifreniz</label>
+                        <label htmlFor='password'>Password</label>
                         <FormInput
                           type='password'
                           name='password'
                           onChange={handleChange}
                           value={formValues.password}
-                          placeholder='Şifrenizi girin'
+                          placeholder='Enter your password'
                         />
                       </div>
                     </div>
                     <div className='form-line'>
                       <div className='full-width right'>
-                        <Link to='/members/forgot-password'>Şifremi unuttum</Link>
+                        <Link to='/members/forgot-password'>Forgot password</Link>
                       </div>
                     </div>
                     <div className='form-line'>
                       <div className='buttons'>
-                        <FormButton type='submit' text='Giriş yap' onClick={handleSubmit} />
+                        <FormButton text='Sign in' />
                       </div>
                     </div>
                     <div className='form-line'>
                       <div className='center'>
                         <p>
-                          Hesabınız yoksa <Link to='/members/signup'>yeni hesap</Link> oluşturun.
+                          If you don't have an account, create a{' '}
+                          <Link to='/members/signup'>new account</Link>.
                         </p>
                       </div>
                     </div>

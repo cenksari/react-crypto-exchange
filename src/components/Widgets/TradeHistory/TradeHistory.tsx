@@ -108,15 +108,13 @@ const TradeHistory: React.FC = () => {
   /**
    * Toggles the state of the menu to open or close.
    */
-  const handleMenuOpen = (): void => {
-    setMenuOpened(!menuOpened);
-  };
+  const handleMenuOpen = (): void => setMenuOpened(!menuOpened);
 
   return (
     <Box>
       <div className='box-title box-vertical-padding box-horizontal-padding no-select'>
         <div ref={ref} className='flex flex-center flex-space-between'>
-          Piyasa geçmişi
+          Market history
           <button type='button' className='box-icon pointer' onClick={() => handleMenuOpen()}>
             <i className='material-icons'>more_vert</i>
           </button>
@@ -152,10 +150,10 @@ const TradeHistory: React.FC = () => {
             <table>
               <thead>
                 <tr>
-                  <th className='left no-select'>Fiyat</th>
-                  <th className='center no-select'>Hacim</th>
-                  <th className='center no-select'>İşlem</th>
-                  <th className='right no-select'>Zaman</th>
+                  <th className='left no-select'>Price</th>
+                  <th className='center no-select'>Amount</th>
+                  <th className='center no-select'>Order</th>
+                  <th className='right no-select'>Time</th>
                 </tr>
               </thead>
               <tbody>

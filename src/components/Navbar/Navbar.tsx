@@ -14,49 +14,46 @@ const Navbar: React.FC = () => (
         />
       </Link>
     </div>
-    <h3>Ana menü</h3>
+    <h3>Main menu</h3>
     <ul>
       <li>
-        <NavbarButton url='/dashboard' icon='dashboard' title='Yatır-çek' />
+        <NavbarButton url='/capital' icon='equalizer' title='Capital' />
       </li>
       <li>
-        <NavbarButton url='/wallet' icon='account_balance_wallet' title='Cüzdanım' />
+        <NavbarButton url='/wallet' icon='account_balance_wallet' title='My wallet' />
       </li>
       <li>
-        <NavbarButton url='/transactions' icon='sync' title='İşlemler' />
+        <NavbarButton url='/transactions' icon='sync' title='Transactions' />
       </li>
       <li>
-        <NavbarButton url='/trading' icon='paid' title='Ticaret' />
-      </li>
-      <li>
-        <NavbarButton url='/exchange' icon='account_balance' title='Takas' />
-      </li>
-      <li>
-        <NavbarButton url='/capital' icon='equalizer' title='Piyasa' />
+        <NavbarButton url='/dashboard' icon='dashboard' title='Deposit / Withdraw' />
       </li>
     </ul>
     <h3>Diğerleri</h3>
     <ul>
       <li>
-        <NavbarButton url='/members' icon='account_circle' title='Profil' />
+        <NavbarButton url='/members' icon='account_circle' title='My profile' />
       </li>
       <li>
-        <NavbarButton url='/contacts' icon='contacts' title='Kişiler' />
+        <NavbarButton url='/contacts' icon='contacts' title='Addresses' />
       </li>
       <li>
-        <NavbarButton url='/messages' icon='chat' title='Mesajlar' />
+        <NavbarButton url='/messages' icon='chat' title='Messages' />
       </li>
       <li>
-        <NavbarButton url='/settings' icon='settings' title='Ayarlar' />
+        <NavbarButton url='/settings' icon='settings' title='Settings' />
       </li>
     </ul>
     <div className='copyright'>
       <strong>Crypto Exchange</strong>
       <p>
-        2021 &copy; Tüm hakları saklıdır.
+        {new Date().getFullYear()} &copy; All rights reserved.
         <br />
         <br />
-        Made with <span>❤</span> by Cenk SARI
+        Made with <span>❤</span> by{' '}
+        <a target='_blank' rel='noreferrer' href='https://www.cenksari.com'>
+          Cenk SARI
+        </a>
       </p>
     </div>
   </nav>

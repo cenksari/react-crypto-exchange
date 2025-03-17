@@ -5,7 +5,7 @@ import Box from '../../Common/Box';
 interface IProps {
   item: any;
   searchValue: string;
-  searchSubmit: (e: React.FormEvent) => void;
+  searchSubmit: (e: React.FormEvent<HTMLFormElement>) => void;
   searchOnChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
 }
 
@@ -22,7 +22,7 @@ const CoinHorizontal: React.FC<IProps> = ({ item, searchValue, searchOnChange, s
         </div>
         <div className='divider' />
         <div>
-          <label className='gray'>Değer fiyatı</label>
+          <label className='gray'>Price</label>
           <strong>
             {item.amount} {item.currency}
             <em className='red'>{item.change}</em>
@@ -30,24 +30,24 @@ const CoinHorizontal: React.FC<IProps> = ({ item, searchValue, searchOnChange, s
         </div>
         <div className='divider responsive-hide2' />
         <div className='responsive-hide2'>
-          <label className='gray'>Finansman oranı</label>
+          <label className='gray'>Financing rate</label>
           <strong>{item.financialRate}</strong>
         </div>
         <div className='divider responsive-hide2' />
         <div className='responsive-hide2'>
-          <label className='gray'>Hacim</label>
+          <label className='gray'>Weight</label>
           <strong>{item.weight}</strong>
         </div>
         <div className='divider responsive-hide' />
         <div className='no-select responsive-hide'>
-          <form onSubmit={searchSubmit} noValidate>
+          <form noValidate onSubmit={searchSubmit}>
             <input
               type='text'
               id='keyword'
               name='keyword'
               autoComplete='off'
-              placeholder='Arama'
               value={searchValue}
+              placeholder='Search'
               onChange={searchOnChange}
             />
             <button type='button' className='pointer'>
