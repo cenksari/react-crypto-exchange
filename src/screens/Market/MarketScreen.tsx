@@ -39,7 +39,8 @@ const coinData: ICrypto = {
   financialRate: '-0.0252%/hr',
   icon: 'https://icons.iconarchive.com/icons/cjdowner/cryptocurrency-flat/256/Bitcoin-BTC-icon.png',
   amount: '18.783,33',
-  description: `Bitcoin, Satoshi Nakamoto adını kullanmış bilinmeyen bir kişi veya grup tarafından 2008'de icat edilmiş bir kriptoparadır. 2009'da bir açık kaynak kodlu yazılım olarak piyasaya`,
+  description:
+    'Bitcoin is a cryptocurrency invented in 2008 by an unknown person or group using the name Satoshi Nakamoto. It was released as open-source software in 2009',
 };
 
 const MarketScreen: React.FC = () => {
