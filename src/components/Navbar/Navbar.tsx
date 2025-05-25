@@ -29,7 +29,7 @@ const Navbar: React.FC = () => (
         <NavbarButton url='/dashboard' icon='dashboard' title='Deposit / Withdraw' />
       </li>
     </ul>
-    <h3>Diğerleri</h3>
+    <h3>Others</h3>
     <ul>
       <li>
         <NavbarButton url='/members' icon='account_circle' title='My profile' />

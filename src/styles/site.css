@@ -449,7 +449,7 @@ a i {
 }
 
 .box-dropdown {
-  top: 60px;
+  top: 50px;
   right: 20px;
   z-index: 9999999;
   min-width: 150px;
@@ -706,11 +706,11 @@ a i {
 
 .data-table .status {
   color: #ffffff;
-  padding: 10px 15px;
+  user-select: none;
+  padding: 8px 10px;
   text-align: center;
   border-radius: 25px;
   display: inline-block;
-  user-select: none;
   -webkit-user-select: none;
 }
 
@@ -1818,5 +1818,10 @@ header .header-right .header-user .signout i {
   .top-search input,
   .top-search button {
     padding: 10px 15px;
+  }
+
+  .box-dropdown {
+    top: 40px;
+    right: 10px;
   }
 }
