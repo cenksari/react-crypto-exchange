@@ -37,6 +37,7 @@ export default [
       'react/prop-types': 'off',
       'prettier/prettier': 'error',
       'react/react-in-jsx-scope': 'off',
+      'react/jsx-no-target-blank': 'off',
       'react/require-default-props': 'off',
       '@typescript-eslint/no-explicit-any': 'off',
       'no-unused-vars': ['error', { args: 'none' }],
