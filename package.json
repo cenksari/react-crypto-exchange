@@ -3,21 +3,23 @@
   "version": "0.1.10",
   "private": true,
   "dependencies": {
-    "apexcharts": "^4.7.0",
+    "ajv": "^8.17.1",
+    "ajv-keywords": "^5.1.0",
+    "apexcharts": "^5.3.2",
     "react": "^19.1.1",
-    "react-apexcharts": "^1.7.0",
+    "react-apexcharts": "^1.4.0", 
     "react-dom": "^19.1.1",
-    "react-router-dom": "^7.7.1",
+    "react-router-dom": "^7.8.0",
     "react-scripts": "^5.0.1",
-    "react-sparklines": "^1.7.0",
-    "typescript": "^5.8.3"
+    "react-sparklines": "1.7.0",
+    "typescript": "^5.4.5"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "set \"GENERATE_SOURCEMAP=false\" && react-scripts build",
     "eslint": "eslint ./src",
-    "prettier": "prettier --check **",
-    "prettier fix": "prettier --write **"
+    "prettier": "prettier --check \"**/*.{js,jsx,ts,tsx,json,css,md}\"",
+    "prettier fix": "prettier --write \"**/*.{js,jsx,ts,tsx,json,css,md}\""
   },
   "eslintConfig": {
     "extends": [
@@ -37,7 +39,7 @@
     ]
   },
   "devDependencies": {
-    "@types/node": "^24.1.0",
+    "@types/node": "^20.10.5",
     "@types/react": "^19.1.9",
     "@types/react-dom": "^19.1.7",
     "@types/react-sparklines": "^1.7.5",
