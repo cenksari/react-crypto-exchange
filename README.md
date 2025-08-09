@@ -1,94 +1,282 @@
-# React Crypto Exchange Template
+# Crypto Exchange Platform
 
-Are you ready to dive into the world of cryptocurrency trading? Look no further! This React Crypto Exchange Template is designed to provide a solid foundation for building a comprehensive cryptocurrency exchange platform. With its sleek and modern design, this template is perfect for anyone looking to create a user-friendly and intuitive trading experience.
+A modern, secure, and high-performance cryptocurrency trading platform built with React 19, TypeScript, and Vite.
 
-**Key Features**
+## 🚀 Features
 
-- **Real-time Market Data**: Stay up-to-date with the latest market trends and prices.
-- **User Profile Management**: Manage your account, view transaction history, and track your portfolio.
-- **Secure Transactions**: Execute trades with confidence using our secure transaction processing system.
-- **Multi-Currency Support**: Trade with a variety of cryptocurrencies and fiat currencies.
-- **Responsive Design**: Accessible on any device, ensuring a seamless user experience across all platforms.
+### Core Features
+- **React 19** with latest features and optimizations
+- **TypeScript** for type safety and better developer experience
+- **Vite** for ultra-fast development and optimized builds
+- **Zustand** for lightweight state management
+- **React Hook Form** with Zod validation for robust form handling
+- **React Router v7** for modern routing
+- **Hot Toast** for elegant notifications
 
-**Why Choose This Template?**
+### Security Features
+- Input sanitization and XSS protection
+- CSRF token support
+- Secure authentication with JWT
+- Password strength validation
+- Two-factor authentication ready
+- Rate limiting configuration
 
-- **Easy Customization**: Tailor the template to fit your brand's unique style and needs.
-- **Fast Development**: Get your exchange up and running quickly with our pre-built components and features.
+### Performance Optimizations
+- Code splitting with React.lazy
+- Dynamic imports for heavy libraries (ApexCharts)
+- Bundle optimization with manual chunking
+- Image optimization and lazy loading
+- Service worker ready
+- Memoization and React.Suspense
 
-**Get Started Today!**
+### Developer Experience
+- Strict TypeScript configuration
+- Comprehensive ESLint rules
+- Prettier code formatting
+- Vitest for testing
+- Path aliases for clean imports
+- Error boundaries for graceful error handling
 
-Explore the demo, review the code, and start building your cryptocurrency exchange platform with React Crypto Exchange Template.
+### Production Ready
+- Docker containerization
+- CI/CD pipeline with GitHub Actions
+- Environment-based configuration
+- Health checks and monitoring
+- Nginx configuration for production
+- Security headers and CSP
 
-## Support this project
+## 🏗️ Architecture
 
-You are free to download, change and use it anywhere. I will regularly update this template with new resources and pages I found on the web. Don't hesitate to participate by sending a PR! Maybe your first on Github :)
+```
+src/
+├── components/          # Reusable UI components
+│   ├── Common/         # Generic components
+│   ├── Forms/          # Form-specific components
+│   └── ErrorBoundary/  # Error handling
+├── hooks/              # Custom React hooks
+├── layouts/            # Page layouts
+├── screens/            # Page components
+├── services/           # API services
+├── stores/             # State management
+├── types/              # TypeScript type definitions
+├── utils/              # Utility functions
+└── styles/             # Global styles
+```
 
-If you like this resource, please follow me on GitHub. Thank you!
+## 🛠️ Technology Stack
 
-## Demo
+### Frontend
+- **React 19.1.1** - Latest React with concurrent features
+- **TypeScript 5.8** - Type safety and IDE support
+- **Vite 6.1** - Next generation build tool
+- **Zustand 5.0** - Lightweight state management
+- **React Hook Form 7.54** - Performant forms with validation
+- **Zod 3.24** - Schema validation
+- **Lucide React** - Modern icon library
+- **Clsx** - Conditional class names
 
-[https://react-crypto-exchange-nine.vercel.app/](https://react-crypto-exchange-nine.vercel.app/)
+### Development Tools
+- **ESLint 9.32** - Linting with modern rules
+- **Prettier 3.6** - Code formatting
+- **Vitest 2.1** - Fast unit testing
+- **TypeScript ESLint** - TypeScript-specific linting
 
-## Screenshots
+### Production
+- **Docker** - Containerization
+- **Nginx** - Web server and reverse proxy
+- **GitHub Actions** - CI/CD pipeline
 
-![Dashboard](https://github.com/cenksari/react-crypto-exchange/blob/master/screenshots/1-dashboard.png?raw=true)
+## 🚀 Quick Start
 
-![Profile](https://github.com/cenksari/react-crypto-exchange/blob/master/screenshots/2-profile.png?raw=true)
+### Prerequisites
+- Node.js 20+ and npm/yarn
+- Docker (optional, for containerization)
 
-![Deposit](https://github.com/cenksari/react-crypto-exchange/blob/master/screenshots/3-deposit.png?raw=true)
+### Development Setup
 
-![Transactions](https://github.com/cenksari/react-crypto-exchange/blob/master/screenshots/4-transactions.png?raw=true)
+1. **Clone the repository**
+```bash
+git clone <repository-url>
+cd react-crypto-exchange-optimized
+```
 
-![Market](https://github.com/cenksari/react-crypto-exchange/blob/master/screenshots/5-market.png?raw=true)
+2. **Install dependencies**
+```bash
+npm install
+```
 
-![Signin](https://github.com/cenksari/react-crypto-exchange/blob/master/screenshots/6-signin.png?raw=true)
+3. **Set up environment variables**
+```bash
+cp .env.example .env
+# Edit .env with your configuration
+```
 
-![Signup](https://github.com/cenksari/react-crypto-exchange/blob/master/screenshots/7-signup.png?raw=true)
+4. **Start development server**
+```bash
+npm run dev
+```
 
-## Installation
+The application will be available at `http://localhost:3000`
 
-1. Clone the project:
+### Available Scripts
 
-   ```bash
-   git clone https://github.com/cenksari/react-crypto-exchange.git
-   ```
+```bash
+# Development
+npm run dev              # Start development server
+npm run build           # Build for production
+npm run preview         # Preview production build locally
 
-2. Navigate to the project directory:
+# Quality Assurance
+npm run lint            # Run ESLint
+npm run lint:fix        # Fix ESLint errors
+npm run format          # Format code with Prettier
+npm run format:check    # Check code formatting
+npm run type-check      # Run TypeScript compiler
 
-   ```bash
-   cd react-crypto-exchange
-   ```
+# Testing
+npm run test            # Run tests
+npm run test:ui         # Run tests with UI
+npm run test:coverage   # Run tests with coverage
+```
 
-3. Install dependencies:
+## 🐳 Docker Deployment
 
-   ```bash
-   npm install
-   ```
+### Build and Run with Docker
 
-   or
+```bash
+# Build the Docker image
+docker build -t crypto-exchange .
 
-   ```bash
-   yarn install
-   ```
+# Run the container
+docker run -p 3000:80 crypto-exchange
+```
 
-4. Start the application:
+### Using Docker Compose
 
-   ```bash
-   npm start
-   ```
+```bash
+# Start all services
+docker-compose up -d
 
-## Usage
+# View logs
+docker-compose logs -f
 
-Once the application is started, navigate to [http://localhost:3000](http://localhost:3000) in your browser to test application.
+# Stop services
+docker-compose down
+```
 
-## Contributing
+## 🔧 Configuration
 
-If you would like to contribute, please create a new branch and submit a pull request with your changes. Review may be needed before acceptance.
+### Environment Variables
 
-## Authors
+Create `.env` files for different environments:
 
-@cenksari
+- `.env` - Development configuration
+- `.env.production` - Production configuration
+- `.env.example` - Template with all available variables
 
-## License
+Key environment variables:
 
-MIT
+```bash
+# Application
+VITE_APP_NAME=Crypto Exchange
+VITE_APP_VERSION=1.0.0
+VITE_APP_ENVIRONMENT=production
+
+# API Configuration
+VITE_API_BASE_URL=https://api.cryptoexchange.com
+VITE_WS_BASE_URL=wss://ws.cryptoexchange.com
+
+# Security
+VITE_JWT_SECRET=your_jwt_secret
+VITE_CSRF_TOKEN=your_csrf_token
+
+# Features
+VITE_ENABLE_2FA=true
+VITE_ENABLE_KYC=true
+VITE_ENABLE_TRADING=true
+
+# Monitoring
+VITE_SENTRY_DSN=your_sentry_dsn
+VITE_GOOGLE_ANALYTICS_ID=your_ga_id
+```
+
+## 🔒 Security Features
+
+### Authentication & Authorization
+- JWT-based authentication
+- Refresh token mechanism
+- Protected routes with role-based access
+- Session management and timeout
+
+### Input Validation & Sanitization
+- Zod schema validation
+- XSS protection through input sanitization
+- CSRF protection ready
+- SQL injection prevention
+
+### Security Headers
+- Content Security Policy (CSP)
+- X-Frame-Options
+- X-Content-Type-Options
+- X-XSS-Protection
+- Referrer Policy
+
+## 🧪 Testing
+
+The project uses Vitest for testing with comprehensive test setup:
+
+```bash
+# Run all tests
+npm run test
+
+# Run tests in watch mode
+npm run test:watch
+
+# Run tests with coverage
+npm run test:coverage
+
+# Run tests with UI
+npm run test:ui
+```
+
+## 📦 Build & Deployment
+
+### Production Build
+
+```bash
+npm run build
+```
+
+This creates an optimized production build in the `dist/` directory with:
+- Minified and compressed files
+- Code splitting for optimal loading
+- Tree shaking for smaller bundles
+- Source maps disabled for security
+
+### CI/CD Pipeline
+
+The project includes a comprehensive GitHub Actions workflow:
+
+1. **Code Quality**: Linting, formatting, and type checking
+2. **Testing**: Unit tests with coverage reporting
+3. **Security**: Vulnerability scanning with Trivy
+4. **Build**: Production build and Docker image creation
+5. **Deploy**: Automated deployment to production
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create a feature branch: `git checkout -b feature/new-feature`
+3. Make your changes and add tests
+4. Run quality checks: `npm run lint && npm run test`
+5. Commit your changes: `git commit -m 'Add new feature'`
+6. Push to the branch: `git push origin feature/new-feature`
+7. Submit a pull request
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
+
+---
+
+**Note**: This is a demo project for educational purposes. Do not use in production without proper security auditing and compliance checks for financial applications.
