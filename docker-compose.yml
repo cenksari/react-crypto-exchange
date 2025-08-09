@@ -1,0 +1,43 @@
+version: '3.8'
+
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: production
+    ports:
+      - "3000:80"
+    environment:
+      - VITE_APP_NAME=${VITE_APP_NAME:-Crypto Exchange}
+      - VITE_API_BASE_URL=${VITE_API_BASE_URL:-http://localhost:8000/api}
+      - VITE_WS_BASE_URL=${VITE_WS_BASE_URL:-ws://localhost:8000/ws}
+    env_file:
+      - .env.production
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:80/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+    networks:
+      - crypto-exchange-network
+
+  # Optional: Add backend service
+  # backend:
+  #   image: your-backend-image:latest
+  #   ports:
+  #     - "8000:8000"
+  #   environment:
+  #     - NODE_ENV=production
+  #   networks:
+  #     - crypto-exchange-network
+
+networks:
+  crypto-exchange-network:
+    driver: bridge
+
+volumes:
+  nginx_cache:
+    driver: local
